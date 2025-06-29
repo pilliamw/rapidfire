@@ -122,8 +122,13 @@ function parse_qset_lines(lines) {
             } else {
                 if (currentQType == "SAQ") {
                     if (line[0] == "A" || line[0] == "EXA") { // TODO FIX
-                        currentQObj.correctAnswers.push(line[1]);
-                    } else if (line[0] != "EXP") { // TODO FIX
+                        // pre-patch
+                        // currentQObj.correctAnswers.push(line[1]);
+
+                        // post-patch
+                        // [exact-bool, "ans"]
+                        currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
+                    } else { // TODO FIX??? IDK????
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
                 } else if (currentQType == "MCQ") {

@@ -255,7 +255,7 @@ class SAQQuestion {
 
             SAQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             SAQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            SAQ_FEEDBACK_TEXT.innerText = `Skipped! Accepted Answers: ${this.correctAnswers.join(", ")}`;
+            SAQ_FEEDBACK_TEXT.innerText = `Skipped! Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")}`;
             SAQ_FEEDBACK_DIV.style.display = "flex";
 
             this.status = QUESTION_STATUS.SKIPPED;
@@ -268,7 +268,7 @@ class SAQQuestion {
                 let isCorrect = false;
                 let threshold = [0.00, 0.65, 0.77, 0.85, 1.00][settings.checker];
                 for (const ca of this.correctAnswers) {
-                    if (compare_strings(ans, trim_lower(ca)) >= threshold) {
+                    if (compare_strings(ans, trim_lower(ca[1])) >= (ca[0] ? 1.00 : threshold)) {
                         isCorrect = true;
                         break;
                     }
@@ -286,7 +286,7 @@ class SAQQuestion {
 
                     SAQ_FEEDBACK_SVG.setAttribute("href", "#svg_check");
                     SAQ_FEEDBACK_DIV.className = "scq_feedback correct";
-                    SAQ_FEEDBACK_TEXT.innerText = `Correct! (Accepted Answers: ${this.correctAnswers.join(", ")})`;
+                    SAQ_FEEDBACK_TEXT.innerText = `Correct! (Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")})`;
                     SAQ_FEEDBACK_DIV.style.display = "flex";
 
                     if (this.status != QUESTION_STATUS.INCORRECT) {
