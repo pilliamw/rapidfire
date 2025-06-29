@@ -371,14 +371,23 @@ class MCQOption {
 }
 
 class MCQQuestion {
-    constructor(q, topic, correct, wrongAnswers) {
+    constructor(q, topic) {
         this.type = "MCQ";
 
         this.q = q;
         this.topic = topic;
-        this.correctAnswer = correct;
+        
+        // pre-patch
+        /*
+        this.correctAnswer = [];
         this.correctIdx = undefined;
-        this.wrongAnswers = wrongAnswers;
+        this.wrongAnswers = [];
+        */
+
+        // post-patch
+        this.answers = [];
+        this.optionOrder = [];
+        this.shuffle = true;
 
         this.selected = undefined;
         this.buttons = [];
@@ -401,6 +410,7 @@ class MCQQuestion {
         this.processingSubmit = false;
         reset_mcq_div();
         
+        /* pre-patch
         this.selected = undefined;
         this.correctIdx = Math.floor(Math.random() * (this.wrongAnswers.length+1));
         this.buttons = [];
@@ -411,6 +421,21 @@ class MCQQuestion {
 
         for (let i in options) {
             this.buttons.push(new MCQOption(i, alphabet[i], options[i], i == this.correctIdx));
+            this.buttons[i].render(settings, false, "");
+            this.buttons[i].add_to_div();
+            add_letter_keybind(alphabet[i].toLowerCase());
+        }
+        */
+
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        this.selected = undefined;
+        this.buttons = [];
+        for (let i in this.answers) this.optionOrder.push(i);
+        if (this.shuffle) this.optionOrder = shuffle(this.optionOrder);
+
+        for (let i in this.answers) {
+            this.buttons.push(new MCQOption(i, alphabet[i], this.answers[this.optionOrder[i]][1], this.answers[this.optionOrder[i]][0]));
             this.buttons[i].render(settings, false, "");
             this.buttons[i].add_to_div();
             add_letter_keybind(alphabet[i].toLowerCase());
@@ -448,7 +473,11 @@ class MCQQuestion {
             MCQ_INPUT_BTN.setAttribute("disabled", "");
 
             for (let idx in this.buttons) {
-                this.buttons[idx].render(settings, true, idx == this.correctIdx ? "greendashed" : "")
+                // pre-patch
+                // this.buttons[idx].render(settings, true, idx == this.correctIdx ? "greendashed" : "")
+                
+                // post-patch
+                this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "greendashed" : "");
                 remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
             }
 
@@ -460,7 +489,10 @@ class MCQQuestion {
 
             MCQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             MCQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${this.buttons[this.correctIdx].letter}`;
+            // pre-patch
+            // MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${this.buttons[this.correctIdx].letter}`;
+            // post-patch
+            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: KILL YOURSELF`;
             MCQ_FEEDBACK_DIV.style.display = "flex";
 
             this.status = QUESTION_STATUS.SKIPPED;
@@ -468,13 +500,22 @@ class MCQQuestion {
             if (this.selected != undefined) {
                 this.processingSubmit = true;
                 MCQ_INPUT_BTN.setAttribute("disabled", "");
-                let isCorrect = (this.selected == this.correctIdx);
+                // pre-patch
+                // let isCorrect = (this.selected == this.correctIdx);
+
+                // post-patch
+                let isCorrect = this.answers[this.optionOrder[this.selected]][0];
 
                 if (isCorrect) {
                     SCQ_SKIP_BTN.setAttribute("disabled", "");
 
                     for (let idx in this.buttons) {
-                        this.buttons[idx].render(settings, true, idx == this.correctIdx ? "green" : "")
+                        // pre-patch
+                        // this.buttons[idx].render(settings, true, idx == this.correctIdx ? "green" : "")
+                        
+                        // post-patch
+                        this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "green" : "");
+
                         remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
                     }
                     MCQ_INPUT_BTN.onclick = function() { process_input(["NEXT", ""]) }

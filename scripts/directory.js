@@ -121,23 +121,41 @@ function parse_qset_lines(lines) {
                 currentlyParsingQ = false;
             } else {
                 if (currentQType == "SAQ") {
-                    if (line[0] == "A" || line[0] == "EXA") { // TODO FIX
+                    if (line[0] == "A" || line[0] == "EXA") {
                         // pre-patch
                         // currentQObj.correctAnswers.push(line[1]);
 
                         // post-patch
                         // [exact-bool, "ans"]
                         currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
-                    } else { // TODO FIX??? IDK????
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
+                    } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
                 } else if (currentQType == "MCQ") {
+                    // pre-patch
+
+                    /*
                     if (line[0] == "CA") {
                         currentQObj.correctAnswer = line[1];
                     } else if (line[0] == "WA") {
                         currentQObj.wrongAnswers.push(line[1]);
                     } else if (line[0] == "NS" || line[0] == "EXP") {
                         // TODO
+                    } else {
+                        throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
+                    }*/
+
+                    // post-patch
+                    if (line[0] == "CA") {
+                        currentQObj.answers.push([true, line[1]]);
+                    } else if (line[0] == "WA") {
+                        currentQObj.answers.push([false, line[1]]);
+                    } else if (line[0] == "NS") {
+                        currentQObj.shuffle = false;
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -157,7 +175,7 @@ function parse_qset_lines(lines) {
                 currentlyParsingQ = true;
             } else if (line[0] == "MCQ") {
                 currentQType = "MCQ";
-                currentQObj = new MCQQuestion(line[1], currentTopic, [], []);
+                currentQObj = new MCQQuestion(line[1], currentTopic);
                 currentlyParsingQ = true;
             } else {
                 throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
