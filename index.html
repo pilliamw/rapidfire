@@ -223,8 +223,23 @@
                 </select>
               </div>
             </div>
+            
+            <div class="settings_op">
+              <div class="settings_op_info">
+                <p class="settings_op_title">Shuffle Mode</p>
+                <p class="settings_op_subtitle">Affects whether or not the answer options to multiple-choice questions are shuffled. For the recommended experience, keep this set to "Automatic".</p>
+              </div>
+              
+              <div class="settings_op_select">
+                <select class="settings_dropdown" id="settings_inp_shufflemode">
+                  <option value=1>Automatic</option>
+                  <option value=2>Never Shuffle</option>
+                  <option value=3>Always Shuffle</option>
+                </select>
+              </div>
+            </div>
 
-            <div id="settings_checker_skip" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Show Question Topic</p>
                 <p class="settings_op_subtitle">Display which topic set each question is drawn from.</p>
@@ -238,7 +253,7 @@
               </div>
             </div>
 
-            <div id="settings_checker_skip" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Skip Shortcut</p>
                 <p class="settings_op_subtitle">If enabled, double-tapping ENTER while no answer is selected will automatically skip the problem.</p>
@@ -252,7 +267,7 @@
               </div>
             </div>
 
-            <div id="settings_checker_mcq" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">MCQ Keybinds</p>
                 <p class="settings_op_subtitle">If enabled, pressing the letter keys (ABCD, etc.) corresponding to an MCQ option will automatically select it.</p>
@@ -266,7 +281,7 @@
               </div>
             </div>
 
-            <div id="settings_checker_redo" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Redo Skipped Questions</p>
                 <p class="settings_op_subtitle">Add skipped questions to the back of the question queue.</p>
@@ -280,7 +295,7 @@
               </div>
             </div>
 
-            <div id="settings_checker_redo" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Redo Failed Questions</p>
                 <p class="settings_op_subtitle">Add failed questions (not answering correctly on the first attempt) to the back of the question queue.</p>
@@ -294,7 +309,7 @@
               </div>
             </div>
 
-            <div id="settings_checker_redo" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Insert Do-Overs Randomly</p>
                 <p class="settings_op_subtitle">When a question is redone, add it in a random position in the question queue instead of at the back.</p>
@@ -308,7 +323,7 @@
               </div>
             </div>
 
-            <div id="settings_render_latex" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Render LaTeX</p>
                 <p class="settings_op_subtitle">
@@ -325,7 +340,7 @@
               </div>
             </div>
             
-            <div id="settings_checker_confetti" class="settings_op">
+            <div class="settings_op">
               <div class="settings_op_info">
                 <p class="settings_op_title">Confetti</p>
                 <p class="settings_op_subtitle">Yippee! Yippee! Yippee! Yippee! Yippee! Yippee!<br>(Toss up a little confetti after every correct answer.)</p>

@@ -377,14 +377,6 @@ class MCQQuestion {
         this.q = q;
         this.topic = topic;
         
-        // pre-patch
-        /*
-        this.correctAnswer = [];
-        this.correctIdx = undefined;
-        this.wrongAnswers = [];
-        */
-
-        // post-patch
         this.answers = [];
         this.optionOrder = [];
         this.shuffle = true;
@@ -409,30 +401,12 @@ class MCQQuestion {
     render(settings) {
         this.processingSubmit = false;
         reset_mcq_div();
-        
-        /* pre-patch
-        this.selected = undefined;
-        this.correctIdx = Math.floor(Math.random() * (this.wrongAnswers.length+1));
-        this.buttons = [];
-        
-        let waList = shuffle(this.wrongAnswers);
-        let options = waList.slice(0, this.correctIdx).concat([this.correctAnswer]).concat(waList.slice(this.correctIdx));
-        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-        for (let i in options) {
-            this.buttons.push(new MCQOption(i, alphabet[i], options[i], i == this.correctIdx));
-            this.buttons[i].render(settings, false, "");
-            this.buttons[i].add_to_div();
-            add_letter_keybind(alphabet[i].toLowerCase());
-        }
-        */
 
         let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
         this.selected = undefined;
         this.buttons = [];
         for (let i in this.answers) this.optionOrder.push(i);
-        if (this.shuffle) this.optionOrder = shuffle(this.optionOrder);
+        if ((settings.shufflemode != 2) && (this.shuffle || settings.shufflemode == 3)) this.optionOrder = shuffle(this.optionOrder);
 
         for (let i in this.answers) {
             this.buttons.push(new MCQOption(i, alphabet[i], this.answers[this.optionOrder[i]][1], this.answers[this.optionOrder[i]][0]));
@@ -473,10 +447,6 @@ class MCQQuestion {
             MCQ_INPUT_BTN.setAttribute("disabled", "");
 
             for (let idx in this.buttons) {
-                // pre-patch
-                // this.buttons[idx].render(settings, true, idx == this.correctIdx ? "greendashed" : "")
-                
-                // post-patch
                 this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "greendashed" : "");
                 remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
             }
@@ -489,9 +459,6 @@ class MCQQuestion {
 
             MCQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             MCQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            // pre-patch
-            // MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${this.buttons[this.correctIdx].letter}`;
-            // post-patch
             MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: KILL YOURSELF`;
             MCQ_FEEDBACK_DIV.style.display = "flex";
 
@@ -500,20 +467,12 @@ class MCQQuestion {
             if (this.selected != undefined) {
                 this.processingSubmit = true;
                 MCQ_INPUT_BTN.setAttribute("disabled", "");
-                // pre-patch
-                // let isCorrect = (this.selected == this.correctIdx);
-
-                // post-patch
                 let isCorrect = this.answers[this.optionOrder[this.selected]][0];
 
                 if (isCorrect) {
                     SCQ_SKIP_BTN.setAttribute("disabled", "");
 
                     for (let idx in this.buttons) {
-                        // pre-patch
-                        // this.buttons[idx].render(settings, true, idx == this.correctIdx ? "green" : "")
-                        
-                        // post-patch
                         this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "green" : "");
 
                         remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
@@ -704,6 +663,7 @@ const SETTINGS_CLOSE_BTN = document.getElementById("settings_close_btn");
 var CURRENT_SETTINGS = {};
 var DEFAULT_SETTINGS = {
     "checker": 2,
+    "shufflemode": 1,
     "showtopic": true,
     "skipshortcut": false,
     "mcqshortcut": true,
@@ -763,7 +723,7 @@ function reset_settings() {
 function close_settings_div() {
     SETTINGS_CLOSE_BTN.setAttribute("disabled", "");
 
-    if (CURRENT_SESSION != undefined) {
+    if (CURRENT_SESSION != undefined && CURRENT_SESSION.currentQuestion != undefined) {
         CURRENT_SESSION.load_settings(CURRENT_SETTINGS);
         CURRENT_SESSION.rerender();
     }

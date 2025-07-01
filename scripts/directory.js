@@ -34,8 +34,8 @@ const DIRECTORY = {
         "files": [
             "flashcards"
         ]
-    }
-    /*"DEBUG": {
+    },/*
+    "DEBUG": {
         "plaintext": "Debug Question Sets",
         "path": "../questions/debug/",
         "files": ["debug"]
@@ -122,11 +122,6 @@ function parse_qset_lines(lines) {
             } else {
                 if (currentQType == "SAQ") {
                     if (line[0] == "A" || line[0] == "EXA") {
-                        // pre-patch
-                        // currentQObj.correctAnswers.push(line[1]);
-
-                        // post-patch
-                        // [exact-bool, "ans"]
                         currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
                     } else if (line[0] == "EXP") {
                         // TODO: Explanations
@@ -134,20 +129,6 @@ function parse_qset_lines(lines) {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
                 } else if (currentQType == "MCQ") {
-                    // pre-patch
-
-                    /*
-                    if (line[0] == "CA") {
-                        currentQObj.correctAnswer = line[1];
-                    } else if (line[0] == "WA") {
-                        currentQObj.wrongAnswers.push(line[1]);
-                    } else if (line[0] == "NS" || line[0] == "EXP") {
-                        // TODO
-                    } else {
-                        throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
-                    }*/
-
-                    // post-patch
                     if (line[0] == "CA") {
                         currentQObj.answers.push([true, line[1]]);
                     } else if (line[0] == "WA") {
