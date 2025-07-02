@@ -225,7 +225,9 @@ const MMNS_CREATE_BTN = document.getElementById("mmns_create_btn");
 
 const MMNS_TS_TITLE = document.getElementById("mmns_ts_title");
 const MMNS_TS_SUBTITLE = document.getElementById("mmns_ts_subtitle");
+const MMNS_TS_PSALL_BTN = document.getElementById("mmns_ts_psall_btn");
 const MMNS_QCOUNT = document.getElementById("mmns_qcount");
+const MMNS_QCOUNT_WRAPPER = document.getElementById("mmns_num_questions");
 
 const MMNS_TS_DIV = document.getElementById("mmns_topic_select_div");
 
@@ -240,11 +242,18 @@ function clear_mmns_ts_div() {
     MMNS_TS_MENU_ELEMENTS = [];
 
     MMNS_QCOUNT.innerText = `0`;
+
+    MMNS_TS_PSALL_BTN.innerText = "Select All";
+    MMNS_TS_PSALL_BTN.onclick = function() {}
+    MMNS_TS_PSALL_BTN.classList.remove("active");
+    MMNS_TS_PSALL_BTN.setAttribute("disabled", "");
 }
 
 function build_mmns_ts_div(subject) {
     MMNS_TS_TITLE.style.color = "white";
     MMNS_TS_SUBTITLE.innerText = ``;
+    MMNS_TS_PSALL_BTN.classList.remove("active");
+    MMNS_TS_PSALL_BTN.removeAttribute("disabled");
 
     MMNS_TS_DIV.innerHTML = "";
     MMNS_TS_MENU_ELEMENTS = [];
@@ -255,6 +264,19 @@ function build_mmns_ts_div(subject) {
         let menuEle = new PresetMenuElement(subject, preset[0], idx++);
         MMNS_TS_MENU_ELEMENTS.push(menuEle);
         menuEle.firstrender();
+    }
+
+    MMNS_TS_PSALL_BTN.onclick = function() {
+        if (MMNS_TS_PSALL_BTN.classList.contains("active")) {
+            for (let idx in MMNS_TS_MENU_ELEMENTS) {
+                MMNS_TS_MENU_ELEMENTS[idx].deselect_all();
+            }
+        } else {
+            for (let idx in MMNS_TS_MENU_ELEMENTS) {
+                MMNS_TS_MENU_ELEMENTS[idx].select_all();
+            }
+        }
+        update_mmns_session();
     }
 
     update_mmns_session();
@@ -272,6 +294,27 @@ function update_mmns_session() {
         MMNS_CREATE_BTN.setAttribute("disabled", true);
     }
     
+    let allSelected = true;
+    for (let ele of MMNS_TS_MENU_ELEMENTS) {
+        for (let i = 0; i < ele.numTopics; i++) {
+            if (!ele.selected[i]) {
+                allSelected = false;
+                break;
+            }
+        }
+        if (!allSelected) break;
+    }
+
+    if (allSelected) {
+        MMNS_TS_PSALL_BTN.classList.add("active");
+        MMNS_TS_PSALL_BTN.innerText = "Selected All";
+        MMNS_QCOUNT_WRAPPER.style.color = "white";
+    } else {
+        MMNS_TS_PSALL_BTN.classList.remove("active");
+        MMNS_TS_PSALL_BTN.innerText = "Select All";
+        MMNS_QCOUNT_WRAPPER.style.color = "gray";
+    }
+
     MMNS_QCOUNT.innerText = `${totalCount}`;
 }
 

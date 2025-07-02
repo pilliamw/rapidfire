@@ -516,18 +516,6 @@ canvas {
     transition: background-color 0.2s;
 }
 
-#mmns_num_questions {
-    width: 220px;
-    text-align: center;
-
-    position: absolute;
-    top: 105px;
-    right: 20px;
-
-    color: gray;
-    font-size: 14px;
-}
-
 #mmns_sep {
     color: gray;
     margin-top: 20px;
@@ -542,6 +530,30 @@ canvas {
     font-weight: bold;
 
     transition: color 0.2s;
+}
+
+#mmns_ts_psall_btn {
+    right: 150px !important;
+}
+
+#mmns_ts_psall_btn:disabled {
+    cursor: not-allowed;
+    background-color: rgba(50, 57, 70, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.2s;
+}
+
+#mmns_num_questions {
+    position: absolute;
+    right: 40px;
+    width: 100px;
+
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+
+    transition: color 0.2s;
+    transform: translateY(5px);
 }
 
 #mmns_ts_subtitle {
