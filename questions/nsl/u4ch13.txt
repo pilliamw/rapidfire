@@ -31,9 +31,8 @@
 [A] Exit,Entrance
 [END]
 -------------------------------------------
-[MCQ] Entrance and exit polls are especially crucial in shaping candidate policy positions.
-[CA] False
-[WA] True
+[TFQ] Entrance and exit polls are especially crucial in shaping candidate policy positions.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] _________ _______ are gauged by pollsters to see whether respondents support the president's job performance.
@@ -58,23 +57,20 @@
 [WA] During the Honeymoon Period
 [END]
 -------------------------------------------
-[MCQ] Approval ratings do not change dramatically; rather, they slowly increase or taper off.
-[CA] False
-[WA] True
+[TFQ] Approval ratings do not change dramatically; rather, they slowly increase or taper off.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] ______ ______ are small groups of 10-40 citizens who are gathered to hold conversations about specific issues or candidates.
 [A] Focus Groups
 [END]
 -------------------------------------------
-[MCQ] The phrasing of a question can affect how citizens respond to polls, even if the overall meaning of the question remains the same.
-[CA] True
-[WA] False
+[TFQ] The phrasing of a question can affect how citizens respond to polls, even if the overall meaning of the question remains the same.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The order of questions in a poll can affect how citizens respond to them.
-[CA] True
-[WA] False
+[TFQ] The order of questions in a poll can affect how citizens respond to them.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] "________" a question refers to posing it in a way that emphasizes a certain perspective: i.e. "Should abortion be legal under all circumstances?" vs. "Should abortion be legal in cases of rape/incest?"
@@ -137,28 +133,24 @@
 [WA] 0.4
 [END]
 -------------------------------------------
-[MCQ] Many people simply do not have string opinions on certain issues, which may not be accurately reflected in poll results.
-[CA] True
-[WA] False
+[TFQ] Many people simply do not have string opinions on certain issues, which may not be accurately reflected in poll results.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Most people who are uninformed on an issue decline to answer polls or questions on the topic.
-[CA] False
-[WA] True
+[TFQ] Most people who are uninformed on an issue decline to answer polls or questions on the topic.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The method by which an interviewer contacts a respondent can impact the results of a poll.
-[CA] True
-[WA] False
+[TFQ] The method by which an interviewer contacts a respondent can impact the results of a poll.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] ______ ________ is a controversial polling method that attempt to influence people's views on certain topics under the guise of impartial polling.
 [A] Push Polling
 [END]
 -------------------------------------------
-[MCQ] Internet polling is generally a modern solution to the problem of obtaining a random sample.
-[CA] False
-[WA] True
+[TFQ] Internet polling is generally a modern solution to the problem of obtaining a random sample.
+[FALSE]
 [END]
 -------------------------------------------
 [T] NSL 4.6 - Evaluating Public Opinion Data

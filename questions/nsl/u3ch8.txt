@@ -2,9 +2,8 @@
 -------------------------------------------
 [T] NSL 3.1 - The Bill of Rights
 -------------------------------------------
-[MCQ] The original Constitution included many fundamental protections of people's civil liberties.
-[CA] False
-[WA] True
+[TFQ] The original Constitution included many fundamental protections of people's civil liberties.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] To protect civil liberties, Anti-Federalists pushed for a ____________ to be added to the Constitution.
@@ -23,9 +22,8 @@
 [A] Bill of Rights
 [END]
 -------------------------------------------
-[MCQ] There are no limitations on civil liberties guaranteed by the Bill of Rights.
-[WA] True
-[CA] False
+[TFQ] There are no limitations on civil liberties guaranteed by the Bill of Rights.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Civil liberties are limited when they impinge on the ______ ________, another cherished democratic ideal.
@@ -36,9 +34,8 @@
 [A] Public Interest
 [END]
 -------------------------------------------
-[MCQ] The Court's interpretation of civil liberties and the Bill of Rights changes very little over time.
-[CA] False
-[WA] True
+[TFQ] The Court's interpretation of civil liberties and the Bill of Rights changes very little over time.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] The Fourteenth Amendment's equal protection clause is an example of:
@@ -73,9 +70,8 @@
 [A] Establishment Clause
 [END]
 -------------------------------------------
-[MCQ] The establishment clause also prevents governments from disregarding a specific religion over another.
-[CA] True
-[WA] False
+[TFQ] The establishment clause also prevents governments from disregarding a specific religion over another.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] The ____________________ in the First Amendment prevents the federal government from stopping religious practices.
@@ -221,9 +217,8 @@
 -------------------------------------------
 [T] NSL 3.3 - I: Freedom of Speech
 -------------------------------------------
-[MCQ] Free speech is absolutely protected under the First Amendment.
-[CA] False
-[WA] True
+[TFQ] Free speech is absolutely protected under the First Amendment.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Free speech can only be limited if governments show ____________ ____________ _______________ - a purpose important enough to justify to curbing of free speech.
@@ -232,9 +227,8 @@
 [A] Substantial Government Interest
 [END]
 -------------------------------------------
-[MCQ] When governments demonstrate compelling government interest, they can constitutionally limit free speech.
-[CA] True
-[WA] False
+[TFQ] When governments demonstrate compelling government interest, they can constitutionally limit free speech.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Was the burning of draft cards to protest the Vietnam War protected under the First Amendment?
@@ -278,9 +272,8 @@
 [A] Symbolic Speech
 [END]
 -------------------------------------------
-[MCQ] People cannot invoke symbolic speech to defend an act that is otherwise illegal.
-[CA] True
-[WA] False
+[TFQ] People cannot invoke symbolic speech to defend an act that is otherwise illegal.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Can you burn the US flag?
@@ -328,14 +321,12 @@
 [A] Obscene Speech
 [END]
 -------------------------------------------
-[MCQ] All pornography is obscene and therefore is not protected by the First Amendment.
-[CA] False
-[WA] True
+[TFQ] All pornography is obscene and therefore is not protected by the First Amendment.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The definition of "obscene speech" is not set in stone and has changed with the times.
-[CA] True
-[WA] False
+[TFQ] The definition of "obscene speech" is not set in stone and has changed with the times.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] This court case led to a similarly named test that serves as a modern standard in obscenity cases.
@@ -391,9 +382,8 @@
 [A] Clear and Present Danger
 [END]
 -------------------------------------------
-[MCQ] The context of an expression needs to be considered to determine if it is constitutionally protected.
-[CA] True
-[WA] False
+[TFQ] The context of an expression needs to be considered to determine if it is constitutionally protected.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] The clear and present danger test was later replaced by the "_________________________" test in *Brandenburg v. Ohio (1969)*.
@@ -413,18 +403,16 @@
 -------------------------------------------
 [T] NSL 3.4 - I: Freedom of Press
 -------------------------------------------
-[MCQ] The Court has not made much distinction between "speech" and "press", and often provides the same protection for both.
-[CA] True
-[WA] False
+[TFQ] The Court has not made much distinction between "speech" and "press", and often provides the same protection for both.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] A charge of _____ refers to false statements in print that damages a person's reputation.
 [A] Libel
 [END]
 -------------------------------------------
-[MCQ] American courts typically allow for a high standard of defamation before rewarding a suing party.
-[CA] True
-[WA] False
+[TFQ] American courts typically allow for a high standard of defamation before rewarding a suing party.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] This court case established the main decision that defended freedom of press against the charge of libel.

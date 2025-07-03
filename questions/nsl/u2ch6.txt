@@ -9,19 +9,16 @@
 [WA] US Supreme Court
 [END]
 -------------------------------------------
-[MCQ] All judges in the US District, Circuit, and Supreme Courts are appointed by the President and have life terms.
-[CA] True
-[WA] False
+[TFQ] All judges in the US District, Circuit, and Supreme Courts are appointed by the President and have life terms.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Only Supreme Court justices need to be confirmed by the Senate; like White House staffers, judges to lower-level courts don't need confirmation.
-[CA] False
-[WA] True
+[TFQ] Only Supreme Court justices need to be confirmed by the Senate; like White House staffers, judges to lower-level courts don't need confirmation.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The Articles of Confederation provided for a federal court system (albeit a weak one).
-[CA] False
-[WA] True
+[TFQ] The Articles of Confederation provided for a federal court system (albeit a weak one).
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] The only Court mentioned in the Constitution is/are the __________ ________.
@@ -34,9 +31,8 @@
 [A] Three
 [END]
 -------------------------------------------
-[MCQ] Article III allows Congress to create as many "inferior" courts as it wants.
-[CA] True
-[WA] False
+[TFQ] Article III allows Congress to create as many "inferior" courts as it wants.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Federal judges generally serve for ____.
@@ -161,9 +157,8 @@
 [A] Injury
 [END]
 -------------------------------------------
-[MCQ] U.S. District Courts try federal crimes (i.e. counterfeiting, tax evasions).
-[CA] True
-[WA] False
+[TFQ] U.S. District Courts try federal crimes (i.e. counterfeiting, tax evasions).
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Most violent crimes are tried in _____ courts.
@@ -312,9 +307,8 @@
 [A] Stare Decisis
 [END]
 -------------------------------------------
-[MCQ] Lower courts generally must follow higher court rulings.
-[CA] True
-[WA] False
+[TFQ] Lower courts generally must follow higher court rulings.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] When a district court receives a case that parallels an already-decided circuit case, it is obliged the rule the same way, a practice called _______ ____________.
@@ -355,9 +349,8 @@
 -------------------------------------------
 [T] NSL 2.10 - The Court in Action
 -------------------------------------------
-[MCQ] Congress does not have the authority to add more justices to the Supreme Court.
-[WA] True
-[CA] False
+[TFQ] Congress does not have the authority to add more justices to the Supreme Court.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] As of 2024, how many Supreme Court justices are there at a time?
@@ -416,9 +409,8 @@
 [A] Rehnquist
 [END]
 -------------------------------------------
-[MCQ] Supreme Court decisions are final, and cannot be overruled unless the Court itself overturns a ruling.
-[WA] True
-[CA] False
+[TFQ] Supreme Court decisions are final, and cannot be overruled unless the Court itself overturns a ruling.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Amendment #__ was passed in response to *Chisholm v. Georgia*, and prevents federal courts from considering certain lawsuits against states.
@@ -441,9 +433,8 @@
 [WA] I, II, and III
 [END]
 -------------------------------------------
-[MCQ] The Supreme Court cannot put rulings or decisions into effect.
-[CA] True
-[WA] False
+[TFQ] The Supreme Court cannot put rulings or decisions into effect.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Before the Supreme Court accepts an appeal, the petitioner files a ________ ____ ___________, arguing why the lower court erred.
@@ -480,9 +471,8 @@
 [A] Judicial Activism
 [END]
 -------------------------------------------
-[MCQ] Judicial activism is generally associated with liberal & left-leaning justices.
-[WA] True
-[CA] False
+[TFQ] Judicial activism is generally associated with liberal & left-leaning justices.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] People who want elected representative legislatures to create policy advocate for _______ _________ in the courts.

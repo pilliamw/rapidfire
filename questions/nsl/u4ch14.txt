@@ -14,9 +14,8 @@
 [A] Wedge Issues
 [END]
 -------------------------------------------
-[MCQ] Wedge issues leave little room for compromise on competing ideas.
-[CA] True
-[WA] False
+[TFQ] Wedge issues leave little room for compromise on competing ideas.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Highly divisive issues tend to hold high _______, or importance, towards individuals or groups.
@@ -27,14 +26,12 @@
 [A] Moderate
 [END]
 -------------------------------------------
-[MCQ] Most Americans have a moderate ideology.
-[CA] True
-[WA] False
+[TFQ] Most Americans have a moderate ideology.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] "Liberal" groups and parties have consistently been receptive to change throughout US history.
-[CA] False
-[WA] True
+[TFQ] "Liberal" groups and parties have consistently been receptive to change throughout US history.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Since the 1930s, the term "______" has usually meant being open to allowing the government to act flexibly and to expand.
@@ -56,23 +53,20 @@
 [WA] Conservative, Conservative
 [END]
 -------------------------------------------
-[MCQ] Most libertarians are pro-life on abortion and do not support equality regarding LGBTQ+ people.
-[CA] False
-[WA] True
+[TFQ] Most libertarians are pro-life on abortion and do not support equality regarding LGBTQ+ people.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Generally, voters who identify as _________ attend Protestant church and follow fundamental Christian ideals.
 [A] Populist
 [END]
 -------------------------------------------
-[MCQ] Populists tend to be found in the South and Midwest, rather than along the coasts.
-[CA] True
-[WA] False
+[TFQ] Populists tend to be found in the South and Midwest, rather than along the coasts.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Populists tend to come from working-class families.
-[CA] True
-[WA] False
+[TFQ] Populists tend to come from working-class families.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Modern voters who identify as _________ believe in workers' rights and higher taxes for the wealthy, and push for drastic systemic changes.
@@ -98,24 +92,20 @@
 [A] Agenda
 [END]
 -------------------------------------------
-[MCQ] Ideally, all levels of government should recognize a policy issue and try to solve it.
-[CA] True
-[WA] False
+[TFQ] Ideally, all levels of government should recognize a policy issue and try to solve it.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Changes in law rarely come incrementally - instead, most policies institute major overhauls to their respective areas.
-[CA] False
-[WA] True
+[TFQ] Changes in law rarely come incrementally - instead, most policies institute major overhauls to their respective areas.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] Each new policy requires the executive branch to enforce it.
-[CA] True
-[WA] False
+[TFQ] Each new policy requires the executive branch to enforce it.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Once passed, challenges to new policies often arise quickly.
-[CA] True
-[WA] False
+[TFQ] Once passed, challenges to new policies often arise quickly.
+[TRUE]
 [END]
 -------------------------------------------
 [T] NSL 4.9 - Ideology and Economic Policy
@@ -179,9 +169,8 @@
 [A] Progressive Tax
 [END]
 -------------------------------------------
-[MCQ] Taxing power can also be used as a way to draft social policy.
-[CA] True
-[WA] False
+[TFQ] Taxing power can also be used as a way to draft social policy.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Some people argue for a ____ ___, which taxes citizens at the same rate regardless of income.
@@ -195,9 +184,8 @@
 [WA] Department of the Treasury
 [END]
 -------------------------------------------
-[MCQ] Balancing the budget is a nearly impossible task.
-[CA] True
-[WA] False
+[TFQ] Balancing the budget is a nearly impossible task.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] _________ ______ is the part of economic policy that deals with how the government manages the supply and demand of its currency.
@@ -289,9 +277,8 @@
 [A] NAFTA
 [END]
 -------------------------------------------
-[MCQ] Businesses and economic conservatives generally favor free trade (i.e. NAFTA).
-[CA] True
-[WA] False
+[TFQ] Businesses and economic conservatives generally favor free trade (i.e. NAFTA).
+[TRUE]
 [END]
 -------------------------------------------
 [T] NSL 4.10 - Ideology and Social Policy
