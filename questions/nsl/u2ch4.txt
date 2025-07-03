@@ -167,9 +167,8 @@
 [A] Elastic Clause
 [END]
 -------------------------------------------
-[MCQ] All bills still need to be approved by both houses before being passed to the president for signing.
-[CA] True
-[WA] False
+[TFQ] All bills still need to be approved by both houses before being passed to the president for signing.
+[TRUE]
 [END]
 -------------------------------------------
 [T] NSL 2.2 - Leadership in Congress
@@ -334,9 +333,8 @@
 [A] Senate Majority Leader
 [END]
 -------------------------------------------
-[MCQ] The Senate Majority Leader can directly influence the votes of their party members.
-[WA] True
-[CA] False
+[TFQ] The Senate Majority Leader can directly influence the votes of their party members.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] Which of the following best describes the role of the Senate whips?
@@ -369,9 +367,8 @@
 [A] Standing Committees
 [END]
 -------------------------------------------
-[MCQ] Committees only have the power to hold & vote on bills before they're passed to the House/Senate floors.
-[WA] True
-[CA] False
+[TFQ] Committees only have the power to hold & vote on bills before they're passed to the House/Senate floors.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] The Ways & Means Committee and the Rules Committee are both examples of _______ committees.<br>*(Hint: Not about House/Senate-specific)*
@@ -395,9 +392,8 @@
 [A] Select
 [END]
 -------------------------------------------
-[MCQ] Only the Senate has the power to form select committees.
-[CA] True
-[WA] False 
+[TFQ] Only the Senate has the power to form select committees.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] In 2012, a committee was formed to investigate a terrorist attack on the US Consulate in Libya. This is an example of a ________ committee.
@@ -504,14 +500,12 @@
 -------------------------------------------
 [T] NSL 2.2 - The Legislative Process
 -------------------------------------------
-[MCQ] Only House or Senate members can *introduce* a bill.
-[CA] True
-[WA] False
+[TFQ] Only House or Senate members can *introduce* a bill.
+[TRUE]
 [END] 
 -------------------------------------------
-[MCQ] Only House or Senate members can *author* a bill.
-[WA] True
-[CA] False
+[TFQ] Only House or Senate members can *author* a bill.
+[FALSE]
 [END] 
 -------------------------------------------
 [SAQ] The member who introduces and typically assumes authorship of a bill is called the bill's _________.
@@ -522,9 +516,8 @@
 [A] Riders
 [END] 
 -------------------------------------------
-[MCQ] The majority of bills introduced in Congress are eventually signed into law.
-[WA] True
-[CA] False
+[TFQ] The majority of bills introduced in Congress are eventually signed into law.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] A bill that includes multiple areas of law is called a(n) __________ bill.
@@ -558,9 +551,8 @@
 [WA] Debated on the floor
 [END]
 -------------------------------------------
-[MCQ] Bills can be assigned to multiple committees.
-[CA] True
-[WA] False
+[TFQ] Bills can be assigned to multiple committees.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Select the correct order of stages that bills go through in committee.
@@ -694,9 +686,8 @@
 [A] Gridlock
 [END]
 -------------------------------------------
-[MCQ] Gridlock can occur both in the houses of Congress and between Congress & the President.
-[CA] True
-[WA] False
+[TFQ] Gridlock can occur both in the houses of Congress and between Congress & the President.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Members in Congress who try to reflect the will of their constituency follow the _________ model.
@@ -882,9 +873,8 @@
 [CA] *Shaw* concerned a black majority district, whereas *Gomillion* concerned the exclusion of blacks in districts; Both ruled the districts were unconstitutional
 [END]
 -------------------------------------------
-[MCQ] *Shaw v. Reno* ruled that race could not be used as a factor in the process of redistricting.
-[WA] True
-[CA] False
+[TFQ] *Shaw v. Reno* ruled that race could not be used as a factor in the process of redistricting.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] A "Senate Showdown" occurs when:

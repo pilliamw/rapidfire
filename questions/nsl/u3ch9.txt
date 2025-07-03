@@ -8,9 +8,8 @@
 [A] Two
 [END]
 -------------------------------------------
-[MCQ] The Second Amendment is controversial due to difficulty in interpreting the founders' intentions.
-[CA] True
-[WA] False
+[TFQ] The Second Amendment is controversial due to difficulty in interpreting the founders' intentions.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Gun laws generally fall within the police powers of the ________ government.
@@ -70,9 +69,8 @@
 [A] Eight
 [END]
 -------------------------------------------
-[MCQ] States can make the death penalty mandatory by law for certain severe crimes (i.e. mass murder or rape).
-[CA] False
-[WA] True
+[TFQ] States can make the death penalty mandatory by law for certain severe crimes (i.e. mass murder or rape).
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] During colonial times, the British government issued ______ ___ ________________, or broad search warrants, allowing soldiers to search virtually anywhere they wanted.
@@ -95,19 +93,16 @@
 [A] Probable Cause
 [END]
 -------------------------------------------
-[MCQ] If a police officer sees a crime in plain view, they still need to obtain a warrant retroactively to legally make an arrest.
-[CA] False
-[WA] True
+[TFQ] If a police officer sees a crime in plain view, they still need to obtain a warrant retroactively to legally make an arrest.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The requirements to conduct a search in institutions like schools or public airports are lessened.
-[CA] True
-[WA] False
+[TFQ] The requirements to conduct a search in institutions like schools or public airports are lessened.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Police officers do not need a warrant before looking into the cell phone of an arrested defendant.
-[CA] False
-[WA] True
+[TFQ] Police officers do not need a warrant before looking into the cell phone of an arrested defendant.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] _______ is the information about a cell phone conversation minus its actual contents - the duration, caller & recipient, etc.

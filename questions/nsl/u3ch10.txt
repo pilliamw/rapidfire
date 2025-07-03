@@ -8,9 +8,8 @@
 [WA] All Levels Of
 [END]
 -------------------------------------------
-[MCQ] States did not originally have to follow the national Bill of Rights.
-[CA] True
-[WA] False
+[TFQ] States did not originally have to follow the national Bill of Rights.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] _______ ____________ is the process of declaring only certain parts of the Bill of Rights applicable to the states.
@@ -80,16 +79,14 @@
 [WA] No
 [END]
 -------------------------------------------
-[MCQ] The Supreme Court rarely hears court cases regarding Second Amendment protections of the right to bear arms.
-[CA] True
-[WA] False
+[TFQ] The Supreme Court rarely hears court cases regarding Second Amendment protections of the right to bear arms.
+[TRUE]
 [END]
 -------------------------------------------
 [T] NSL 3.8 - Due Process & Rights of the Accused
 -------------------------------------------
-[MCQ] Phrases in the Bill of Rights are generally clearly defined and interpreted.
-[CA] False
-[WA] True
+[TFQ] Phrases in the Bill of Rights are generally clearly defined and interpreted.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Amendment #___ *established* due process.
@@ -108,9 +105,8 @@
 [WA] Substantive
 [END]
 -------------------------------------------
-[MCQ] The government can take away life, liberty, and property if it acts in a highly specific and prescribed manner.
-[CA] True
-[WA] False
+[TFQ] The government can take away life, liberty, and property if it acts in a highly specific and prescribed manner.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Amendment #___ prevents law enforcement from conducting unreasonable searches and seizures.
@@ -160,9 +156,8 @@
 [WA] No
 [END]
 -------------------------------------------
-[MCQ] Students have fewer protections against searches than the average citizen does in their home/in public.
-[CA] True
-[WA] False
+[TFQ] Students have fewer protections against searches than the average citizen does in their home/in public.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] This 1985 court case gave school administrators a greater degree of leeway than police in conducting searches.
@@ -216,9 +211,8 @@
 [WA] No
 [END]
 -------------------------------------------
-[MCQ] Due Process can be ignored in the state of war or other national crisis.
-[CA] False
-[WA] True
+[TFQ] Due Process can be ignored in the state of war or other national crisis.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] This 1966 court case declared that police must inform suspects of their rights before an interrogation.
@@ -244,9 +238,8 @@
 [A] Five
 [END]
 -------------------------------------------
-[MCQ] Failure to read a suspect their Miranda Rights automatically disqualifies any evidence or confessions obtained from being used in court.
-[CA] False
-[WA] True
+[TFQ] Failure to read a suspect their Miranda Rights automatically disqualifies any evidence or confessions obtained from being used in court.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] The ______________ approach puts the protection of people before procedural protections for suspects.
@@ -291,23 +284,20 @@
 -------------------------------------------
 [T] NSL 3.9 - Due Process & Rights to Privacy
 -------------------------------------------
-[MCQ] The "right to privacy" is not explicitly stated in the Constitution.
-[CA] True
-[WA] False
+[TFQ] The "right to privacy" is not explicitly stated in the Constitution.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] ___________ due process places limits on the "substance" of the law - what liberties the government can take away from a citizen.
 [A] Substantive
 [END]
 -------------------------------------------
-[MCQ] Government policies cannot violate substantive due process under any circumstances.
-[CA] False
-[WA] True
+[TFQ] Government policies cannot violate substantive due process under any circumstances.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] Substantive Due Process absolutely protects the fundamental rights of citizens.
-[CA] False
-[WA] True
+[TFQ] Substantive Due Process absolutely protects the fundamental rights of citizens.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] *Griswold v. Connecticut (1965)* established an inherent _____________________ that could be found in the "penumbras" of various Bill of Rights Amendments.

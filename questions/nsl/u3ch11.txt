@@ -25,19 +25,16 @@
 [A] National Association for the Advancement of Colored People
 [END]
 -------------------------------------------
-[MCQ] The NAACP has regularly argued cases in the Supreme Court.
-[CA] True
-[WA] False
+[TFQ] The NAACP has regularly argued cases in the Supreme Court.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The NAACP only argues in Supreme Court cases concerning laws discriminating against African-American people.
-[CA] False
-[WA] True
+[TFQ] The NAACP only argues in Supreme Court cases concerning laws discriminating against African-American people.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The NAACP's first contribution to school integration was the *Brown v. Board* decision.
-[CA] False
-[WA] True
+[TFQ] The NAACP's first contribution to school integration was the *Brown v. Board* decision.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Who wrote "Letter from a Birmingham Jail"?

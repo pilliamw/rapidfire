@@ -89,19 +89,16 @@
 [WA] The US would not function as a weak union of 50 individual states
 [END]
 -------------------------------------------
-[MCQ] The DoI's "all men are created equal" line was created to suggest practical equality for all American citizens.
-[CA] False
-[WA] True
+[TFQ] The DoI's "all men are created equal" line was created to suggest practical equality for all American citizens.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The federal government has not historically infringed on equality of opportunity; this was done by the states.
-[CA] False
-[WA] True
+[TFQ] The federal government has not historically infringed on equality of opportunity; this was done by the states.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] Equality of opportunity is a widely shared value amongst American citizens, regardless of ideology.
-[CA] True
-[WA] False
+[TFQ] Equality of opportunity is a widely shared value amongst American citizens, regardless of ideology.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] __________ ___ ___________ is the belief that every citizen should have a fair chance to reach a higher status based on their skills.
@@ -134,9 +131,8 @@
 [A] Rule of Law
 [END]
 -------------------------------------------
-[MCQ] Under the rule of law, small transgressions (i.e. speeding in a school zone by 5 mph) can still be let go without punishment.
-[CA] True
-[WA] False
+[TFQ] Under the rule of law, small transgressions (i.e. speeding in a school zone by 5 mph) can still be let go without punishment.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Citizens desire _______ __________- a government kept under control by law, checks and balances, and the separation of power.
@@ -186,29 +182,24 @@
 [A] Mass Media
 [END]
 -------------------------------------------
-[MCQ] There is evidence that the K-12 experience is more likely to make a student liberal.
-[CA] False
-[WA] True
+[TFQ] There is evidence that the K-12 experience is more likely to make a student liberal.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] There is evidence that going to graduate school for advanced degrees is more likely to make a person liberal.
-[CA] True
-[WA] False
+[TFQ] There is evidence that going to graduate school for advanced degrees is more likely to make a person liberal.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Peer pressure can help activate civic action or participation.
-[CA] True
-[WA] False
+[TFQ] Peer pressure can help activate civic action or participation.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] There is a clear correlation between whether a person attends church and their political ideology.
-[CA] False
-[WA] True
+[TFQ] There is a clear correlation between whether a person attends church and their political ideology.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] There is a clear correlation between whether a person attends church and their level of participation in politics.
-[CA] True
-[WA] False
+[TFQ] There is a clear correlation between whether a person attends church and their level of participation in politics.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] The Girl/Boy Scouts or volunteers at a hospital are examples of _____ ____________.
@@ -219,14 +210,12 @@
 [A] Civic Institutions
 [END]
 -------------------------------------------
-[MCQ] Civic Institutions bring only like-minded people today, reinforcing already held beliefs.
-[CA] False
-[WA] True
+[TFQ] Civic Institutions bring only like-minded people today, reinforcing already held beliefs.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] Geographic location plays a key role in people's political ideologies.
-[CA] True
-[WA] False
+[TFQ] Geographic location plays a key role in people's political ideologies.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] For a century after the Civil War, the most identifiable Democratic region was the:
@@ -254,23 +243,20 @@
 [A] Globalization
 [END]
 -------------------------------------------
-[MCQ] The impacts of globalization go beyond the economy.
-[CA] True
-[WA] False
+[TFQ] The impacts of globalization go beyond the economy.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The US is the dominant economic power affecting globalization.
-[CA] True
-[WA] False
+[TFQ] The US is the dominant economic power affecting globalization.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] In general, US influence in the world is seen as promoting the principles of ________.
 [A] Democracy
 [END]
 -------------------------------------------
-[MCQ] The US is also exposed to foreign values through globalization.
-[CA] True
-[WA] False
+[TFQ] The US is also exposed to foreign values through globalization.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Cultures that are called __________ often put the needs of the community over individual needs.
@@ -361,9 +347,8 @@
 [WA] Oppose
 [END]
 -------------------------------------------
-[MCQ] Seniors are the most reliable voters.
-[CA] True
-[WA] False
+[TFQ] Seniors are the most reliable voters.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] __________ _______ include the variety of physical, social, and psychological changes that people go through as they age.
@@ -396,9 +381,8 @@
 [WA] Remained Republican
 [END]
 -------------------------------------------
-[MCQ] The Democratic Party has historically held consistently liberal social views.
-[CA] False
-[WA] True
+[TFQ] The Democratic Party has historically held consistently liberal social views.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Name an important event in Millennials' formative years that affected their political socialization.
@@ -432,8 +416,7 @@
 [A] Great Recession
 [END]
 -------------------------------------------
-[MCQ] Pessimistic views formed during a sudden economic downturn tend to be long-lasting.
-[CA] True
-[WA] False
+[TFQ] Pessimistic views formed during a sudden economic downturn tend to be long-lasting.
+[TRUE]
 [END]
 -------------------------------------------

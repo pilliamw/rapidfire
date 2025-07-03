@@ -34,13 +34,16 @@ const DIRECTORY = {
         "files": [
             "flashcards"
         ]
-    }
-    /*"DEBUG": {
+    },
+    "DEBUG": {
         "plaintext": "Debug Question Sets",
         "path": "../questions/debug/",
         "files": ["debug"]
-    }*/
+    }
 }
+
+// Remove for debug
+delete DIRECTORY.DEBUG;
 
 var SUBJECTS = {"None": "-----------------------"}; // Used for dropdown
 var PRESETS = {"None": "-----------------------"}; // Used for dropdown
@@ -121,18 +124,32 @@ function parse_qset_lines(lines) {
                 currentlyParsingQ = false;
             } else {
                 if (currentQType == "SAQ") {
-                    if (line[0] == "A" || line[0] == "EXA") { // TODO FIX
-                        currentQObj.correctAnswers.push(line[1]);
-                    } else if (line[0] != "EXP") { // TODO FIX
+                    if (line[0] == "A" || line[0] == "EXA") {
+                        currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
+                    } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
                 } else if (currentQType == "MCQ") {
                     if (line[0] == "CA") {
-                        currentQObj.correctAnswer = line[1];
+                        currentQObj.answers.push([true, line[1]]);
                     } else if (line[0] == "WA") {
-                        currentQObj.wrongAnswers.push(line[1]);
-                    } else if (line[0] == "NS" || line[0] == "EXP") {
-                        // TODO
+                        currentQObj.answers.push([false, line[1]]);
+                    } else if (line[0] == "NS") {
+                        currentQObj.shuffle = false;
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
+                    } else {
+                        throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
+                    }
+                } else if (currentQType == "TFQ") {
+                    if (line[0] == "TRUE") {
+                        currentQObj.answer = true;
+                    } else if (line[0] == "FALSE") {
+                        currentQObj.answer = false;
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -152,7 +169,11 @@ function parse_qset_lines(lines) {
                 currentlyParsingQ = true;
             } else if (line[0] == "MCQ") {
                 currentQType = "MCQ";
-                currentQObj = new MCQQuestion(line[1], currentTopic, [], []);
+                currentQObj = new MCQQuestion(line[1], currentTopic);
+                currentlyParsingQ = true;
+            } else if (line[0] == "TFQ") {
+                currentQType = "TFQ";
+                currentQObj = new TFQQuestion(line[1], currentTopic);
                 currentlyParsingQ = true;
             } else {
                 throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);

@@ -305,9 +305,8 @@
 [CA] Hydrophobic
 [END]
 -------------------------------------------
-[MCQ] In a phospholipid, all three "parts" attached to the glycerol backbone face in the same direction.
-[CA] False
-[WA] True
+[TFQ] In a phospholipid, all three "parts" attached to the glycerol backbone face in the same direction.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] In a phospholipid bilayer, the hydrophilic portions point to the:

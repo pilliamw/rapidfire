@@ -13,9 +13,8 @@
 [WA] The bureaucracy has fluctuated in size over the years to adapt to national emergencies
 [END]
 -------------------------------------------
-[MCQ] Many appointments to upper-level positions in the bureaucracy require Senate confirmation.
-[CA] True
-[WA] False
+[TFQ] Many appointments to upper-level positions in the bureaucracy require Senate confirmation.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Executive departments contain ________ that divide the workload and goals of their respective departments.
@@ -81,18 +80,16 @@
 [WA] Congress instructs agencies to focus on specific goals related to their department
 [END]
 -------------------------------------------
-[MCQ] Bureaucrats must enforce laws based on the strict regulations that Congress establishes.
-[CA] False
-[WA] True
+[TFQ] Bureaucrats must enforce laws based on the strict regulations that Congress establishes.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] One key aspect of enforcement is _____________ ___________, making sure that firms and companies are following industry regulations.
 [A] Compliance Monitoring
 [END]
 -------------------------------------------
-[MCQ] Cabinet secretaries are often experts in their fields and frequently testify before Congressional committees.
-[CA] True
-[WA] False
+[TFQ] Cabinet secretaries are often experts in their fields and frequently testify before Congressional committees.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] The relationship between agencies, congressional committees, and interest groups is called an _____ ___________.
@@ -121,9 +118,8 @@
 [A] Issue Networks
 [END]
 -------------------------------------------
-[MCQ] In modern times, the policymaking web has shrunk due to excessive influence by the elite class & stakeholders.
-[CA] False
-[WA] True
+[TFQ] In modern times, the policymaking web has shrunk due to excessive influence by the elite class & stakeholders.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] What does federal agencies typically receive from congressional committees in an iron triangle?<br><br><em>(Disclaimer: This question was written by ChatGPT due to time constraints and will likely be rewritten later.)</em>
@@ -176,9 +172,8 @@
 [A] Spoils System
 [END]
 ------------------------------------------- 
-[MCQ] Patronage and the spoils system have become more widespread as the government has grown.
-[CA] False
-[WA] True
+[TFQ] Patronage and the spoils system have become more widespread as the government has grown.
+[FALSE]
 [END]
 ------------------------------------------- 
 [SAQ] This event brought attention to extreme cases of patronage and encouraged reform in the bureaucracy.
@@ -230,9 +225,8 @@
 -------------------------------------------
 [T] NSL 2.13 - Discretionary and Rule-Making Authority
 -------------------------------------------
-[MCQ] Congress tells members of the bureaucracy the specific regulations that they should enforce to implement policy.
-[CA] False
-[WA] True
+[TFQ] Congress tells members of the bureaucracy the specific regulations that they should enforce to implement policy.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Congress gives ___________________________ - the power to interpret legislation & create rules - to executive departments & agencies.
@@ -246,9 +240,8 @@
 [WA] The agency can claim any authority it wants due to discretionary authority
 [END]
 -------------------------------------------
-[MCQ] Agencies in the bureaucracy are clearly defined to avoid overlapping jurisdiction.
-[CA] False
-[WA] True
+[TFQ] Agencies in the bureaucracy are clearly defined to avoid overlapping jurisdiction.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] The bureaucratic rule-making process is largely governed by the __________________________, passed by Congress in 1946.
@@ -270,14 +263,12 @@
 [WA] Giving many federal offices the ability to device & enforce regulations
 [END]
 -------------------------------------------
-[MCQ] Agencies must identify their legal authority to create and enforce a regulation before it goes into effect.
-[CA] True
-[WA] False
+[TFQ] Agencies must identify their legal authority to create and enforce a regulation before it goes into effect.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Once an agency publishes information about a new regulation, it immediately goes into effect.
-[CA] False
-[WA] True
+[TFQ] Once an agency publishes information about a new regulation, it immediately goes into effect.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Once an agency publishes a new regulation, a final printing of the law is placed in the US ________________________.
@@ -333,9 +324,8 @@
 -------------------------------------------
 [T] NSL 2.14 - Holding the Bureaucracy Accountable
 -------------------------------------------
-[MCQ] The bureaucracy has to answer both the executive & legislative branches.
-[CA] True
-[WA] False
+[TFQ] The bureaucracy has to answer both the executive & legislative branches.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] ____________ ____________ is a major legislative check and balance on agencies.
@@ -363,9 +353,8 @@
 [A] Power of the Purse
 [END]
 -------------------------------------------
-[MCQ] An agency cannot spend public funds unless a committee authorizes the spending of the money.
-[CA] True
-[WA] False
+[TFQ] An agency cannot spend public funds unless a committee authorizes the spending of the money.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] A committee or subcommittee must pass a(n) _________________________ measure before an agency can spend public funds. This measure states the maximum amount the agency can spend on a program.
@@ -373,9 +362,8 @@
 [A] Authorization of Spending
 [END]
 -------------------------------------------
-[MCQ] Once a committee passes an authorization of spending measure, the agency receives the funds and can spend it on programs as dictated.
-[CA] False
-[WA] True
+[TFQ] Once a committee passes an authorization of spending measure, the agency receives the funds and can spend it on programs as dictated.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] An agency does not receive funds until each house's ____________ committee and the full chamber approves of the spending.
@@ -409,9 +397,8 @@
 [A] Legislative Veto
 [END]
 -------------------------------------------
-[MCQ] The legislative veto is currently an implied power of Congress.
-[CA] False
-[WA] True
+[TFQ] The legislative veto is currently an implied power of Congress.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] This court case ruled that the use of a legislative veto to halt bureaucratic action was unconstitutional.
@@ -434,9 +421,8 @@
 [A] go native
 [END]
 -------------------------------------------
-[MCQ] Because the Supreme Court doesn't take many appeals from the circuit courts, the Court of Appeals is largely the final arbiter of agency decisions.
-[CA] True
-[WA] False
+[TFQ] Because the Supreme Court doesn't take many appeals from the circuit courts, the Court of Appeals is largely the final arbiter of agency decisions.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Generally, the Courts tend to uphold the idea that deference should go to the:

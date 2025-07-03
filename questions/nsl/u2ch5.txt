@@ -61,9 +61,8 @@
 [A] Formal
 [END]
 -------------------------------------------
-[MCQ] Presidents don't have much influence on Congress besides being able to recommend new laws.
-[CA] False
-[WA] True
+[TFQ] Presidents don't have much influence on Congress besides being able to recommend new laws.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Presidents often use _________________ & ___________ to attempt to get Congress to agree with their policy agenda.
@@ -151,9 +150,8 @@
 [A] Congress
 [END]
 -------------------------------------------
-[MCQ] What constitutes a "war" is clearly defined in the Constitution.
-[CA] False
-[WA] True
+[TFQ] What constitutes a "war" is clearly defined in the Constitution.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] The President doesn't need Congress's approval for ________ military actions.
@@ -180,14 +178,12 @@
 [A] Executive Orders
 [END]
 -------------------------------------------
-[MCQ] Executive orders have the same effect as law.
-[CA] True
-[WA] False
+[TFQ] Executive orders have the same effect as law.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] Executive orders must be based on existing laws and/or the Constitution.
-[CA] True
-[WA] False
+[TFQ] Executive orders must be based on existing laws and/or the Constitution.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Which of the following is a way that an executive order can be reversed?
@@ -210,9 +206,8 @@
 [A] Explicit Powers
 [END]
 -------------------------------------------
-[MCQ] Presidents can change the wording of a bill through signing statements.
-[CA] False
-[WA] True
+[TFQ] Presidents can change the wording of a bill through signing statements.
+[FALSE]
 [EXP] Signing statements don't actually change the wording of a bill!
 [END]
 -------------------------------------------
@@ -233,9 +228,8 @@
 -------------------------------------------
 [T] NSL 2.5 - The President's Team
 -------------------------------------------
-[MCQ] The Vice President is the second most powerful government officer in the US.
-[CA] False
-[WA] True
+[TFQ] The Vice President is the second most powerful government officer in the US.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] Who or what mostly determines the role of the VP on presidential policy?
@@ -273,9 +267,8 @@
 [WA] As big/small as the President wants
 [END]
 -------------------------------------------
-[MCQ] The President has the power to appoint Cabinet secretaries.
-[CA] True
-[WA] False
+[TFQ] The President has the power to appoint Cabinet secretaries.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] The national government has 15 ___________ _____________ to cover a wide range of national concerns.
@@ -298,9 +291,8 @@
 [A] Ambassador
 [END]
 -------------------------------------------
-[MCQ] Ambassadors must come from foreign affair careers and/or be experts in their respective nations.
-[CA] False
-[WA] True
+[TFQ] Ambassadors must come from foreign affair careers and/or be experts in their respective nations.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] This executive department is responsible for operating embassies and employing ambassadors.
@@ -370,9 +362,8 @@
 [A] White House Staff
 [END]
 -------------------------------------------
-[MCQ] Staffers of the White House Office must first be approved by the Senate.
-[CA] False
-[WA] True
+[TFQ] Staffers of the White House Office must first be approved by the Senate.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] Which of the following is a main difference between White House staffers & Cabinet secretaries?
@@ -403,18 +394,16 @@
 [A] Inherent Powers
 [END]
 -------------------------------------------
-[MCQ] The powers of the presidency are clearly defined by the Constitution.
-[CA] False
-[WA] True
+[TFQ] The powers of the presidency are clearly defined by the Constitution.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Presidents appoint thousands of officials per congressional term, and most are approved __ ___, hundreds at a time.
 [A] en bloc
 [END]
 -------------------------------------------
-[MCQ] Congress subjects most presidential appointees to intense scrutiny & public hearings.
-[CA] False
-[WA] True
+[TFQ] Congress subjects most presidential appointees to intense scrutiny & public hearings.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] If the Senate is not in session during a vacancy, the President can make ________ __________________, who serve until the Senate reconvenes & votes on them.
@@ -430,34 +419,28 @@
 [A] pro forma
 [END]
 -------------------------------------------
-[MCQ] Presidential Cabinet nominations are often rejected by Congress, especially if government is divided.
-[CA] False
-[WA] True
+[TFQ] Presidential Cabinet nominations are often rejected by Congress, especially if government is divided.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] Ambassador appointments are often awarded as political favors rather than on the basis of qualifications.
-[CA] True
-[WA] False
+[TFQ] Ambassador appointments are often awarded as political favors rather than on the basis of qualifications.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The President can remove all upper-level executive branch officials at will.
-[WA] False
-[CA] True
+[TFQ] The President can remove all upper-level executive branch officials at will.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The President can remove upper-level executive branch officials for any reason, except for regulatory heads.
-[CA] True
-[WA] False
+[TFQ] The President can remove upper-level executive branch officials for any reason, except for regulatory heads.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] The President cannot remove regulatory heads.
-[WA] True
-[CA] False
+[TFQ] The President cannot remove regulatory heads.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The Supreme Court can also check the executive branch by finding presidential actions unconstitutional.
-[CA] True
-[WA] False
+[TFQ] The Supreme Court can also check the executive branch by finding presidential actions unconstitutional.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] A major interaction between the executive & judicial branches is the appointment of _________ _______.
@@ -534,9 +517,8 @@
 [WA] Suspending *habeas corpus* could only be done during an emergency, which this was
 [END]
 -------------------------------------------
-[MCQ] Despite the Civil War, Lincoln's expansions of presidential powers were constitutional and remain in place today.
-[CA] False
-[WA] True
+[TFQ] Despite the Civil War, Lincoln's expansions of presidential powers were constitutional and remain in place today.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] During the late 1800s to early 1900s, presidential power was stretched to advance national interests. Name one of two presidents responsible for this shift.
@@ -616,8 +598,7 @@
 [A] Press Secretary
 [END]
 -------------------------------------------
-[MCQ] Press events are open events that portray the President transparently and in an unbiased light.
-[CA] False
-[WA] True
+[TFQ] Press events are open events that portray the President transparently and in an unbiased light.
+[FALSE]
 [END]
 -------------------------------------------

@@ -229,9 +229,8 @@
 [A] Interest Groups
 [END]
 -------------------------------------------
-[SAQ] (T/F) Citizens can help influence lawmaking and governmental decisions in all three branches of federal govt.
-[EXA] T
-[EXA] True
+[TFQ] Citizens can help influence lawmaking and governmental decisions in all three branches of federal govt.
+[TRUE]
 [END]
 -------------------------------------------
 [SAQ] Citizens can file complaints through _______ to assure enforcement/fairness in law, and can even report some federal crimes to these.<br>(Hint: EEOC, the FBI, and the DEA)
@@ -249,14 +248,12 @@
 [CA] Initiating impeachment trials for members in Congress
 [END]
 -------------------------------------------
-[SAQ] (T/F) A Senate Supermajority (2/3) is enough to override a House decision, allowing for a law to pass.
-[EXA] F
-[EXA] False
+[TFQ] A Senate Supermajority (2/3) is enough to override a House decision, allowing for a law to pass.
+[FALSE]
 [END]
 -------------------------------------------
-[SAQ] (T/F) Only the legislative branch can establish law & policy.
-[EXA] F
-[EXA] False
+[TFQ] Only the legislative branch can establish law & policy.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] This branch of national govt. makes public will become public policy.

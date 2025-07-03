@@ -133,9 +133,8 @@
 [CA] Complex Sugars
 [END]
 -------------------------------------------
-[MCQ] It is possible for two polysaccharides to have the same formula and still be unique from each other.
-[CA] True
-[WA] False
+[TFQ] It is possible for two polysaccharides to have the same formula and still be unique from each other.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Starch and Glycogen both have the formula (C6H10O5)n, and yet they have different properties. This is because:
@@ -145,9 +144,8 @@
 [WA] Glycogen has double the formula of Starch; formulas aren't reducible!
 [END]
 -------------------------------------------
-[MCQ] Polysaccharides can themselves combine to make new polysaccharides.
-[CA] True
-[WA] False
+[TFQ] Polysaccharides can themselves combine to make new polysaccharides.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] A carbohydrate is made up of **n** glucose monomers (n > 2). How many **carbon** atoms are in its formula?
@@ -186,14 +184,12 @@
 [WA] Aldoses v. Ketoses
 [END]
 -------------------------------------------
-[MCQ] All monosaccharides are reducing sugars, and will produce a positive Benedict's test result.
-[CA] True
-[WA] False
+[TFQ] All monosaccharides are reducing sugars, and will produce a positive Benedict's test result.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] All disaccharides are reducing sugars, and will produce a positive Benedict's test result.
-[WA] True
-[CA] False
+[TFQ] All disaccharides are reducing sugars, and will produce a positive Benedict's test result.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] Name a common disaccharide that does not produce a positive Benedict's test result.

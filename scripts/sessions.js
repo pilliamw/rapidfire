@@ -255,7 +255,7 @@ class SAQQuestion {
 
             SAQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             SAQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            SAQ_FEEDBACK_TEXT.innerText = `Skipped! Accepted Answers: ${this.correctAnswers.join(", ")}`;
+            SAQ_FEEDBACK_TEXT.innerText = `Skipped! Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")}`;
             SAQ_FEEDBACK_DIV.style.display = "flex";
 
             this.status = QUESTION_STATUS.SKIPPED;
@@ -268,7 +268,7 @@ class SAQQuestion {
                 let isCorrect = false;
                 let threshold = [0.00, 0.65, 0.77, 0.85, 1.00][settings.checker];
                 for (const ca of this.correctAnswers) {
-                    if (compare_strings(ans, trim_lower(ca)) >= threshold) {
+                    if (compare_strings(ans, trim_lower(ca[1])) >= (ca[0] ? 1.00 : threshold)) {
                         isCorrect = true;
                         break;
                     }
@@ -286,7 +286,7 @@ class SAQQuestion {
 
                     SAQ_FEEDBACK_SVG.setAttribute("href", "#svg_check");
                     SAQ_FEEDBACK_DIV.className = "scq_feedback correct";
-                    SAQ_FEEDBACK_TEXT.innerText = `Correct! (Accepted Answers: ${this.correctAnswers.join(", ")})`;
+                    SAQ_FEEDBACK_TEXT.innerText = `Correct! (Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")})`;
                     SAQ_FEEDBACK_DIV.style.display = "flex";
 
                     if (this.status != QUESTION_STATUS.INCORRECT) {
@@ -371,14 +371,15 @@ class MCQOption {
 }
 
 class MCQQuestion {
-    constructor(q, topic, correct, wrongAnswers) {
+    constructor(q, topic) {
         this.type = "MCQ";
 
         this.q = q;
         this.topic = topic;
-        this.correctAnswer = correct;
-        this.correctIdx = undefined;
-        this.wrongAnswers = wrongAnswers;
+        
+        this.answers = [];
+        this.optionOrder = [];
+        this.shuffle = true;
 
         this.selected = undefined;
         this.buttons = [];
@@ -400,17 +401,15 @@ class MCQQuestion {
     render(settings) {
         this.processingSubmit = false;
         reset_mcq_div();
-        
-        this.selected = undefined;
-        this.correctIdx = Math.floor(Math.random() * (this.wrongAnswers.length+1));
-        this.buttons = [];
-        
-        let waList = shuffle(this.wrongAnswers);
-        let options = waList.slice(0, this.correctIdx).concat([this.correctAnswer]).concat(waList.slice(this.correctIdx));
-        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        for (let i in options) {
-            this.buttons.push(new MCQOption(i, alphabet[i], options[i], i == this.correctIdx));
+        let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        this.selected = undefined;
+        this.buttons = [];
+        for (let i in this.answers) this.optionOrder.push(i);
+        if ((settings.shufflemode != 2) && (this.shuffle || settings.shufflemode == 3)) this.optionOrder = shuffle(this.optionOrder);
+
+        for (let i in this.answers) {
+            this.buttons.push(new MCQOption(i, alphabet[i], this.answers[this.optionOrder[i]][1], this.answers[this.optionOrder[i]][0]));
             this.buttons[i].render(settings, false, "");
             this.buttons[i].add_to_div();
             add_letter_keybind(alphabet[i].toLowerCase());
@@ -447,8 +446,10 @@ class MCQQuestion {
             SCQ_SKIP_BTN.setAttribute("disabled", "");
             MCQ_INPUT_BTN.setAttribute("disabled", "");
 
+            let correctLetter = undefined;
             for (let idx in this.buttons) {
-                this.buttons[idx].render(settings, true, idx == this.correctIdx ? "greendashed" : "")
+                this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "greendashed" : "");
+                if (this.answers[this.optionOrder[idx]][0]) correctLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[idx];
                 remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
             }
 
@@ -460,7 +461,7 @@ class MCQQuestion {
 
             MCQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             MCQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${this.buttons[this.correctIdx].letter}`;
+            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${correctLetter}`;
             MCQ_FEEDBACK_DIV.style.display = "flex";
 
             this.status = QUESTION_STATUS.SKIPPED;
@@ -468,13 +469,14 @@ class MCQQuestion {
             if (this.selected != undefined) {
                 this.processingSubmit = true;
                 MCQ_INPUT_BTN.setAttribute("disabled", "");
-                let isCorrect = (this.selected == this.correctIdx);
+                let isCorrect = this.answers[this.optionOrder[this.selected]][0];
 
                 if (isCorrect) {
                     SCQ_SKIP_BTN.setAttribute("disabled", "");
 
                     for (let idx in this.buttons) {
-                        this.buttons[idx].render(settings, true, idx == this.correctIdx ? "green" : "")
+                        this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "green" : "");
+
                         remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
                     }
                     MCQ_INPUT_BTN.onclick = function() { process_input(["NEXT", ""]) }
@@ -526,6 +528,44 @@ class MCQQuestion {
                 MCQ_INPUT_BTN.focus();
             }
         }
+    }
+}
+
+class TFQQuestion extends MCQQuestion {
+    constructor(q, topic) {
+        super("<strong>True or False?</strong> " + q, topic);
+
+        //this.type = "MCQ";
+
+        //this.q = q;
+        //this.topic = topic;
+        
+        //this.answers = [];
+        //this.optionOrder = [];
+        //this.shuffle = true;
+
+        //this.selected = undefined;
+        //this.buttons = [];
+
+        //this.processingSubmit = false;
+
+        //this.status = QUESTION_STATUS.UNSOLVED;
+
+        this.answer = undefined;
+        this.shuffle = false;
+    }
+
+    render(settings) {
+        this.answers = [[this.answer, "True"], [!this.answer, "False"]];
+        super.render(settings);
+
+        if (settings.showtopic) SCQ_QTYPE.innerText = `True or False? | ${this.topic}`;
+        else SCQ_QTYPE.innerText = `True or False?`;
+    }
+
+    rerender(settings) {
+        if (settings.showtopic) SCQ_QTYPE.innerText = `True or False? | ${this.topic}`;
+        else SCQ_QTYPE.innerText = `True or False?`;
     }
 }
 
@@ -663,6 +703,7 @@ const SETTINGS_CLOSE_BTN = document.getElementById("settings_close_btn");
 var CURRENT_SETTINGS = {};
 var DEFAULT_SETTINGS = {
     "checker": 2,
+    "shufflemode": 1,
     "showtopic": true,
     "skipshortcut": false,
     "mcqshortcut": true,
@@ -722,7 +763,7 @@ function reset_settings() {
 function close_settings_div() {
     SETTINGS_CLOSE_BTN.setAttribute("disabled", "");
 
-    if (CURRENT_SESSION != undefined) {
+    if (CURRENT_SESSION != undefined && CURRENT_SESSION.currentQuestion != undefined) {
         CURRENT_SESSION.load_settings(CURRENT_SETTINGS);
         CURRENT_SESSION.rerender();
     }

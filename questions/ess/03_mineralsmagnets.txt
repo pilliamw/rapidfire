@@ -23,9 +23,8 @@
 [A] Silicon & Oxygen
 [END]
 -------------------------------------------
-[MCQ] Silicates are called that because they only contain silicon.
-[CA] False
-[WA] True
+[TFQ] Silicates are called that because they only contain silicon.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] ___________ are minerals that mainly consist of Silicon and Oxygen.
@@ -145,9 +144,8 @@
 [A] Tectosilicate
 [END]
 -------------------------------------------
-[MCQ] The tetrahedra in silicates can have the central silicon substituted for other atoms, like aluminum.
-[CA] True
-[WA] False
+[TFQ] The tetrahedra in silicates can have the central silicon substituted for other atoms, like aluminum.
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] Pure quartz is usually colorless or white. Which of the following explains the existence of different colors of quartz, like rosy quartz or smoky quartz?
@@ -221,9 +219,8 @@
 [A] Elements
 [END]
 -------------------------------------------
-[MCQ] Color is an accurate tool for distinguishing between two minerals.
-[CA] False
-[WA] True
+[TFQ] Color is an accurate tool for distinguishing between two minerals.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] ________ refers to the appearance of a mineral in reflected light.
@@ -329,19 +326,16 @@
 -------------------------------------------
 [T] Rare Earth Elements
 -------------------------------------------
-[MCQ] Rare Earth Elements aren't actually rare, they're just hard to extract.
-[CA] True
-[WA] False
+[TFQ] Rare Earth Elements aren't actually rare, they're just hard to extract.
+[TRUE]
 [END]
 -------------------------------------------
-[MCQ] REEs are found in large ore veins; the hard part is figuring out where those actually are.
-[CA] False
-[WA] True
+[TFQ] REEs are found in large ore veins; the hard part is figuring out where those actually are.
+[FALSE]
 [END]
 -------------------------------------------
-[MCQ] The main use of REEs is in jewelry and expensive cosmetic products.
-[CA] False
-[WA] True
+[TFQ] The main use of REEs is in jewelry and expensive cosmetic products.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] This REE is critical in technology (such as in making speakers) due to its powerful magnetic properties.
@@ -397,27 +391,24 @@
 [WA] Opposite
 [END]
 -------------------------------------------
-[MCQ] In a ferromagnetic material, all of the domains point in the exact same direction.
-[CA] False
-[WA] True
+[TFQ] In a ferromagnetic material, all of the domains point in the exact same direction.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] __________ refers to the "lag time" between a material being brought into a magnetic field and the domains lining up with each other.
 [A] Hysteresis
 [END]
 -------------------------------------------
-[MCQ] Once a permanent magnetic field is created in an element, it cannot be removed.
-[CA] False
-[WA] True
+[TFQ] Once a permanent magnetic field is created in an element, it cannot be removed.
+[FALSE]
 [END]
 -------------------------------------------
 [SAQ] ___________ refers to the process of bringing a magnetic object into a powerful opposing magnetic field to remove its magnetic properties. (This process is often used to destroy electronic media or hide large military ships from magnetic radars.)
 [A] Degaussing
 [END]
 -------------------------------------------
-[MCQ] All magnets have a north and a south pole (even if you cut a magnet in half!).
-[CA] True
-[WA] False
+[TFQ] All magnets have a north and a south pole (even if you cut a magnet in half!).
+[TRUE]
 [END]
 -------------------------------------------
 [MCQ] In magnets, _____ poles attract.
@@ -482,9 +473,8 @@
 [WA] AC
 [END]
 -------------------------------------------
-[MCQ] In an electric motor, the coil of wire is constantly attracted to the permanent magnet, creating torque.
-[CA] False
-[WA] True
+[TFQ] In an electric motor, the coil of wire is constantly attracted to the permanent magnet, creating torque.
+[FALSE]
 [END]
 -------------------------------------------
 [MCQ] Why is one half of the wire's insulation stripped in a makeshift electric motor?
