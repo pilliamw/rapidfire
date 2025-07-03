@@ -34,13 +34,16 @@ const DIRECTORY = {
         "files": [
             "flashcards"
         ]
-    },/*
+    },
     "DEBUG": {
         "plaintext": "Debug Question Sets",
         "path": "../questions/debug/",
         "files": ["debug"]
-    }*/
+    }
 }
+
+// Remove for debug
+delete DIRECTORY.DEBUG;
 
 var SUBJECTS = {"None": "-----------------------"}; // Used for dropdown
 var PRESETS = {"None": "-----------------------"}; // Used for dropdown
@@ -140,6 +143,16 @@ function parse_qset_lines(lines) {
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
+                } else if (currentQType == "TFQ") {
+                    if (line[0] == "TRUE") {
+                        currentQObj.answer = true;
+                    } else if (line[0] == "FALSE") {
+                        currentQObj.answer = false;
+                    } else if (line[0] == "EXP") {
+                        // TODO: Explanations
+                    } else {
+                        throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
+                    }
                 }
             }           
         } else {
@@ -157,6 +170,10 @@ function parse_qset_lines(lines) {
             } else if (line[0] == "MCQ") {
                 currentQType = "MCQ";
                 currentQObj = new MCQQuestion(line[1], currentTopic);
+                currentlyParsingQ = true;
+            } else if (line[0] == "TFQ") {
+                currentQType = "TFQ";
+                currentQObj = new TFQQuestion(line[1], currentTopic);
                 currentlyParsingQ = true;
             } else {
                 throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);

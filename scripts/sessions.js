@@ -446,8 +446,10 @@ class MCQQuestion {
             SCQ_SKIP_BTN.setAttribute("disabled", "");
             MCQ_INPUT_BTN.setAttribute("disabled", "");
 
+            let correctLetter = undefined;
             for (let idx in this.buttons) {
                 this.buttons[idx].render(settings, true, this.answers[this.optionOrder[idx]][0] ? "greendashed" : "");
+                if (this.answers[this.optionOrder[idx]][0]) correctLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[idx];
                 remove_letter_keybind("abcdefghijklmnopqrstuvwxyz"[idx]);
             }
 
@@ -459,7 +461,7 @@ class MCQQuestion {
 
             MCQ_FEEDBACK_SVG.setAttribute("href", "#svg_mincirc");
             MCQ_FEEDBACK_DIV.className = "scq_feedback skipped";
-            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: KILL YOURSELF`;
+            MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${correctLetter}`;
             MCQ_FEEDBACK_DIV.style.display = "flex";
 
             this.status = QUESTION_STATUS.SKIPPED;
@@ -526,6 +528,44 @@ class MCQQuestion {
                 MCQ_INPUT_BTN.focus();
             }
         }
+    }
+}
+
+class TFQQuestion extends MCQQuestion {
+    constructor(q, topic) {
+        super("<strong>True or False?</strong> " + q, topic);
+
+        //this.type = "MCQ";
+
+        //this.q = q;
+        //this.topic = topic;
+        
+        //this.answers = [];
+        //this.optionOrder = [];
+        //this.shuffle = true;
+
+        //this.selected = undefined;
+        //this.buttons = [];
+
+        //this.processingSubmit = false;
+
+        //this.status = QUESTION_STATUS.UNSOLVED;
+
+        this.answer = undefined;
+        this.shuffle = false;
+    }
+
+    render(settings) {
+        this.answers = [[this.answer, "True"], [!this.answer, "False"]];
+        super.render(settings);
+
+        if (settings.showtopic) SCQ_QTYPE.innerText = `True or False? | ${this.topic}`;
+        else SCQ_QTYPE.innerText = `True or False?`;
+    }
+
+    rerender(settings) {
+        if (settings.showtopic) SCQ_QTYPE.innerText = `True or False? | ${this.topic}`;
+        else SCQ_QTYPE.innerText = `True or False?`;
     }
 }
 
