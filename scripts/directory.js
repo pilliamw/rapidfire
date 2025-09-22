@@ -14,6 +14,13 @@ const DIRECTORY = {
             "u3ch9", "u3ch10", "u3ch11", "u4ch12", "u4ch13", "u4ch14"
         ]
     },
+    "APWH": {
+        "plaintext": "AP World History",
+        "path": "./questions/apwh/",
+        "files": [
+            "unit0"
+        ]
+    },
     "ESS": {
         "plaintext": "Adv. Earth & Space Systems",
         "path": "./questions/ess/",
@@ -144,9 +151,9 @@ function parse_qset_lines(lines) {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
                 } else if (currentQType == "TFQ") {
-                    if (line[0] == "TRUE") {
+                    if (line[0].toUpperCase() == "TRUE") {
                         currentQObj.answer = true;
-                    } else if (line[0] == "FALSE") {
+                    } else if (line[0].toUpperCase() == "FALSE") {
                         currentQObj.answer = false;
                     } else if (line[0] == "EXP") {
                         // TODO: Explanations
