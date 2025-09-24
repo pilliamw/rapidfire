@@ -204,3 +204,109 @@
 -------------------------------------------
 [T] AP World 1.2 - Developments in Dar al-Islam
 -------------------------------------------
+[SAQ] After the death of __________ in 632, Islam spread rapidly outward from Arabia.
+[A] Muhammad
+[END]
+-------------------------------------------
+[SAQ] Muhammad's death caused the rapid spread of ______ outward from Arabia.
+[A] Islam
+[END]
+-------------------------------------------
+[SAQ] Where did Islam originate?
+[A] Arabia
+[A] Arabian Peninsula
+[A] Mecca
+[END]
+-------------------------------------------
+[TFQ] Due to its monotheistic nature, Islamic leaders showed little tolerance to other religions.
+[False]
+[END]
+-------------------------------------------
+[SAQ] Under the Abbasid Empire, scholars traveled to study at the _______________, a renowned learning center.
+[A] House of Wisdom
+[END]
+-------------------------------------------
+[SAQ] The _____________ symbolically ruled the region of Arabia during the 1100s and 1200s.
+[A] Abbasid
+[A] Abbasid Caliph
+[A] Abbasid Caliphate
+[END]
+-------------------------------------------
+[SAQ] Arabs often purchased _______, enslaved people who were often Turks, to serve as soldiers and later as bureaucrats.
+[A] Mamluks
+[END]
+-------------------------------------------
+[TFQ] Mamluks often had more opportunities for advancement than other enslaved peoples.
+[True]
+[END]
+-------------------------------------------
+[SAQ] In Egypt, a group of enslaved peoples seized control of the government and established the ______ Sultanate (1250-1517).
+[A] Mamluk
+[END]
+-------------------------------------------
+[SAQ] The _______ Turks from Central Asia challenged the Abbasids during the 11th century.
+[A] Seljuk
+[END]
+-------------------------------------------
+[SAQ] Under ______ rule, travel to Jerusalem was limited, causing the beginning of the Crusades.
+[A] Seljuk
+[END]
+-------------------------------------------
+[SAQ] _________ from Central Asia conquered the remaining Abbasid Empire in 1258 and ended Seljuk rule.
+[A] Mongols
+[END]
+-------------------------------------------
+[SAQ] The Abbasids were an important link connecting Asia & Europe, and many goods and ideas flowed through ________ (city).
+[A] Baghdad
+[END]
+-------------------------------------------
+[MCQ] Over time, the Islamic world:
+[CA] Fragmented politically
+[WA] United politically
+[END]
+-------------------------------------------
+[SAQ] _______ scholars sought knowledge from various cultures, translating and studying many texts and innovations across multiple fields.
+[A] Islamic
+[END]
+-------------------------------------------
+[SAQ] ____________ was one of the most celebrated Islamic scholars, contributing to astronomy, law, logic, ethics, math, philosophy, and medicine.
+[A] Nasir al-Din al-Tusi
+[A] Nasir
+[A] Nasir al-Din
+[A] al-Tusi
+[END]
+-------------------------------------------
+[SAQ] Unlike Muslims, who focused on intellectual pursuits, ______ emphasized introspection to grasp spiritual truths.
+[A] Sufis
+[END]
+-------------------------------------------
+[TFQ] Islamic society viewed merchants as more prestigious than did other societies in Europe and Asia.
+[True]
+[END]
+-------------------------------------------
+[TFQ] Islamic soldiers were allowed to own territory they conquered, motivating widespread military conquest.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Islam allowed slavery.
+[True]
+[END]
+-------------------------------------------
+[TFQ] Muslims could enslave everyone except other Muslims.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Dar al-Islam established a hereditary institution of slavery.
+[False]
+[END]
+-------------------------------------------
+[MCQ] Overall, Islamic women enjoyed a ______ status compared to Christian or Jewish women.
+[CA] Higher
+[WA] Equal
+[WA] Lower
+[END]
+-------------------------------------------
+[SAQ] The defeat at the ___________ marked the limit of Islamic expansion into Western Europe.
+[A] Battle of Tours
+[END]
+-------------------------------------------
