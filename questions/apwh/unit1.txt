@@ -54,6 +54,10 @@
 [True]
 [END]
 -------------------------------------------
+[SAQ] The Song dynasty introduced the use of __________, facilitating long-distance trade.
+[A] Paper Money
+[END]
+-------------------------------------------
 [TFQ] China didn't have the greatest manufacturing capability in the world until the use of coal to power machines in the 1700s.
 [False]
 [END]
@@ -269,11 +273,22 @@
 [A] Islamic
 [END]
 -------------------------------------------
+[MCQ] Which best describes a key intellectual role of Islamic scholars during the Abbasid period?
+[CA] Preserving and translating Greek and Roman works
+[WA] Burning classical texts to enforce religious unity
+[WA] Rejecting mathematics and philosophy
+[WA] Promoting only oral traditions
+[END]
+-------------------------------------------
 [SAQ] ____________ was one of the most celebrated Islamic scholars, contributing to astronomy, law, logic, ethics, math, philosophy, and medicine.
 [A] Nasir al-Din al-Tusi
 [A] Nasir
 [A] Nasir al-Din
 [A] al-Tusi
+[END]
+-------------------------------------------
+[SAQ] The adoption of _________ from China enabled the Abbasids to produce books and spread knowledge more widely.
+[A] Paper
 [END]
 -------------------------------------------
 [SAQ] Unlike Muslims, who focused on intellectual pursuits, ______ emphasized introspection to grasp spiritual truths.
@@ -422,9 +437,20 @@
 [A] Bhakti Movement
 [END]
 -------------------------------------------
+[MCQ] The Bhakti Movement rejected:
+[CA] Rigid Caste Distinctions
+[WA] Personal Devotion to Deities
+[WA] Obediance to Familial Values
+[WA] Hinduism
+[END]
+-------------------------------------------
 [SAQ] Both ____ (subset of Hindus) and ____ (subset of Muslims) were very similar in their effect on their religions' spread.\n*(Answer in format A,B)*
 [A] Bhakti,Sufi
 [A] Bhaktis,Sufis
+[END]
+-------------------------------------------
+[SAQ] ____ missionaries were essential in spreading Islam into South and Southeast Asia.
+[A] Sufi
 [END]
 -------------------------------------------
 [SAQ] Much of Southeast Asia became and remains today ______ (religion).
@@ -437,6 +463,13 @@
 [WA] Land
 [END]
 -------------------------------------------
+[MCQ] The Srivijaya Empire was a _______ kingdom, while the Majapahit Kingdom was a _______ kingdom.
+[CA] Buddhist, Hindu
+[WA] Hindu, Buddhist
+[WA] Buddhist, Buddhist
+[WA] Hindu, Hindu
+[END]
+-------------------------------------------
 [MCQ] Both the Sinhala dynasties and Khmer Empire in Southeast Asia sustained power by controlling ___ routes.
 [WA] Sea
 [CA] Land
@@ -444,6 +477,17 @@
 -------------------------------------------
 [SAQ] The Sinhala dynasties relied heavily on __________ systems (name of innovation), contributing to economic growth.
 [A] Irrigation
+[END]
+-------------------------------------------
+[MCQ] The kingdoms of Southeast Asia became wealthy primarily by participating in the ___________ trade network.
+[CA] Indian Ocean
+[WA] Silk Road
+[WA] Trans-Saharan
+[WA] Mediterranean
+[END]
+-------------------------------------------
+[SAQ] The temple complex of _______ ______ in the Khmer Empire highlights Hindu adaptations to Buddhist worship.
+[A] Angkor Wat
 [END]
 -------------------------------------------
 [TFQ] Culture in Southeast Asia was greatly influenced by Indian culture.
