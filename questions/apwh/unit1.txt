@@ -310,3 +310,143 @@
 [A] Battle of Tours
 [END]
 -------------------------------------------
+[T] AP World 1.3 - Developments in South and Southeast Asia
+-------------------------------------------
+[TFQ] South Asia was only occasionally united as a single state in its history.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Most people in South Asia from 500 to 1200 believed in _______, providing some cultural unity.
+[A] Hinduism
+[END]
+-------------------------------------------
+[MCQ] Southern India was (more/less) stable than Northern India up to the 1500s.
+[CA] More
+[WA] Less
+[END]
+-------------------------------------------
+[SAQ] The _____________ Empire ruled over Southern India during the 1300s to 1600s. 
+[A] Vijayanagara
+[END]
+-------------------------------------------
+[SAQ] After the fall of the Gupta, the ______ kingdoms formed in nothern India.
+[A] Rajput
+[END]
+-------------------------------------------
+[MCQ] ______________ left Indian kingdoms vulnerable to Muslim attacks after the fall of the Gupta.
+[CA] Lack of Centralized Power
+[WA] Unrest amongst Lower Classes
+[WA] Isolation from Profitable Trade Routes
+[WA] Inconvenient Environmental Location
+[END]
+-------------------------------------------
+[SAQ] The ______ Sultanate brought Islam into Northern India and reigned for 300 years.
+[A] Delhi
+[END]
+-------------------------------------------
+[SAQ] The Delhi Sultanate brought ______ into Northern India.
+[A] Islam
+[END]
+-------------------------------------------
+[MCQ] The interaction of these two religions in northern India dominated its political history from the 13th century.
+[CA] Islam, Hinduism
+[WA] Christianity, Hinduism
+[WA] Islam, Christainity
+[WA] Hinduism, Confucianism
+[WA] Hinduism, Buddhism
+[END]
+-------------------------------------------
+[TFQ] Localized kingdoms played a major role in India's political landscape, even during the reign of the Delhi Sultanate.
+[True]
+[END]
+-------------------------------------------
+[MCQ] Hinduism and Islam were two _______ religions.
+[CA] Very different
+[WA] Very similar
+[END]
+-------------------------------------------
+[MCQ] Hinduism is ___________.
+[CA] Polytheistic
+[WA] Monotheistic
+[END]
+-------------------------------------------
+[MCQ] _______ was associated with a hierarchical caste system.
+[CA] Hinduism
+[WA] Islam
+[END]
+-------------------------------------------
+[SAQ] Islam wanted to _______, or actively seek converts.
+[A] Proselytize
+[END]
+-------------------------------------------
+[MCQ] Both Islam (in India) and Christianity (in the Roman Empire) appealed to:
+[NS]
+[CA] The suffering lower class
+[WA] The discontent middle class
+[WA] The powerful upper class
+[END]
+-------------------------------------------
+[MCQ] Most converts to Islam in India were ________.
+[CA] Buddhists
+[WA] Hindus
+[WA] Christians
+[END]
+-------------------------------------------
+[SAQ] India's _____ system is its strongest historical continuity.
+[A] Caste
+[END]
+-------------------------------------------
+[TFQ] The caste system in India allowed for easy social mobility.
+[False]
+[END]
+-------------------------------------------
+[MCQ] Which best describes how converts in South & Southeast Asia reacted to the spread of Islam?
+[WA] Accomodated the faith & replaced traditions
+[CA] Accomodated the faith while keeping traditions
+[WA] Rejected the faith entirely
+[WA] Rejected the faith but adopted its traditions
+[END]
+-------------------------------------------
+[MCQ] The Qutub Minar is an example of:
+[CA] Islamic architecture incorporating Hindu art
+[WA] Purely Buddhist architecture
+[WA] Mongol steppe monuments
+[WA] Traditional Confucian temple designs
+[END]
+-------------------------------------------
+[SAQ] ____ melded the grammar of Hindi with Arabic vocabulary, becoming the official language of Pakistan.
+[A] Urdu
+[END]
+-------------------------------------------
+[SAQ] In the _______ ________, starting in 12th century Southern India, Hindus focused on strong attachments to particular deities.
+[A] Bhakti Movement
+[END]
+-------------------------------------------
+[SAQ] Both ____ (subset of Hindus) and ____ (subset of Muslims) were very similar in their effect on their religions' spread.\n*(Answer in format A,B)*
+[A] Bhakti,Sufi
+[A] Bhaktis,Sufis
+[END]
+-------------------------------------------
+[SAQ] Much of Southeast Asia became and remains today ______ (religion).
+[A] Buddhist
+[A] Buddhism
+[END]
+-------------------------------------------
+[MCQ] Both the Srivijaya Empire and Majapahit Kingdom in Southeast Asia sustained power by controlling ___ routes.
+[CA] Sea
+[WA] Land
+[END]
+-------------------------------------------
+[MCQ] Both the Sinhala dynasties and Khmer Empire in Southeast Asia sustained power by controlling ___ routes.
+[WA] Sea
+[CA] Land
+[END]
+-------------------------------------------
+[SAQ] The Sinhala dynasties relied heavily on __________ systems (name of innovation), contributing to economic growth.
+[A] Irrigation
+[END]
+-------------------------------------------
+[TFQ] Culture in Southeast Asia was greatly influenced by Indian culture.
+[True]
+[END]
+-------------------------------------------
