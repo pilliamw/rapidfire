@@ -494,3 +494,140 @@
 [True]
 [END]
 -------------------------------------------
+[T] AP World 1.4 - Developments in the Americas
+-------------------------------------------
+[SAQ] The first large-scale civilization in North America was the ___________ culture.
+[A] Mississippian
+[END]
+-------------------------------------------
+[SAQ] The Mississippians had a _______ society, meaning that social standing was determined by the woman's side of the family.
+[A] Matrilineal
+[END]
+-------------------------------------------
+[SAQ] _____ civilization, stretching over southern Mexico, reached its height from 250 to 900.
+[A] Mayan
+[END]
+-------------------------------------------
+[SAQ] The main form of Mayan government was the _______, a city surrounded by territory and ruled by a king.
+[A] City-State
+[END]
+-------------------------------------------
+[TFQ] All Mayan rulers were men.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Wars between Mayan city-states were common.
+[True]
+[END]
+-------------------------------------------
+[MCQ] Mayans often fought each other to gain:
+[CA] Tributes
+[WA] Territory
+[END]
+-------------------------------------------
+[TFQ] Mayan city-states had standing armies, effectively providing a defense during conflicts.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Mayan lands were ruled by a central government.
+[False]
+[END]
+-------------------------------------------
+[MCQ] Which of the following was NOT an innovation in Mayan society?
+[CA] Gunpowder
+[WA] Calendars
+[WA] The Number Zero
+[WA] Rubber
+[END]
+-------------------------------------------
+[SAQ] The _____ were originally hunter-gatherers who migrated to Mexico and founded Tenochtitlan in 1325.
+[A] Aztecs
+[A] Mexicas
+[END]
+-------------------------------------------
+[SAQ] __________, capital of the Aztec civilization, was one of the largest cities in the world.
+[A] Tenochtitlan
+[END]
+-------------------------------------------
+[SAQ] Both Aztec & Mayan civilizations developed a _____ system, where commoners & conquered people paid goods and services to the government.
+[A] Tribute
+[END]
+-------------------------------------------
+[SAQ] Aztec government was a _________, rule by religious leaders.
+[A] Theocracy
+[END]
+-------------------------------------------
+[TFQ] Aztecs worshipped a single deity at a time, known as the Great Speaker.
+[False]
+[END]
+-------------------------------------------
+[SAQ] _______ ________ played a large role in Aztec religious ceremonies. Enslaved people often played a large role in these.
+[A] Human Sacrificies
+[END]
+-------------------------------------------
+[MCQ] Which best describes the role of women in Aztec society?
+[CA] Worked as weavers and scribes
+[WA] Fully subservient to men
+[WA] Leader of the household
+[WA] Political and religious leaders
+[END]
+-------------------------------------------
+[TFQ] Aztecs made many agricultural innovations compared to the world, leading to a long-term food surplus and population boom.
+[False]
+[END]
+-------------------------------------------
+[SAQ] __________ began conquering tribes in Peru in 1438, creating the Incan Empire.
+[A] Pachacuti
+[END]
+-------------------------------------------
+[SAQ] Pachacuti's military victories led to the formation of the _____ Empire.
+[A] Inca
+[A] Incan
+[A] Incan Empire
+[END]
+-------------------------------------------
+[SAQ] The _____ Empire extended from Ecuador to Chile during the 1400s.
+[A] Incan
+[END]
+-------------------------------------------
+[MCQ] The Incan Empire was split into:
+[CA] Four Provinces
+[WA] Multiple City-States
+[WA] One Unified Territory
+[END]
+-------------------------------------------
+[SAQ] People ruled under the Inca were subject to mandatory public service under the _______ system.
+[A] Mita
+[A] Mit'a
+[A] Mit'a system
+[END]
+-------------------------------------------
+[TFQ] All three major early civilizations in the Americas developed a tribute system.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Similarly to the Mayans and Aztecs, the Incas worshipped an extensive variety of gods with no emphasis on a particular deity.
+[False]
+[END]
+-------------------------------------------
+[SAQ] The Temple of the Sun formed the core of ______ religion.
+[A] Incan
+[END]
+-------------------------------------------
+[TFQ] Under the Incas, priests were often consulted before important actions.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Inca religion included some ______, the belief that elements of the physical world could have supernatural powers.
+[A] Animism
+[END]
+-------------------------------------------
+[SAQ] The Incans constructed a massive roadway called the _____ ___, especially important in the mountainous region.
+[A] Carpa Nan
+[A] Qhapaq Ñan
+[END]
+-------------------------------------------
+[TFQ] Most early civilizations in the Americas were directly or indirectly taken down by European exploration.
+[True]
+[END]
+-------------------------------------------
