@@ -1,0 +1,107 @@
+[PRESET] Prologue - History before 1200 CE
+-------------------------------------------
+[T] AP World 0.1 - Human Development to c. 600 BCE
+-------------------------------------------
+[SAQ] What does "CE" (as in "1200 CE") stand for?
+[A] Common Era
+[END]
+-------------------------------------------
+[SAQ] Early humans developed a system of religious beliefs called _______, reverence for deities associated with feats of nature.
+[A] Animism
+[END]
+-------------------------------------------
+[TFQ] Early human societies were fairly egalitarian but showed early signs of patriarchy.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Early human societies showed early signs of _________, referring to societal domination by males.
+[A] Patriarchy
+[END]
+-------------------------------------------
+[SAQ] Around 8000 BCE, humans began to plant crops and raise animals, in a change called the ___________ _______.
+[A] Agricultural Revolution
+[END]
+-------------------------------------------
+[MCQ] Where did the Agricultural Revolution begin?
+[CA] Middle East
+[WA] Americas
+[WA] Asia
+[WA] Africa
+[END]
+-------------------------------------------
+[SAQ] Due to the __________ ________, part of the population could for the first time specialize in non-food producing activities.
+[A] Agricultural Revolution
+[END]
+-------------------------------------------
+[MCQ] Which of the following is NOT a trend directly caused by the Agricultural Revolution?
+[CA] Trans-continental trade routes
+[WA] Population growth & larger settlements
+[WA] Specialization in one job
+[WA] Development of new technology
+[WA] Societal hierarchies and conflict
+[END]
+-------------------------------------------
+[TFQ] Most early human civilizations were located in river valleys due to the fertile land.
+[True]
+[END]
+-------------------------------------------
+[SAQ] The world's first civilization, Sumer, was located in ___________.
+[A] Mesopotamia
+[END]
+-------------------------------------------
+[MCQ] Mesopotamia was roughly located in this geographical region.
+[CA] Middle East
+[WA] Americas
+[WA] Asia
+[WA] Europe
+[END]
+-------------------------------------------
+[SAQ] A(n) __________ is an independent state made up of a city and the surrounding territory.
+[A] city-state
+[END]
+-------------------------------------------
+[TFQ] Unlike Mesopotamia, the early civilization in Egypt was governed by multiple leaders at once.
+[False]
+[END]
+-------------------------------------------
+[MCQ] Which of the two early civilizations demonstrated a more patriarchal hierarchy?
+[CA] Mesopotamia
+[WA] Egypt
+[END]
+-------------------------------------------
+[TFQ] Some early civilizations in the Americas did not develop in river valleys.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Sophisticated ancient civilizations grew along the _______ River in South Asia, some of which engaged in trade with Mesopotamia.
+[A] Indus
+[END]
+-------------------------------------------
+[SAQ] ________ refers to the belief in many gods, as opposed to the belief in a single supreme deity.
+[A] Polytheism
+[END]
+-------------------------------------------
+[SAQ] _________ refers to the belief in a single supreme deity, as opposed to the belief in many gods.
+[A] Monotheism
+[END]
+-------------------------------------------
+[SAQ] Aryans who migrated to India and Pakistan contributed greatly to the development of the religion now called ________.
+[A] Hinduism
+[END]
+-------------------------------------------
+[SAQ] The ______, key scriptures in Hinduism, taught about a cycle of reincarnation and societal organization into castes.
+[A] Vedas
+[END]
+-------------------------------------------
+[TFQ] Under the caste system specified by the Vedas, social mobility was common and social status changed with time.
+[False]
+[END]
+-------------------------------------------
+[SAQ] An early form of monotheism, ________, developed in Persia and focused on human free will.
+[A] Zoroastrianism
+[END]
+-------------------------------------------
+[SAQ] The most influential early example of monotheism, ________, was based on the teachings of Abraham.
+[A] Judaism
+[END]
+-------------------------------------------
