@@ -1,0 +1,206 @@
+[PRESET] Unit 1
+-------------------------------------------
+[T] AP World 1.1 - Developments in East Asia
+-------------------------------------------
+[SAQ] The ______ Dynasty replaced the Tang in 960, ruling for more than three centuries.
+[A] Song
+[END]
+-------------------------------------------
+[TFQ] The Song Dynasty ruled the largest empire in Chinese history.
+[False]
+[END]
+-------------------------------------------
+[SAQ] China's strength was partially a result of its ______ _________, a vast organization in which appointed officials carried out empire policies.
+[A] Imperial Bureaucracy
+[END]
+-------------------------------------------
+[TFQ] China's imperial bureaucracy was a long-running feature of Chinese government, spanning across centuries.
+[True]
+[END]
+-------------------------------------------
+[TFQ] Highly desired jobs in China's bureaucracy could only be obtained by the elite class and nobles.
+[False]
+[END]
+-------------------------------------------
+[SAQ] China's bureaucratic system was known as a _________, due to the civil service exam required to obtain job openings.
+[A] Meritocracy
+[END]
+-------------------------------------------
+[TFQ] The poor were equally represented in China's meritocracy thanks to the fairness of its civil service exams.
+[False]
+[END]
+-------------------------------------------
+[TFQ] The size of the bureaucracy under the Song Dynasty eventually contributed to its weakness.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Civil service exams under the Song Dynasty were based on ________ texts.
+[A] Confucian
+[END]
+-------------------------------------------
+[SAQ] The expansion of the _____ ______ enabled China under the Song Dynasty to become the most populous trading area in the world.
+[A] Grand Canal
+[END]
+-------------------------------------------
+[SAQ] ________ was invented in China and used for military purposes during the Song Dynasty, revolutionizing the fighting of wars.
+[A] Gunpowder
+[END]
+-------------------------------------------
+[SAQ] ______ ______, introduced from a kingdom in present-day Vietnam, greatly expanded agricultural production in China.
+[A] Champa Rice
+[END]
+-------------------------------------------
+[TFQ] Innovations in agriculture led to a surplus of food and population growth under the Song Dynasty.
+[True]
+[END]
+-------------------------------------------
+[TFQ] China didn't have the greatest manufacturing capability in the world until the use of coal to power machines in the 1700s.
+[False]
+[END]
+-------------------------------------------
+[SAQ] _______ had the greatest manufacturing capability in the world by the first century CE.
+[A] China
+[END]
+-------------------------------------------
+[SAQ] Under the Song, China experienced _______________ - a set of economic changes where people in rural areas produced a surplus.
+[A] Proto-industrialization
+[END]
+-------------------------------------------
+[TFQ] Proto-industrialization featured large-scale production in factories with complex machinery.
+[False]
+[END]
+-------------------------------------------
+[SAQ] Skilled craftworkers called _______ produced many products under the imperial government during China's proto-industrialization.
+[A] Artisans
+[END]
+-------------------------------------------
+[TFQ] Advances in China's naval technology allowed great control over trade in the South China Sea during the Song Dynasty.
+[True]
+[END]
+-------------------------------------------
+[TFQ] The Song Dynasty paid the public to work on building public projects.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Under the _________ system, other states paid money or goods to honor the Chinese emperor.
+[A] Tribute
+[A] Tributary
+[END]
+-------------------------------------------
+[TFQ] At the height of the Song Dynasty, China was the most urbanized land in the world.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Bureaucratic expansion in China created a new social class, the __________ _______, who were educated in Confucian philosophy.
+[A] Scholar Gentry
+[END]
+-------------------------------------------
+[TFQ] Under the Song Dynasty, merchants ranked below farmers.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Women in China often practiced _____ ______, which signified social status while restricting their ability to participate in the public sphere.
+[A] Foot Binding
+[END]
+-------------------------------------------
+[MCQ] Which best describes how women were treated under Confucian traditions?
+[CA] Respected but expected to defer to men
+[WA] Always subservient to men
+[WA] Fundamentally equal to men
+[WA] Always superior to men
+[END]
+-------------------------------------------
+[SAQ] China was the first to use _________ ______, which allowed the efficient copying and dissemination of art & written texts.
+[A] Woodblock Printing
+[END]
+-------------------------------------------
+[TFQ] Confucian scholars focused on literature and consumed it at a tremendous rate.
+[True]
+[END]
+-------------------------------------------
+[TFQ] During the Tang Dynasty, Buddhism interacted with Chinese culture via the Silk Roads.
+[True]
+[END]
+-------------------------------------------
+[SAQ] _______ _________ focused on personal spiritual growth through meditation & self-discipline, becoming strongest in Southeast Asia.
+[A] Theravada Buddhism
+[END]
+-------------------------------------------
+[SAQ] _______ _________ focused on spiritual growth for all beings and on service, becoming strongest in China & Korea.
+[A] Mahayana Buddhism
+[END]
+-------------------------------------------
+[SAQ] _______ _________ focused on chanting, becoming strongest in Tibet.
+[A] Tibetan Buddhism
+[END]
+-------------------------------------------
+[MCQ] The major forms of Buddhism all include a belief in the Four Noble Truths, which stress the idea that:
+[CA] Personal suffering can be alleviated by eliminating desires
+[WA] Eternal salvation is guaranteed by the belief in Jesus Christ
+[WA] Multiple religions can coexist with one another
+[WA] Nature is holy and should be respected at all costs
+[END]
+-------------------------------------------
+[SAQ] ______ faiths are fused from two separate ideas, such as Chan Buddhism (fused from Buddhism & Daoism).
+[A] Syncretic
+[END]
+-------------------------------------------
+[SAQ] Buddhist doctrines combined with Daoist traditions to create _____ ________.
+[A] Chan Buddhism
+[A] Zen Buddhism
+[END]
+-------------------------------------------
+[TFQ] Buddhism became very popular in China during the Tang Dynasty.
+[True]
+[END]
+-------------------------------------------
+[SAQ] This special religious building became very popular in China due to the spread of Buddhism.
+[A] Monasteries
+[END]
+-------------------------------------------
+[TFQ] The Tang Dynasty was impartial to Buddhism's popularity.
+[False]
+[END]
+-------------------------------------------
+[SAQ] The Confucian ideal of ______ _______, an emphasis on respect for one's elders, helped the Song maintain their rule in China.
+[A] Filial Piety
+[END]
+-------------------------------------------
+[SAQ] _____ ___________ evolved in China between 770 and 840, combining rational thought with the abstract ideas of Daoism and Buddhism.
+[A] Neo-Confucianism
+[END]
+-------------------------------------------
+[SAQ] During the _____ period, Japan emulated Chinese traditions in politics, art, and literature.
+[A] Heian
+[A] Heian Period
+[END]
+-------------------------------------------
+[SAQ] Japan was a _____ society, where landowning aristocrats battled for control of land while the majority worked as rice farmers.
+[A] Feudal
+[A] Feudalism
+[END]
+-------------------------------------------
+[TFQ] Japanese feudalism and European feudalism were very similar to each other.
+[True]
+[END]
+-------------------------------------------
+[TFQ] Korea emulated many aspects of Chinese politics and culture.
+[True]
+[END]
+-------------------------------------------
+[TFQ] The landed aristocracy was much more powerful in China than in Korea.
+[False]
+[END]
+-------------------------------------------
+[SAQ] The Vietnamese preferred _______ _______, compared to the extended families of the Chinese.
+[A] Nuclear Families
+[END]
+-------------------------------------------
+[MCQ] Which of the following had the most adversarial relationship with China during the 1200s?
+[CA] Vietnam
+[WA] Japan
+[WA] Korea
+[END]
+-------------------------------------------
+[T] AP World 1.2 - Developments in Dar al-Islam
+-------------------------------------------
