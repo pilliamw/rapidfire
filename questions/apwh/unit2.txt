@@ -1,0 +1,133 @@
+[PRESET] Unit 2 - Networks of Exchange (1200 to 1450)
+-------------------------------------------
+[T] AP World 2.1 - The Silk Road
+-------------------------------------------
+[SAQ] The _______ helped pave the way to expanding networks of exchange, as armies brought fabrics and spices from the East back to Europe.
+[A] Crusades
+[END]
+-------------------------------------------
+[TFQ] The Ottoman Empire halted the operation of the Silk Road in the 12th-13th centuries.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Europeans made overland trips across Europe to trade with Asia long before finding a sea route along the Cape of Good Hope.
+[True]
+[END]
+-------------------------------------------
+[MCQ] The Silk Road was revived in the 8th & 9th centuries mainly by:
+[CA] Arab merchants from the Abbasid
+[WA] Sufi missionaries spreading Buddhism
+[WA] European seafarers and navigators
+[WA] Trade policies enforced by the Tang Dynasty
+[END]
+-------------------------------------------
+[MCQ] The second gold age of the Silk Roads was marked by China's extensive importation of __________.
+[CA] Luxury Goods
+[WA] Slave Labor
+[WA] Religious Ideals
+[WA] Agricultural Products (Food)
+[END]
+-------------------------------------------
+[SAQ] The rise of the _______________ had the most significant impact on the expansion of trade in the 1200s.
+[A] Mongol
+[A] Mongols
+[A] Mongol Empire
+[END]
+-------------------------------------------
+[SAQ] The rise of the _______________ united parts of the Silk Road under an authority that respected merchants and enforced laws.
+[A] Mongol
+[A] Mongols
+[A] Mongol Empire
+[END]
+-------------------------------------------
+[TFQ] The Mongol Empire greatly increased the safety of travel along the Silk Roads.
+[True]
+[END]
+-------------------------------------------
+[MCQ] Which of the following was NOT a Chinese invention that led to increased naval trade control?
+[CA] Sextant
+[WA] Magnetic Compass
+[WA] Rudder
+[WA] Junk
+[END]
+-------------------------------------------
+[TFQ] The Silk Road followed regional rivers, allowing for easy travel through the hospitable terrain.
+[False]
+[END]
+-------------------------------------------
+[SAQ] These desert cities along the Silk Road routes that were watered by rivers and became thriving centers of trade. What were they called?
+[A] Oasis
+[A] Oases
+[END]
+-------------------------------------------
+[SAQ] Name an oasis city along the Silk Road.
+[A] Kashgar
+[A] Samarkand
+[END]
+-------------------------------------------
+[MCQ] Choose the odd one out. (Hint: All three of these are trade cities, but one of them is different from the others!)
+[WA] Kashgar
+[WA] Samarkand
+[CA] Baghdad
+[END]
+-------------------------------------------
+[SAQ] Once the routes of the Silk Roads became stabilized, inns known as ______________ sprang up, often about 100 miles apart (the distance a camel could travel before needing water).
+[A] Caravanserai
+[END]
+-------------------------------------------
+[MCQ] Which of the following best describes China's economy around the time of the Silk Roads?
+[CA] Money Economy
+[WA] Bartering Economy
+[END]
+-------------------------------------------
+[SAQ] To facilitate trade, China developed a system of credit known as _______ ____, allowing merchants to deposit money at one location and withdraw it at the next.
+[A] Flying Cash
+[END]
+-------------------------------------------
+[MCQ] China's system of flying cash used:
+[CA] Paper Money
+[WA] Copper Coins
+[WA] Bartered Goods
+[END]
+-------------------------------------------
+[SAQ] Locations for exchanging flying cash became the model for modern-day _____ (building/service).
+[A] Bank
+[A] Banks
+[END]
+-------------------------------------------
+[SAQ] The ________ _____, locations where merchants traded in money under the flying cash system, was the precursor to modern banking.
+[A] Banking House
+[END]
+-------------------------------------------
+[SAQ] At banking houses, merchants presented _______________ - a document stating a legal promise of payment by a set date - in order to receive money.
+[A] Bills of Exchange
+[END]
+-------------------------------------------
+[MCQ] The system of flying cash _______ trade along the Silk Road.
+[CA] Helped
+[WA] Hindered
+[END]
+-------------------------------------------
+[SAQ] The ________ awakened European interest in Asian luxury goods.
+[A] Crusades
+[END]
+-------------------------------------------
+[SAQ] In the 13th century, cities in northern Germany & Scandinavia formed a commercial alliance called the _______ ______.
+[A] Hanseatic League
+[END]
+-------------------------------------------
+[MCQ] The Hanseatic League controlled trade by:
+[CA] Controlling the North & Baltic Sea
+[WA] Setting checkpoints along the Silk Road
+[WA] Discovering the first naval route to China
+[WA] Launching attacks on Silk Road merchants
+[END]
+-------------------------------------------
+[SAQ] The _________ ______ was the first common market and confederation of merchant guilds.
+[A] Hanseatic League
+[END]
+-------------------------------------------
+[TFQ] Increased European demand for luxury goods led to an increase in production of said luxury goods in Asia.
+[True]
+[END]
+-------------------------------------------
