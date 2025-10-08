@@ -131,3 +131,168 @@
 [True]
 [END]
 -------------------------------------------
+[T] AP World 2.2 - The Mongol Empire & The Modern World
+-------------------------------------------
+[SAQ] The ______ empire was the largest continuous land empire in history.
+[A] Mongol
+[END]
+-------------------------------------------
+[MCQ] Which of the following best describes the Mongols in the early 12th century?
+[CA] Clans of hunter-gatherer nomads north of the Gobi Desert
+[WA] A highly organized empire spanning the entire Silk Road
+[WA] An isolated tribe located in Southeast Asia
+[WA] They did not exist yet
+[END]
+-------------------------------------------
+[SAQ] Leaders of individual Mongol tribes were called _____.
+[A] Khans
+[END]
+-------------------------------------------
+[SAQ] Temujin, a powerful Mongol leader born in 1162, was better known as _________ ____.
+[A] Genghis Khan
+[END]
+-------------------------------------------
+[SAQ] Genghis Khan was chosen at a Mongol chieftan meeting called a _________.
+[A] Kuriltai
+[END]
+-------------------------------------------
+[SAQ] Genghis Khan's kingdom was called a ________.
+[A] Khanate
+[END]
+-------------------------------------------
+[TFQ] Mongolian warriors were fierce in battle but were gracious towards defeated kingdoms.
+[False]
+[END]
+-------------------------------------------
+[MCQ] The Mongolian kingdom grew primarily thanks to:
+[CA] Military Victories
+[WA] Trade Agreements
+[END]
+-------------------------------------------
+[TFQ] Mongols quickly incorporated the military weapons and technology of conquered peoples.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Captured engineers helped the Mongols construct _____ ______ such as portable towers and catapults.
+[A] Siege Weapons
+[END]
+-------------------------------------------
+[TFQ] Genghis Khan was much less ruthless when governing under peace than during his military conquests.
+[True]
+[END]
+-------------------------------------------
+[SAQ] The period of Eurasian history during Mongol rule between the 13th and 14th centuries is called ____ _________.
+[A] Pax Mongolica
+[END]
+-------------------------------------------
+[MCQ] Pax Mongolica was a period of:
+[CA] Peace
+[WA] War
+[END]
+-------------------------------------------
+[TFQ] Genghis Khan's soldiers took charge of protecting the Silk Roads after Mongolian warfare ended, fostering trade.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Genghis Khan attempted to unify his kingdom by asking a scribe to create the _____ _______.
+[A] Uyghur Alphabet
+[END]
+-------------------------------------------
+[TFQ] After Genghis Khan's death, his sons split up and formed three separate khanates, further expanding the empire.
+[True]
+[END]
+-------------------------------------------
+[SAQ] In 1236, _____ led a Mongolian army into Russia and captured most of northern Russia.
+[CA] Batu
+[WA] Hulegu
+[WA] Kublai Khan
+[END]
+-------------------------------------------
+[SAQ] Batu's army, which came to known as the ________ ______, conquered most of northern Russia in the 1200s.
+[A] Golden Horde
+[END]
+-------------------------------------------
+[TFQ] European sympathy and/or indifference to the Mongols ended once they captured Russia.
+[False]
+[END]
+-------------------------------------------
+[TFQ] Mongols ruled northern Russia by directly appointing new rulers to the region.
+[False]
+[END]
+-------------------------------------------
+[SAQ] The city-state of ______ in Russia began collecting tributes and eventually rose up against the Golden Horde, causing declining Mongol influence in the region.
+[A] Moscow
+[END]
+-------------------------------------------
+[TFQ] As a result of Mongol rule, Russia severed many ties with Western Europe and began to develop a distinctly Russian culture.
+[True]
+[END]
+-------------------------------------------
+[MCQ] ______, a grandson of Genghis Khan, led a Mongol army to destroy the Abbasid caliphate.
+[CA] Hulegu
+[WA] Batu
+[WA] Kublai Khan
+[END]
+-------------------------------------------
+[SAQ] Hulegu's kingdom, called the ________, in Central Asia spanned from Byzantium to the Oxus River at its peak.
+[A] Il-khanate
+[END]
+-------------------------------------------
+[SAQ] Most Mongols living in the Il-Khanate converted to ______.
+[A] Islam
+[END]
+-------------------------------------------
+[TFQ] The Mongol empire always supported religious toleration during its rule.
+[False]
+[END]
+-------------------------------------------
+[MCQ] ______, a grandson of Genghis Khan, brought about the end of the Song Dynasty and established the Yuan Dynasty.
+[WA] Hulegu
+[WA] Batu
+[CA] Kublai Khan
+[END]
+-------------------------------------------
+[SAQ] Kublai Khan established the _____ Dynasty in China.
+[A] Yuan
+[A] Yuan Dynasty
+[END]
+-------------------------------------------
+[MCQ] Women in the Mongol Empire led (more/less) independent lives than women in other societies at the time.
+[CA] More
+[WA] Less
+[END]
+-------------------------------------------
+[TFQ] The Mongolian rulers of China failed to expand beyond China.
+[True]
+[END]
+-------------------------------------------
+[SAQ] In the 1350s, the ____ ____ _______ began quitely organizing to end the Yuan Dynasty.
+[A] White Lotus Society
+[END]
+-------------------------------------------
+[SAQ] The Yuan Dynasty was eventually overthrown by ____ _______, a Buddhist monk from a poor peasant family.
+[A] Zhu Yuanzhang
+[A] Yuanzhang
+[END]
+-------------------------------------------
+[SAQ] The Yuan Dynasty was overthrown and succeeded by the ____ Dynasty.
+[A] Ming
+[END]
+-------------------------------------------
+[TFQ] Cultural exchange also occurred through the Silk Road under Mongol rule.
+[True]
+[END]
+-------------------------------------------
+[MCQ] Mongols ruled successfully due to their understanding of _____________, which transferred to many occupied civilizations.
+[CA] Centralized Power
+[WA] The Tributary System
+[WA] Democracy
+[WA] Interregional Negotiations
+-------------------------------------------
+[TFQ] The bubonic plague was partially spread as a result of Mongol reopening of the Silk Road.
+[True]
+[END]
+-------------------------------------------
+[T] AP World 2.3 - Exchange in the Indian Ocean
+-------------------------------------------
+[SAQ] 
