@@ -18,7 +18,7 @@ const DIRECTORY = {
         "plaintext": "AP World History",
         "path": "./questions/apwh/",
         "files": [
-            "unit0", "unit1", "unit2"
+            "unit1"
         ]
     },
     "ESS": {

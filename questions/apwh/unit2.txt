@@ -202,7 +202,7 @@
 [True]
 [END]
 -------------------------------------------
-[SAQ] In 1236, _____ led a Mongolian army into Russia and captured most of northern Russia.
+[MCQ] In 1236, _____ led a Mongolian army into Russia and captured most of northern Russia.
 [CA] Batu
 [WA] Hulegu
 [WA] Kublai Khan
@@ -288,6 +288,7 @@
 [WA] The Tributary System
 [WA] Democracy
 [WA] Interregional Negotiations
+[END]
 -------------------------------------------
 [TFQ] The bubonic plague was partially spread as a result of Mongol reopening of the Silk Road.
 [True]
