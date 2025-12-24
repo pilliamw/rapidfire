@@ -1,4 +1,4 @@
-[PRESET] Unit 1
+[PRESET] Unit 1 - The Global Tapestry (1200 to 1450)
 -------------------------------------------
 [T] AP World 1.1 - Developments in East Asia
 -------------------------------------------
@@ -629,5 +629,27 @@
 -------------------------------------------
 [TFQ] Most early civilizations in the Americas were directly or indirectly taken down by European exploration.
 [True]
+[END]
+-------------------------------------------
+[T] AP World 1.5 - Developments in Africa
+-------------------------------------------
+[TFQ] In the 1000s, many African tribes were constantly migrating across the continent in search of food, leading to increased cultural exchange.
+[False]
+[END]
+-------------------------------------------
+[TFQ] In contrast to most Asian & European societies, Sub-Saharan African socities did not centralize power under a leader of government.
+[True]
+[END]
+-------------------------------------------
+[SAQ] Communities in Africa formed _______ ___________, where families governed themselves.
+[A] Kin-based Networks
+[END]
+-------------------------------------------
+[SAQ] In Sub-Saharan African communities, a male head of network called the _____ mediated conflicts and dealt with neighboring groups.
+[A] Chief
+[END]
+-------------------------------------------
+[TFQ] Villages in Sub-Saharan African rarely communicated or traded with each other.
+[False]
 [END]
 -------------------------------------------
