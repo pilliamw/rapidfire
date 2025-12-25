@@ -134,7 +134,8 @@ function parse_qset_lines(lines) {
                     if (line[0] == "A" || line[0] == "EXA") {
                         currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -146,7 +147,8 @@ function parse_qset_lines(lines) {
                     } else if (line[0] == "NS") {
                         currentQObj.shuffle = false;
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -156,7 +158,8 @@ function parse_qset_lines(lines) {
                     } else if (line[0].toUpperCase() == "FALSE") {
                         currentQObj.answer = false;
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }

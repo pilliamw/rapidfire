@@ -1356,6 +1356,43 @@ input:checked + .settings_toggle_slider:before {
     transition: color 0.2s, background-color 0.2s;
 }
 
+#scq_exp_box {
+    background-color: #111827;
+    border: gray 1px solid;
+    border-radius: 10px;
+
+    position: absolute;
+    width: 500px;
+    height: min-content;
+    bottom: calc(100% + 20px);
+    right: 0px;
+
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+#scq_exp_box_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #6699ff;
+
+    margin-bottom: 15px;
+}
+
+#scq_exp_box_title_svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+#scq_exp_box_title_text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */
 /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */
 /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */ /* SHORT-ANSWER */
