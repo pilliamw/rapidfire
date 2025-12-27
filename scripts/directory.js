@@ -46,7 +46,7 @@ const DIRECTORY = {
         "plaintext": "Linear Algebra",
         "path": "./questions/linalg/",
         "files": [
-            "unit1"
+            "unit1", "unit2", "unit3", "unit4", "unit5", "unit6", "unit7", "supplementary"
         ]
     },
     "DEBUG": {

@@ -1,0 +1,503 @@
+[PRESET] Supplementary Exercises
+-------------------------------------------
+[T] Chapter 1 Supplementary Exercises
+-------------------------------------------
+[TFQ] Every matrix is row equivalent to a unique matrix in echelon form.
+[False]
+[EXP] The word “reduced” is missing. Counterexample: $A = \begin{bmatrix}1 & 2 \\ 3 & 4\end{bmatrix}$ is row equivalent to both $B = \begin{bmatrix}1 & 2 \\ 0 & -2\end{bmatrix}$ and $C = \begin{bmatrix}1 & 2 \\ 0 & -2\end{bmatrix}$ in echelon form.
+[END]
+[TFQ] Any system of $n$ linear equations in $n$ variables has at most $n$ solutions.
+[False]
+[EXP] Counterexample: Let $A$ be any $n \times n$ matrix with fewer than $n$ pivot columns. Then $Ax=0$ has infinitely many solutions (Theorem 2, Section 1.2).
+[END]
+[TFQ] If a system of linear equations has two different solutions, it must have infinitely many solutions.
+[True]
+[EXP] If a linear system has more than one solution, it is consistent with a free variable. By the Existence and Uniqueness Theorem (Section 1.2), the system has infinitely many solutions.
+[END]
+[TFQ] If a system of linear equations has no free variables, then it has a unique solution.
+[False]
+[EXP] Counterexample: $\begin{cases} x_1 + x_2 = 5 \\ 2x_1 + 2x_2 = 2 \end{cases}$ has no free variables but no solution.
+[END]
+[TFQ] If an augmented matrix $\begin{bmatrix} A & b \end{bmatrix}$ is transformed into $\begin{bmatrix} C & d \end{bmatrix}$ by elementary row operations, then the equations $Ax=b$ and $Cx=d$ have exactly the same solution sets.
+[True]
+[EXP] See Section 1.1: elementary row operations preserve the solution set of the associated linear system.
+[END]
+[TFQ] If a system $Ax=b$ has more than one solution, then so does the system $Ax=0$.
+[True]
+[EXP] By Theorem 6 (Section 1.5), the solution sets of $Ax=b$ and $Ax=0$ are translates of each other; both have the same number of solutions.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix and the equation $Ax=b$ is consistent for some $b$, then the columns of $A$ span $\mathbb{R}^m$.
+[False]
+[EXP] For the columns of $A$ to span $\mathbb{R}^m$, $Ax=b$ must be consistent for **all** $b \in \mathbb{R}^m$, not just one.
+[END]
+[TFQ] If an augmented matrix $\begin{bmatrix} A & b \end{bmatrix}$ can be transformed by elementary row operations into reduced echelon form, then the equation $Ax=b$ is consistent.
+[False]
+[EXP] Any matrix can be row reduced to reduced echelon form, but $Ax=b$ may still be inconsistent.
+[END]
+[TFQ] If matrices $A$ and $B$ are row equivalent, they have the same reduced echelon form.
+[True]
+[EXP] The reduced echelon form of a matrix is unique; row equivalent matrices transform to the same reduced echelon form.
+[END]
+[TFQ] The equation $Ax=0$ has the trivial solution if and only if there are no free variables.
+[False]
+[EXP] Every homogeneous system $Ax=0$ has the trivial solution regardless of free variables.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix and the equation $Ax=b$ is consistent for every $b \in \mathbb{R}^m$, then $A$ has $m$ pivot columns.
+[True]
+[EXP] By Theorem 4 (Section 1.4), consistency for all $b$ requires a pivot in every row; thus $A$ has $m$ pivot columns.
+[END]
+[TFQ] If an $m \times n$ matrix $A$ has a pivot position in every row, then the equation $Ax=b$ has a unique solution for each $b \in \mathbb{R}^m$.
+[False]
+[EXP] If $A$ has more than $m$ columns, there can be free variables; thus the solution may not be unique.
+[END]
+[TFQ] If an $n \times n$ matrix $A$ has $n$ pivot positions, then the reduced echelon form of $A$ is the $n \times n$ identity matrix.
+[True]
+[EXP] $n$ pivot positions imply a pivot in each row and column; reduced echelon form is $I_n$.
+[END]
+[TFQ] If $3 \times 3$ matrices $A$ and $B$ each have three pivot positions, then $A$ can be transformed into $B$ by elementary row operations.
+[True]
+[EXP] Both reduce to $I_3$, and the operations are reversible.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix, if $Ax=b$ has at least two different solutions, and if $Ax=c$ is consistent, then $Ax=c$ has many solutions.
+[True]
+[EXP] Same reasoning as for question f: existence of a free variable guarantees multiple solutions.
+[END]
+[TFQ] If $A$ and $B$ are row equivalent $m \times n$ matrices and if the columns of $A$ span $\mathbb{R}^m$, then so do the columns of $B$.
+[True]
+[EXP] By Theorem 4 (Section 1.4), row operations preserve pivot positions; hence $B$ also spans $\mathbb{R}^m$.
+[END]
+[TFQ] If none of the vectors in the set $S = \{v_1, v_2, v_3\} \subset \mathbb{R}^3$ is a multiple of one of the other vectors, then $S$ is linearly independent.
+[False]
+[EXP] See Example 5 (Section 1.6); the condition is not sufficient for independence.
+[END]
+[TFQ] If $\{u, v, w\}$ is linearly independent, then $u$, $v$, and $w$ are not in $\mathbb{R}^2$.
+[True]
+[EXP] By Theorem 8 (Section 1.6), any three vectors in $\mathbb{R}^2$ are linearly dependent.
+[END]
+[TFQ] In some cases, it is possible for four vectors to span $\mathbb{R}^5$.
+[False]
+[EXP] A $5 \times 4$ matrix cannot have a pivot in every row; thus four vectors cannot span $\mathbb{R}^5$.
+[END]
+[TFQ] If $u$ and $v$ are in $\mathbb{R}^m$, then $u$ is in $\operatorname{Span}\{u, v\}$.
+[True]
+[EXP] $u = 1 \cdot u + 0 \cdot v$.
+[END]
+[TFQ] If $u$, $v$, and $w$ are nonzero vectors in $\mathbb{R}^2$, then $w$ is a linear combination of $u$ and $v$.
+[False]
+[EXP] If $u$ and $v$ are multiples, $\operatorname{Span}\{u,v\}$ is a line, and $w$ may not lie on that line.
+[END]
+[TFQ] If $w$ is a linear combination of $u$ and $v$ in $\mathbb{R}^n$, then $u$ is a linear combination of $v$ and $w$.
+[False]
+[EXP] Let $w = 2v$ and $\{u,v\}$ linearly independent; then $u$ cannot be written as a combination of $v$ and $w$.
+[END]
+[TFQ] Suppose that $v_1, v_2, v_3$ are in $\mathbb{R}^5$, $v_2$ is not a multiple of $v_1$, and $v_3$ is not a linear combination of $v_1$ and $v_2$. Then $\{v_1, v_2, v_3\}$ is linearly independent.
+[False]
+[EXP] If $v_1 = 0$, then the set is dependent regardless of $v_2$ and $v_3$ (Theorem 7, Section 1.7).
+[END]
+[TFQ] A linear transformation is a function.
+[True]
+[EXP] Definition in Section 1.8: a linear transformation is a special type of function (transformation).
+[END]
+[TFQ] If $A$ is a $6 \times 5$ matrix, the linear transformation $x \mapsto Ax$ cannot map $\mathbb{R}^5$ onto $\mathbb{R}^6$.
+[True]
+[EXP] Mapping onto $\mathbb{R}^6$ requires a pivot in every row; impossible since $A$ has only 5 columns.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix with $m$ pivot columns, then the linear transformation $x \mapsto Ax$ is a one-to-one mapping.
+[False]
+[EXP] For one-to-one, $A$ must have a pivot in every column. $m$ pivot columns may be less than $n$.
+[END]
+-------------------------------------------
+[T] Chapter 2 Supplementary Exercises
+-------------------------------------------
+[TFQ] If $A$ and $B$ are $m \times n$, then both $AB^T$ and $A^T B$ are defined.
+[True]
+[EXP] $B^T$ has $n$ rows, matching the number of columns of $A$, so $AB^T$ is defined. Similarly, $A^T$ has $m$ columns and $B$ has $m$ rows, so $A^T B$ is defined.
+[END]
+[TFQ] If $AB = C$ and $C$ has 2 columns, then $A$ has 2 columns.
+[False]
+[EXP] The number of columns of $C$ equals the number of columns of $B$, not $A$. $A$ must have as many columns as $B$ has rows.
+[END]
+[TFQ] Left-multiplying a matrix $B$ by a diagonal matrix $A$, with nonzero entries on the diagonal, scales the rows of $B$.
+[True]
+[EXP] The $i$th row of $AB$ is $d_i$ times the $i$th row of $B$, where $d_i$ is the $i$th diagonal entry of $A$.
+[END]
+[TFQ] If $BC = BD$, then $C = D$.
+[False]
+[EXP] Counterexample: take $B$ as the zero matrix. Then $BC = BD = 0$, but $C \neq D$.
+[END]
+[TFQ] If $AC = 0$, then either $A = 0$ or $C = 0$.
+[False]
+[EXP] Counterexample: $A = \begin{bmatrix}1 & 0 \\ 0 & 0\end{bmatrix}$ and $C = \begin{bmatrix}0 & 0 \\ 0 & 1\end{bmatrix}$; then $AC = 0$ but neither $A$ nor $C$ is zero.
+[END]
+[TFQ] If $A$ and $B$ are $n \times n$, then $(A + B)(A - B) = A^2 - B^2$.
+[False]
+[EXP] $(A + B)(A - B) = A^2 - AB + BA - B^2$; equality holds only if $A$ and $B$ commute ($AB = BA$).
+[END]
+[TFQ] An elementary $n \times n$ matrix has either $n$ or $n+1$ nonzero entries.
+[True]
+[EXP] Replacement matrices have $n+1$ nonzero entries; scaling and interchange matrices have $n$ nonzero entries.
+[END]
+[TFQ] The transpose of an elementary matrix is an elementary matrix.
+[True]
+[EXP] The transpose preserves the type of the row operation: interchange, scaling, or replacement.
+[END]
+[TFQ] An elementary matrix must be square.
+[True]
+[EXP] By definition, an elementary matrix is obtained from a row operation on $I_n$, which is square.
+[END]
+[TFQ] Every square matrix is a product of elementary matrices.
+[False]
+[EXP] Only invertible matrices can be expressed as a product of elementary matrices. Non-invertible matrices cannot.
+[END]
+[TFQ] If $A$ is $3 \times 3$ with three pivot positions, there exist elementary matrices $E_1, \ldots, E_p$ such that $E_p \cdots E_1 A = I$.
+[True]
+[EXP] A matrix with three pivots is row equivalent to $I_3$, so it can be written as a product of elementary matrices transforming $A$ to $I_3$.
+[END]
+[TFQ] If $AB = I$, then $A$ is invertible.
+[False]
+[EXP] $A$ must be square to conclude invertibility. For non-square $A$, $AB = I$ does not guarantee $A$ is invertible.
+[END]
+[TFQ] If $A$ and $B$ are square and invertible, then $AB$ is invertible, and $(AB)^{-1} = A^{-1}B^{-1}$.
+[False]
+[EXP] Correct formula: $(AB)^{-1} = B^{-1} A^{-1}$. The order of inverses is reversed.
+[END]
+[TFQ] If $AB = BA$ and $A$ is invertible, then $A^{-1}B = BA^{-1}$.
+[True]
+[EXP] Multiply $AB = BA$ on the left by $A^{-1}$ and on the right by $A^{-1}$ to obtain $A^{-1}B = BA^{-1}$.
+[END]
+[TFQ] If $A$ is invertible and $r \neq 0$, then $(rA)^{-1} = rA^{-1}$.
+[False]
+[EXP] Correct formula: $(rA)^{-1} = r^{-1}A^{-1}$, since $(rA)(r^{-1}A^{-1}) = I$.
+[END]
+[TFQ] If $A$ is a $3 \times 3$ matrix and the equation $Ax = \begin{bmatrix}1\\0\\0\end{bmatrix}$ has a unique solution, then $A$ is invertible.
+[True]
+[EXP] A unique solution implies no free variables, so $A$ has three pivot positions. By the Invertible Matrix Theorem, $A$ is invertible.
+[END]
+-------------------------------------------
+[T] Chapter 3 Supplementary Exercises
+-------------------------------------------
+[TFQ] If $A$ is a $2 \times 2$ matrix with a zero determinant, then one column of $A$ is a multiple of the other.
+[True]
+[EXP] If $\det A = 0$, the columns are linearly dependent; for a $2 \times 2$ matrix, this means one column is a scalar multiple of the other.
+[END]
+[TFQ] If two rows of a $3 \times 3$ matrix $A$ are the same, then $\det A = 0$.
+[True]
+[EXP] See Exercise 30 in Section 3.2: a matrix with duplicate rows has linearly dependent rows, making the determinant zero.
+[END]
+[TFQ] If $A$ is a $3 \times 3$ matrix, then $\det 5A = 5 \det A$.
+[False]
+[EXP] By Theorem 3(c), $\det(cA) = c^n \det A$ for an $n \times n$ matrix. Here, $\det(5A) = 5^3 \det A = 125 \det A$, not $5 \det A$.
+[END]
+[TFQ] If $A$ and $B$ are $n \times n$ matrices, with $\det A = 2$ and $\det B = 3$, then $\det(A + B) = 5$.
+[False]
+[EXP] Determinants are not additive: $\det(A + B) \neq \det A + \det B$ in general. Counterexample: $A = \begin{bmatrix}2 & 0\\0 & 1\end{bmatrix}$, $B = \begin{bmatrix}1 & 0\\0 & 3\end{bmatrix}$, then $A+B = \begin{bmatrix}3 & 0\\0 & 4\end{bmatrix}$, $\det(A+B) = 12 \neq 5$.
+[END]
+[TFQ] If $A$ is $n \times n$ and $\det A = 2$, then $\det A^3 = 6$.
+[False]
+[EXP] By Theorem 6, $\det(A^k) = (\det A)^k$. Here, $\det(A^3) = 2^3 = 8$, not 6.
+[END]
+[TFQ] If $B$ is produced by interchanging two rows of $A$, then $\det B = \det A$.
+[False]
+[EXP] By Theorem 3(b), each row interchange multiplies the determinant by $-1$, so $\det B = -\det A$.
+[END]
+[TFQ] If $B$ is produced by multiplying row 3 of $A$ by 5, then $\det B = 5 \det A$.
+[True]
+[EXP] See Theorem 3(c): multiplying a single row by $k$ multiplies the determinant by $k$.
+[END]
+[TFQ] If $B$ is formed by adding to one row of $A$ a linear combination of the other rows, then $\det B = \det A$.
+[True]
+[EXP] See Theorem 3(a): adding a multiple of one row to another row does not change the determinant.
+[END]
+[TFQ] $\det A^T = \det A$.
+[False]
+[EXP] See Theorem 5: actually, $\det(A^T) = \det A$, so this statement should be True; the source might contain a typo.
+[END]
+[TFQ] $\det(A^n) = \det A$.
+[False]
+[EXP] By Theorem 3(c), $\det(A^n) = (\det A)^n$, not $\det A$.
+[END]
+[TFQ] $\det(A^T A) \ge 0$.
+[True]
+[EXP] See Theorems 6 and 5: $\det(A^T A) = (\det A)^2 \ge 0$ for any square matrix $A$.
+[END]
+[TFQ] Any system of $n$ linear equations in $n$ variables can be solved by Cramer’s rule.
+[False]
+[EXP] Cramer’s rule requires the coefficient matrix to be invertible; not all $n \times n$ systems satisfy this.
+[END]
+[TFQ] If $u$ and $v$ are in $\mathbb{R}^2$ and $\det [u\ v] = 10$, then the area of the triangle in the plane with vertices at $0$, $u$, and $v$ is 10.
+[False]
+[EXP] The area of the triangle is $\frac{1}{2} |\det[u\ v]| = 5$, not 10.
+[END]
+[TFQ] If $A^3 = 0$, then $\det A = 0$.
+[True]
+[EXP] See Theorem 6: if a matrix is nilpotent ($A^k = 0$ for some $k$), its determinant is zero.
+[END]
+[TFQ] If $A$ is invertible, then $\det A^{-1} = \det A$.
+[False]
+[EXP] For an invertible matrix, $\det(A^{-1}) = (\det A)^{-1}$, not $\det A$.
+[END]
+[TFQ] If $A$ is invertible, then $(\det A)(\det A^{-1}) = 1$.
+[True]
+[EXP] See Theorem 6: by definition of the inverse, $\det(A) \cdot \det(A^{-1}) = \det(I) = 1$.
+[END]
+-------------------------------------------
+[T] Chapter 4 Supplementary Exercises
+-------------------------------------------
+[TFQ] The set of all linear combinations of $v_{1}, \ldots, v_{p}$ is a vector space.
+[True]
+[EXP] This set is $\operatorname{Span}\{v_{1}, \ldots, v_{p}\}$, and every span is a subspace, hence itself a vector space.
+[END]
+[TFQ] If $\{v_{1}, \ldots, v_{p-1}\}$ spans $V$, then $S$ spans $V$.
+[True]
+[EXP] Any linear combination of $v_{1}, \ldots, v_{p-1}$ is also a linear combination of $v_{1}, \ldots, v_{p}$ using a zero coefficient for $v_{p}$.
+[END]
+[TFQ] If $\{v_{1}, \ldots, v_{p-1}\}$ is linearly independent, then so is $S$.
+[False]
+[EXP] Counterexample: Let $v_{p} = v_{1}$. Then $S = \{v_{1}, \ldots, v_{p}\}$ is linearly dependent.
+[END]
+[TFQ] If $S$ is linearly independent, then $S$ is a basis for $V$.
+[False]
+[EXP] Counterexample: Let $\{e_{1}, e_{2}, e_{3}\}$ be the standard basis for $\mathbb{R}^{3}$. Then $\{e_{1}, e_{2}\}$ is linearly independent but does not span $\mathbb{R}^{3}$, so it is not a basis.
+[END]
+[TFQ] If $\operatorname{Span} S = V$, then some subset of $S$ is a basis for $V$.
+[True]
+[EXP] See the Spanning Set Theorem (Section 4.3), which ensures that a spanning set contains a basis.
+[END]
+[TFQ] If $\dim V = p$ and $\operatorname{Span} S = V$, then $S$ cannot be linearly dependent.
+[True]
+[EXP] By the Basis Theorem, $S$ is a basis for $V$ because it spans $V$ and has exactly $p$ elements, so $S$ must be linearly independent.
+[END]
+[TFQ] A plane in $\mathbb{R}^{3}$ is a two-dimensional subspace.
+[False]
+[EXP] The plane must pass through the origin to be a subspace; a general plane in $\mathbb{R}^{3}$ may not.
+[END]
+[TFQ] The nonpivot columns of a matrix are always linearly dependent.
+[False]
+[EXP] Counterexample: Consider $\begin{bmatrix}2 & 5 & 2 & 0 \\ 0 & 0 & 7 & 3 \\ 0 & 0 & 0 & 0\end{bmatrix}$. Some nonpivot columns may be independent.
+[END]
+[TFQ] Row operations on a matrix $A$ can change the linear dependence relations among the rows of $A$.
+[True]
+[EXP] Row operations can alter the rows’ dependence structure; see discussion before Theorem 13 in Section 4.6.
+[END]
+[TFQ] Row operations on a matrix can change the null space.
+[False]
+[EXP] Row operations do not change the solution set of $Ax = 0$, so the null space remains the same.
+[END]
+[TFQ] The rank of a matrix equals the number of nonzero rows.
+[False]
+[EXP] Counterexample: $A = \begin{bmatrix}1 & 2 \\ 3 & 6\end{bmatrix}$ has two nonzero rows but rank $1$.
+[END]
+[TFQ] If an $m \times n$ matrix $A$ is row equivalent to an echelon matrix $U$ and $U$ has $k$ nonzero rows, then the dimension of the solution space of $Ax = 0$ is $m - k$.
+[False]
+[EXP] If $U$ has $k$ nonzero rows, then $\operatorname{rank} A = k$ and $\dim \operatorname{Nul} A = n - k$ by the Rank Theorem.
+[END]
+[TFQ] If $B$ is obtained from a matrix $A$ by several elementary row operations, then $\operatorname{rank} B = \operatorname{rank} A$.
+[True]
+[EXP] Row equivalent matrices have the same number of pivot columns, hence the same rank.
+[END]
+[TFQ] The nonzero rows of a matrix $A$ form a basis for $\operatorname{Row} A$.
+[False]
+[EXP] The nonzero rows span $\operatorname{Row} A$ but may not be linearly independent.
+[END]
+[TFQ] If matrices $A$ and $B$ have the same reduced echelon form, then $\operatorname{Row} A = \operatorname{Row} B$.
+[True]
+[EXP] The nonzero rows of the reduced echelon form $E$ form a basis for the row space of each matrix row equivalent to $E$.
+[END]
+[TFQ] If $H$ is a subspace of $\mathbb{R}^{3}$, then there is a $3 \times 3$ matrix $A$ such that $H = \operatorname{Col} A$.
+[True]
+[EXP] If $H$ has dimension $0$, $1$, $2$, or $3$, appropriate matrices $A$ can be constructed so that $\operatorname{Col} A = H$.
+[END]
+[TFQ] If $A$ is $m \times n$ and $\operatorname{rank} A = m$, then the linear transformation $x \mapsto Ax$ is one-to-one.
+[False]
+[EXP] Counterexample: $A = \begin{bmatrix}1 & 0 & 0 \\ 0 & 1 & 0\end{bmatrix}$. Rank $2$ but the transformation is not one-to-one if $n > m$.
+[END]
+[TFQ] If $A$ is $m \times n$ and the linear transformation $x \mapsto Ax$ is onto, then $\operatorname{rank} A = m$.
+[True]
+[EXP] If the transformation is onto, $\operatorname{Col} A = \mathbb{R}^{m}$, so $\operatorname{rank} A = m$ (Theorem 12(a), Section 1.9).
+[END]
+[TFQ] A change-of-coordinates matrix is always invertible.
+[True]
+[EXP] See the second paragraph after Theorem 15 in Section 4.7.
+[END]
+[TFQ] If $B = \{b_{1}, \ldots, b_{n}\}$ and $C = \{c_{1}, \ldots, c_{n}\}$ are bases for a vector space $V$, then the $j$th column of the change-of-coordinates matrix $P_{C \leftarrow B}$ is the coordinate vector $[c_{j}]_{B}$.
+[False]
+[EXP] The $j$th column of $P_{C \leftarrow B}$ is $[b_{j}]_{C}$, not $[c_{j}]_{B}$.
+[END]
+-------------------------------------------
+[T] Chapter 5 Supplementary Exercises
+-------------------------------------------
+[TFQ] If $A$ is invertible and $1$ is an eigenvalue for $A$, then $1$ is also an eigenvalue of $A^{-1}$.
+[True]
+[EXP] If $Ax = 1 \cdot x$ for some nonzero $x$, then left-multiplying by $A^{-1}$ gives $x = A^{-1}x$, showing $1$ is an eigenvalue of $A^{-1}$.
+[END]
+[TFQ] If $A$ is row equivalent to the identity matrix $I$, then $A$ is diagonalizable.
+[False]
+[EXP] Row equivalence to $I$ only ensures $A$ is invertible. Invertible matrices need not be diagonalizable (see Example 4, Section 5.3).
+[END]
+[TFQ] If $A$ contains a row or column of zeros, then $0$ is an eigenvalue of $A$.
+[True]
+[EXP] A zero row or column implies $A$ is singular. By the Invertible Matrix Theorem (Section 5.2), $0$ is an eigenvalue.
+[END]
+[TFQ] Each eigenvalue of $A$ is also an eigenvalue of $A^2$.
+[False]
+[EXP] Counterexample: $D = \operatorname{diag}(1,3)$. Eigenvalues of $D^2$ are $1$ and $9$, not $3$. In general, eigenvalues of $A^2$ are squares of eigenvalues of $A$.
+[END]
+[TFQ] Each eigenvector of $A$ is also an eigenvector of $A^2$.
+[True]
+[EXP] If $Ax = \lambda x$, then $A^2 x = A(Ax) = A(\lambda x) = \lambda^2 x$, so $x$ is also an eigenvector of $A^2$.
+[END]
+[TFQ] Each eigenvector of an invertible matrix $A$ is also an eigenvector of $A^{-1}$.
+[True]
+[EXP] If $Ax = \lambda x$, then $A^{-1}Ax = x = \lambda A^{-1}x$ implies $A^{-1}x = \lambda^{-1} x$, so $x$ is an eigenvector of $A^{-1}$.
+[END]
+[TFQ] Eigenvalues must be nonzero scalars.
+[False]
+[EXP] Zero is an eigenvalue of any singular square matrix.
+[END]
+[TFQ] Eigenvectors must be nonzero vectors.
+[True]
+[EXP] By definition, eigenvectors cannot be zero.
+[END]
+[TFQ] Two eigenvectors corresponding to the same eigenvalue are always linearly dependent.
+[False]
+[EXP] Eigenvectors corresponding to the same eigenvalue form a subspace. Distinct nonzero multiples (like $v$ and $2v$) are dependent, but multiple linearly independent vectors can exist in the same eigenspace.
+[END]
+[TFQ] Similar matrices always have exactly the same eigenvalues.
+[True]
+[EXP] Follows from Theorem 4, Section 5.2. Similar matrices share the same characteristic polynomial.
+[END]
+[TFQ] Similar matrices always have exactly the same eigenvectors.
+[False]
+[EXP] Eigenvectors of similar matrices may differ. Example: $A$ similar to a diagonal matrix $D$; eigenvectors of $A$ are not generally the same as columns of $D$.
+[END]
+[TFQ] The sum of two eigenvectors of a matrix $A$ is also an eigenvector of $A$.
+[False]
+[EXP] If eigenvectors correspond to distinct eigenvalues, their sum is not an eigenvector (e.g., $A = \begin{bmatrix}2 & 0 \\ 0 & 3\end{bmatrix}$, $e_1$ and $e_2$ eigenvectors).
+[END]
+[TFQ] The eigenvalues of an upper triangular matrix $A$ are exactly the nonzero entries on the diagonal of $A$.
+[False]
+[EXP] The eigenvalues of an upper triangular matrix are all diagonal entries, including zeros; nonzero is not required.
+[END]
+[TFQ] The matrices $A$ and $A^T$ have the same eigenvalues, counting multiplicities.
+[True]
+[EXP] $\det(A - \lambda I) = \det(A^T - \lambda I)$ by the determinant transpose property.
+[END]
+[TFQ] If a $5 \times 5$ matrix $A$ has fewer than $5$ distinct eigenvalues, then $A$ is not diagonalizable.
+[False]
+[EXP] Counterexample: The $5 \times 5$ identity matrix has only 1 distinct eigenvalue but is diagonalizable.
+[END]
+[TFQ] There exists a $2 \times 2$ matrix that has no eigenvectors in $\mathbb{R}^2$.
+[True]
+[EXP] Example: a rotation matrix through $\pi/2$ radians. No real vector $x$ satisfies $Ax = \lambda x$ in $\mathbb{R}^2$.
+[END]
+[TFQ] If $A$ is diagonalizable, then the columns of $A$ are linearly independent.
+[False]
+[EXP] A diagonal matrix may have zero on the diagonal, making its columns linearly dependent.
+[END]
+[TFQ] A nonzero vector cannot correspond to two different eigenvalues of $A$.
+[True]
+[EXP] If $Ax = \lambda_1 x = \lambda_2 x$ and $x \neq 0$, then $\lambda_1 = \lambda_2$.
+[END]
+[TFQ] A (square) matrix $A$ is invertible if and only if there is a coordinate system in which the transformation $x \mapsto Ax$ is represented by a diagonal matrix.
+[False]
+[EXP] A singular diagonalizable matrix (e.g., diagonal with zero) exists. Then $Ax$ is represented by a diagonal matrix but $A$ is not invertible.
+[END]
+[TFQ] If each vector $e_j$ in the standard basis for $\mathbb{R}^n$ is an eigenvector of $A$, then $A$ is a diagonal matrix.
+[True]
+[EXP] By definition, $Ae_j = d_j e_j$, so $A$ is diagonal with $d_1,\dots,d_n$ on the diagonal.
+[END]
+[TFQ] If $A$ is similar to a diagonalizable matrix $B$, then $A$ is also diagonalizable.
+[True]
+[EXP] If $B = P D P^{-1}$ and $A = Q B Q^{-1}$, then $A = (Q P) D (Q P)^{-1}$, showing $A$ is diagonalizable.
+[END]
+[TFQ] If $A$ and $B$ are invertible $n \times n$ matrices, then $AB$ is similar to $BA$.
+[True]
+[EXP] $AB$ is similar to $B^{-1}(AB)B = BA$.
+[END]
+[TFQ] An $n \times n$ matrix with $n$ linearly independent eigenvectors is invertible.
+[False]
+[EXP] Having $n$ linearly independent eigenvectors ensures diagonalizability but not necessarily invertibility; an eigenvalue could be zero.
+[END]
+[TFQ] If $A$ is an $n \times n$ diagonalizable matrix, then each vector in $\mathbb{R}^n$ can be written as a linear combination of eigenvectors of $A$.
+[True]
+[EXP] By the Diagonalization Theorem and the Basis Theorem, $n$ linearly independent eigenvectors of $A$ span $\mathbb{R}^n$.
+[END]
+-------------------------------------------
+[T] Chapter 6 Supplementary Exercises
+-------------------------------------------
+[TFQ] The length of every vector is a positive number.
+[False]
+[EXP] The zero vector has length $\|0\| = 0$, which is not positive.
+[END]
+[TFQ] A vector $v$ and its negative, $-v$, have equal lengths.
+[True]
+[EXP] $\| -v \| = \| (-1)v \| = | -1 | \| v \| = \| v \|$.
+[END]
+[TFQ] The distance between $u$ and $v$ is $\| u - v \|$.
+[True]
+[EXP] This is the definition of distance in $\mathbb{R}^n$.
+[END]
+[TFQ] If $r$ is any scalar, then $\| r v \| = r \| v \|$.
+[False]
+[EXP] The correct formula is $\| r v \| = |r| \, \| v \|$.
+[END]
+[TFQ] If two vectors are orthogonal, they are linearly independent.
+[False]
+[EXP] Orthogonal nonzero vectors are linearly independent, but a zero vector is orthogonal to any vector and does not affect independence.
+[END]
+[TFQ] If $x$ is orthogonal to both $u$ and $v$, then $x$ must be orthogonal to $u - v$.
+[True]
+[EXP] $(x \cdot u) = 0$ and $(x \cdot v) = 0$ imply $x \cdot (u - v) = x \cdot u - x \cdot v = 0$.
+[END]
+[TFQ] If $\|u + v\|^2 = \|u\|^2 + \|v\|^2$, then $u$ and $v$ are orthogonal.
+[True]
+[EXP] This is the “only if” part of the Pythagorean Theorem.
+[END]
+[TFQ] If $\|u - v\|^2 = \|u\|^2 + \|v\|^2$, then $u$ and $v$ are orthogonal.
+[True]
+[EXP] Same reasoning as above; the sign of $v$ does not affect the squared norm.
+[END]
+[TFQ] The orthogonal projection of $y$ onto $u$ is a scalar multiple of $y$.
+[False]
+[EXP] The orthogonal projection is a scalar multiple of $u$, not $y$, unless $y$ is already along $u$.
+[END]
+[TFQ] If a vector $y$ coincides with its orthogonal projection onto a subspace $W$, then $y$ is in $W$.
+[True]
+[EXP] By definition, $\operatorname{proj}_W y$ always lies in $W$.
+[END]
+[TFQ] The set of all vectors in $\mathbb{R}^n$ orthogonal to one fixed vector is a subspace of $\mathbb{R}^n$.
+[True]
+[EXP] See Example 6 and Exercise 30. The set is closed under addition and scalar multiplication.
+[END]
+[TFQ] If $W$ is a subspace of $\mathbb{R}^n$, then $W$ and $W^\perp$ have no vectors in common.
+[False]
+[EXP] The zero vector is in both $W$ and $W^\perp$.
+[END]
+[TFQ] If $\{v_1, v_2, v_3\}$ is an orthogonal set and if $c_1, c_2, c_3$ are scalars, then $\{c_1 v_1, c_2 v_2, c_3 v_3\}$ is an orthogonal set.
+[True]
+[EXP] Scaling nonzero vectors preserves orthogonality. See Exercise 32 in Section 6.2.
+[END]
+[TFQ] If a matrix $U$ has orthonormal columns, then $U U^T = I$.
+[False]
+[EXP] This is only guaranteed for square matrices. See Theorem 10 in Section 6.3.
+[END]
+[TFQ] A square matrix with orthogonal columns is an orthogonal matrix.
+[False]
+[EXP] An orthogonal matrix must be square and have orthonormal columns.
+[END]
+[TFQ] If a square matrix has orthonormal columns, then it also has orthonormal rows.
+[True]
+[EXP] See Exercises 27–28 in Section 6.2. For square $U$, $U^T U = I$ implies $U U^T = I$.
+[END]
+[TFQ] If $W$ is a subspace, then $\|\operatorname{proj}_W v\|^2 + \|v - \operatorname{proj}_W v\|^2 = \|v\|^2$.
+[True]
+[EXP] Follows from the Orthogonal Decomposition Theorem and the Pythagorean Theorem.
+[END]
+[TFQ] A least-squares solution of $Ax = b$ is the vector $A \hat{x}$ in $\operatorname{Col} A$ closest to $b$, so that $\|b - A \hat{x}\| \le \|b - Ax\|$ for all $x$.
+[False]
+[EXP] A least-squares solution is the vector $\hat{x}$, not $A\hat{x}$. $A\hat{x}$ is the corresponding projection in $\operatorname{Col} A$.
+[END]
+[TFQ] The normal equations for a least-squares solution of $Ax = b$ are given by $\hat{x} = (A^T A)^{-1} A^T b$.
+[False]
+[EXP] This formula is valid only if $A^T A$ is invertible. The normal equations themselves are $A^T A \hat{x} = A^T b$.
+[END]

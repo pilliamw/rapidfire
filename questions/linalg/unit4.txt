@@ -1,0 +1,254 @@
+[PRESET] Chapter 4 - Vector Spaces
+-------------------------------------------
+[T] 4.1 - Vector Spaces & Subspaces
+-------------------------------------------
+[TFQ] If $f$ is a function in the vector space $V$ of all real-valued functions on $\mathbb{R}$ and if $f(t) = 0$ for some $t$, then $f$ is the zero vector in $V$.
+[False]
+[EXP] (4.1) The zero vector in $V$ is the function $f$ whose values $f(t)$ are zero for all $t \in \mathbb{R}$, not just at a single point.
+[END]
+[TFQ] A vector is an arrow in three-dimensional space.
+[False]
+[EXP] (4.1) An arrow in 3D space is an example of a vector, but vectors can exist in many vector spaces, so this statement is not universally true.
+[END]
+[TFQ] A subset $H$ of a vector space $V$ is a subspace of $V$ if the zero vector is in $H$.
+[False]
+[EXP] (4.1) Containing the zero vector is necessary but not sufficient. $H$ must also be closed under addition and scalar multiplication.
+[END]
+[TFQ] A subspace is also a vector space.
+[True]
+[EXP] (4.1) By definition, a subspace satisfies all axioms of a vector space under the inherited operations from $V$.
+[END]
+[TFQ] Analog signals are used in the major control systems for the space shuttle, mentioned in the introduction to the chapter.
+[False]
+[EXP] (4.1) Digital signals are used in the major control systems, not analog signals. See Example 3.
+[END]
+[TFQ] A vector is any element of a vector space.
+[True]
+[EXP] (4.1) By the definition of a vector space, its elements are called vectors.
+[END]
+[TFQ] If $u$ is a vector in a vector space $V$, then $(-1)u$ is the same as the negative of $u$.
+[True]
+[EXP] (4.1) See statement (3) in the box before Example 1: multiplying by $-1$ produces the additive inverse.
+[END]
+[TFQ] A vector space is also a subspace.
+[True]
+[EXP] (4.1) Any vector space is trivially a subspace of itself under the same operations.
+[END]
+[TFQ] $\mathbb{R}^2$ is a subspace of $\mathbb{R}^3$.
+[False]
+[EXP] (4.1) $\mathbb{R}^2$ is not a subset of $\mathbb{R}^3$, so it cannot be a subspace.
+[END]
+[TFQ] A subset $H$ of a vector space $V$ is a subspace of $V$ if the following conditions are satisfied: (i) the zero vector of $V$ is in $H$, (ii) $u$, $v$, and $u+v$ are in $H$, and (iii) $c$ is a scalar and $cu$ is in $H$.
+[False]
+[EXP] (4.1) Parts (ii) and (iii) are incorrectly stated. $H$ must contain all linear combinations of its elements; the statement must ensure closure under addition and scalar multiplication for all $u,v \in H$ and all scalars $c$.
+[END]
+-------------------------------------------
+[T] 4.2 - Null Spaces, Column Spaces, and Linear Transformations
+-------------------------------------------
+[TFQ] The null space of $A$ is the solution set of the equation $Ax = 0$.
+[True]
+[EXP] (4.2) By definition, Nul $A$ consists of all solutions to the homogeneous equation $Ax = 0$.
+[END]
+[TFQ] The null space of an $m \times n$ matrix is in $\mathbb{R}^m$.
+[False]
+[EXP] (4.2) See Theorem 2. Nul $A \subseteq \mathbb{R}^n$, not $\mathbb{R}^m$, because solutions $x$ are vectors in $\mathbb{R}^n$.
+[END]
+[TFQ] The column space of $A$ is the range of the mapping $x \mapsto Ax$.
+[True]
+[EXP] (4.2) The columns of $A$ span all possible outputs $Ax$, which defines the range of the linear transformation.
+[END]
+[TFQ] If the equation $Ax = b$ is consistent, then $\text{Col } A$ is $\mathbb{R}^m$.
+[False]
+[EXP] (4.2) Consistency for a single $b$ does not imply that Col $A = \mathbb{R}^m$; Col $A$ equals $\mathbb{R}^m$ only if $Ax = b$ is consistent for every $b \in \mathbb{R}^m$.
+[END]
+[TFQ] The kernel of a linear transformation is a vector space.
+[True]
+[EXP] (4.2) By definition, the kernel (set of all vectors mapped to zero) satisfies all subspace properties.
+[END]
+[TFQ] Col $A$ is the set of all vectors that can be written as $Ax$ for some $x$.
+[True]
+[EXP] (4.2) This is the definition of the column space: all linear combinations of the columns of $A$, equivalently all vectors of the form $Ax$.
+[END]
+[TFQ] A null space is a vector space.
+[True]
+[EXP] (4.2) Theorem 2 confirms that Nul $A$ satisfies closure under addition and scalar multiplication.
+[END]
+[TFQ] The column space of an $m \times n$ matrix is in $\mathbb{R}^m$.
+[True]
+[EXP] (4.2) Theorem 3: each column has $m$ entries, so all linear combinations lie in $\mathbb{R}^m$.
+[END]
+[TFQ] Col $A$ is the set of all solutions of $Ax = b$.
+[False]
+[EXP] (4.2) Col $A$ consists of all outputs $Ax$ for varying $x$, but solutions of $Ax = b$ correspond to preimages of $b$, not to Col $A$ itself.
+[END]
+[TFQ] Nul $A$ is the kernel of the mapping $x \mapsto Ax$.
+[True]
+[EXP] (4.2) By definition, Nul $A$ is exactly the set of all vectors mapped to $0$, i.e., the kernel.
+[END]
+[TFQ] The range of a linear transformation is a vector space.
+[True]
+[EXP] (4.2) See Figure 2. The range of a linear transformation is closed under addition and scalar multiplication.
+[END]
+[TFQ] The set of all solutions of a homogeneous linear differential equation is the kernel of a linear transformation.
+[True]
+[EXP] (4.2) Solutions of homogeneous linear differential equations form a subspace, which is the kernel of the associated linear operator.
+[END]
+-------------------------------------------
+[T] 4.3 - Linearly Independent Sets; Bases
+-------------------------------------------
+[TFQ] A single vector by itself is linearly dependent.
+[False]
+[EXP] (4.3) Only the zero vector by itself is linearly dependent. Nonzero vectors alone are linearly independent. See the paragraph preceding Theorem 4.
+[END]
+[TFQ] If $H = \text{Span}\{b_1, \ldots, b_p\}$, then $\{b_1, \ldots, b_p\}$ is a basis for $H$.
+[False]
+[EXP] (4.3) A basis must be both spanning and linearly independent. The set $\{b_1, \ldots, b_p\}$ may not be linearly independent. See the definition of a basis.
+[END]
+[TFQ] The columns of an invertible $n \times n$ matrix form a basis for $\mathbb{R}^n$.
+[True]
+[EXP] (4.3) Example 3 shows that the columns of an invertible matrix span $\mathbb{R}^n$ and are linearly independent.
+[END]
+[TFQ] A basis is a spanning set that is as large as possible.
+[False]
+[EXP] (4.3) A basis is a minimal spanning set, not as large as possible. See the subsection “Two Views of a Basis.”
+[END]
+[TFQ] In some cases, the linear dependence relations among the columns of a matrix can be affected by certain elementary row operations on the matrix.
+[False]
+[EXP] (4.3) Elementary row operations do not change the linear dependence relations among columns. See the box before Example 9.
+[END]
+[TFQ] A linearly independent set in a subspace $H$ is a basis for $H$.
+[False]
+[EXP] (4.3) To be a basis, the set must also span $H$. Linear independence alone is not sufficient. See the definition of a basis.
+[END]
+[TFQ] If a finite set $S$ of nonzero vectors spans a vector space $V$, then some subset of $S$ is a basis for $V$.
+[True]
+[EXP] (4.3) By the Spanning Set Theorem, a linearly independent subset of a spanning set forms a basis for $V$. See the discussion in Section 4.3.
+[END]
+[TFQ] A basis is a linearly independent set that is as large as possible.
+[True]
+[EXP] (4.3) A basis is a maximal linearly independent set within the space. See the subsection “Two Views of a Basis.”
+[END]
+[TFQ] The standard method for producing a spanning set for $\text{Nul } A$, described in Section 4.2, sometimes fails to produce a basis for $\text{Nul } A$.
+[False]
+[EXP] (4.3) The procedure in Section 4.2 always produces a basis for Nul $A$ by choosing vectors corresponding to free variables.
+[END]
+[TFQ] If $B$ is an echelon form of a matrix $A$, then the pivot columns of $B$ form a basis for Col $A$.
+[False]
+[EXP] (4.3) The pivot columns of $B$ do not correspond to the original columns of $A$. Only the pivot columns of $A$ form a basis for Col $A$. See the warning after Theorem 6.
+[END]
+-------------------------------------------
+[T] 4.4 - Coordinate Systems
+-------------------------------------------
+[TFQ] If $x$ is in $V$ and if $B$ contains $n$ vectors, then the $B$-coordinate vector of $x$ is in $\mathbb{R}^n$.
+[True]
+[EXP] (4.4) By definition, the $B$-coordinate vector of $x$ has $n$ entries corresponding to the coefficients of $x$ relative to the $n$ vectors in $B$.
+[END]
+[TFQ] If $P_B$ is the change-of-coordinates matrix, then $[x]_B = P_B x$, for $x$ in $V$.
+[False]
+[EXP] (4.4) The correct formula is $[x]_B = P_B^{-1} x$, because the coordinate mapping involves the inverse of the change-of-coordinates matrix. See Equation (4) in Section 4.4.
+[END]
+[TFQ] The vector spaces $P_3$ and $\mathbb{R}^3$ are isomorphic.
+[False]
+[EXP] (4.4) $P_3$ (polynomials of degree at most 3) has dimension 4, while $\mathbb{R}^3$ has dimension 3. Vector spaces must have the same dimension to be isomorphic. See Example 5.
+[END]
+[TFQ] If $B$ is the standard basis for $\mathbb{R}^n$, then the $B$-coordinate vector of an $x$ in $\mathbb{R}^n$ is $x$ itself.
+[True]
+[EXP] (4.4) In the standard basis, each vector's coordinates are its entries. See Example 2.
+[END]
+[TFQ] The correspondence $[x]_B \mapsto x$ is called the coordinate mapping.
+[False]
+[EXP] (4.4) By definition, the coordinate mapping is from $x$ to $[x]_B$, not the reverse. See the definition in Section 4.4.
+[END]
+[TFQ] In some cases, a plane in $\mathbb{R}^3$ can be isomorphic to $\mathbb{R}^2$.
+[True]
+[EXP] (4.4) Any plane through the origin in $\mathbb{R}^3$ has dimension 2, so it is isomorphic to $\mathbb{R}^2$. See Example 7.
+[END]
+-------------------------------------------
+[T] 4.5 - The Dimension of a Vector Space
+-------------------------------------------
+[TFQ] If there exists a set $\{v_1, \dots, v_p\}$ that spans $V$, then $\dim V \le p$.
+[True]
+[EXP] (4.5) By definition, any spanning set must have at least as many vectors as the dimension of $V$. See the box before Example 5.
+[END]
+[TFQ] If there exists a linearly independent set $\{v_1, \dots, v_p\}$ in $V$, then $\dim V \ge p$.
+[False]
+[EXP] (4.5) A linearly independent set must have no more vectors than the dimension of $V$, but not every linearly independent set implies $\dim V \ge p$; see Example 4.
+[END]
+[TFQ] If $\dim V = p$, then there exists a spanning set of $p+1$ vectors in $V$.
+[False]
+[EXP] (4.5) By definition, a spanning set must have at least $\dim V$ vectors, but a set with $p+1$ vectors is linearly dependent, so it cannot serve as a minimal spanning set. See Example 1.
+[END]
+[TFQ] If there exists a linearly dependent set $\{v_1, \dots, v_p\}$ in $V$, then $\dim V \le p$.
+[False]
+[EXP] (4.5) A linearly dependent set does not provide information about the maximum dimension of $V$; see Theorem 9.
+[END]
+[TFQ] If every set of $p$ elements in $V$ fails to span $V$, then $\dim V > p$.
+[True]
+[EXP] (4.5) If no set of $p$ elements spans $V$, the dimension must be strictly greater than $p$. See Theorem 12.
+[END]
+[TFQ] If $p \ge 2$ and $\dim V = p$, then every set of $p-1$ nonzero vectors is linearly independent.
+[False]
+[EXP] (4.5) A set of $p-1$ vectors in a $p$-dimensional space may or may not be linearly independent; see Theorem 12.
+[END]
+-------------------------------------------
+[T] 4.6 - Rank
+-------------------------------------------
+[TFQ] The row space of $A$ is the same as the column space of $A^T$.
+[True]
+[EXP] (4.6) The rows of $A$ correspond to the columns of $A^T$, so $\text{Row }A = \text{Col }A^T$. See the paragraph before Example 1.
+[END]
+[TFQ] If $B$ is any echelon form of $A$, and if $B$ has three nonzero rows, then the first three rows of $A$ form a basis for $\text{Row }A$.
+[False]
+[EXP] (4.6) Row operations can change the entries of the original rows; the first three rows of $A$ need not form a basis. See the warning after Example 2.
+[END]
+[TFQ] The dimensions of the row space and the column space of $A$ are the same, even if $A$ is not square.
+[True]
+[EXP] (4.6) This follows from the Rank Theorem, which states $\text{rank}(A) = \dim(\text{Row }A) = \dim(\text{Col }A)$. 
+[END]
+[TFQ] The sum of the dimensions of the row space and the null space of $A$ equals the number of rows in $A$.
+[False]
+[EXP] (4.6) The Rank Theorem states $\dim(\text{Row }A) + \dim(\text{Nul }A) = \text{number of columns of } A$, not rows.
+[END]
+[TFQ] On a computer, row operations can change the apparent rank of a matrix.
+[True]
+[EXP] (4.6) Numerical rounding errors can affect pivot detection, potentially altering the computed rank. See the Numerical Note before the Practice Problem.
+[END]
+[TFQ] If $B$ is any echelon form of $A$, then the pivot columns of $B$ form a basis for the column space of $A$.
+[False]
+[EXP] (4.6) Pivot columns of $B$ correspond to the column space of $B$, not necessarily the original $A$. See the warning after Theorem 6.
+[END]
+[TFQ] Row operations preserve the linear dependence relations among the rows of $A$.
+[False]
+[EXP] (4.6) Row operations can change linear dependence among rows; see the warning after Example 2.
+[END]
+[TFQ] The dimension of the null space of $A$ is the number of columns of $A$ that are not pivot columns.
+[True]
+[EXP] (4.6) By the Rank Theorem, $\dim(\text{Nul }A) = n - \text{rank}(A)$, which counts the non-pivot columns.
+[END]
+[TFQ] The row space of $A^T$ is the same as the column space of $A$.
+[True]
+[EXP] (4.6) Rows of $A^T$ are the columns of $A$, so $\text{Row }A^T = \text{Col }A$.
+[END]
+[TFQ] If $A$ and $B$ are row equivalent, then their row spaces are the same.
+[True]
+[EXP] (4.6) Elementary row operations preserve row space; see Theorem 13.
+[END]
+-------------------------------------------
+[T] 4.7 - Change of Basis
+-------------------------------------------
+[TFQ] The columns of the change-of-coordinates matrix $P_{C \gets B}$ are B-coordinate vectors of the vectors in C.
+[False]
+[EXP] (4.7) See Theorem 15. The columns of $P_{C \gets B}$ are actually the C-coordinate vectors of the vectors in B, not B-coordinate vectors of vectors in C.
+[END]
+[TFQ] If $V = \mathbb{R}^n$ and $C$ is the standard basis for $V$, then $P_{C \gets B}$ is the same as the change-of-coordinates matrix $P_B$ introduced in Section 4.4.
+[True]
+[EXP] (4.7) See the first paragraph in the subsection “Change of Basis in $\mathbb{R}^n$”; when $C$ is the standard basis, the change-of-coordinates matrix reduces to $P_B$.
+[END]
+[TFQ] The columns of $P_{C \gets B}$ are linearly independent.
+[True]
+[EXP] (4.7) The columns of $P_{C \gets B}$ are coordinate vectors of the linearly independent set B. See the second paragraph after Theorem 15.
+[END]
+[TFQ] If $V = \mathbb{R}^2$, $B = \{b_1, b_2\}$, and $C = \{c_1, c_2\}$, then row reduction of $[c_1\ c_2\ b_1\ b_2]$ to $[I\ P]$ produces a matrix $P$ that satisfies $[x]_B = P [x]_C$ for all $x$ in $V$.
+[False]
+[EXP] (4.7) See the discussion after Example 2; the row reduction method as described does not yield a matrix $P$ that satisfies $[x]_B = P [x]_C$ for all $x$.
+[END]
