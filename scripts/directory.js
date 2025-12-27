@@ -42,6 +42,13 @@ const DIRECTORY = {
             "flashcards"
         ]
     },
+    "LinAlg": {
+        "plaintext": "Linear Algebra",
+        "path": "./questions/linalg/",
+        "files": [
+            "unit1"
+        ]
+    },
     "DEBUG": {
         "plaintext": "Debug Question Sets",
         "path": "../questions/debug/",
