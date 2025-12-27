@@ -1,0 +1,83 @@
+[PRESET] Chapter 7 - Symmetric Matrices & Quadratic Forms
+-------------------------------------------
+[T] 7.1 - Diagonalization of Symmetric Matrices
+-------------------------------------------
+[TFQ] An $n \times n$ matrix that is orthogonally diagonalizable must be symmetric.
+[True]
+[EXP] (7.1) See Theorem 2 and the paragraph preceding the theorem. Orthogonal diagonalization requires symmetry.
+[END]
+[TFQ] If $A^T = A$ and if vectors $u$ and $v$ satisfy $Au = 3u$ and $Av = 4v$, then $u \cdot v = 0$.
+[True]
+[EXP] (7.1) For a symmetric matrix, eigenvectors corresponding to distinct eigenvalues are orthogonal. See Theorem 1.
+[END]
+[TFQ] An $n \times n$ symmetric matrix has $n$ distinct real eigenvalues.
+[False]
+[EXP] (7.1) Symmetric matrices have $n$ real eigenvalues (Theorem 3), but they may have repeated values. See Example 3.
+[END]
+[TFQ] For a nonzero $v$ in $\mathbb{R}^n$, the matrix $vv^T$ is called a projection matrix.
+[False]
+[EXP] (7.1) $vv^T$ must be normalized by $v^T v$ to form a projection matrix. See the paragraph following formula (2).
+[END]
+[TFQ] There are symmetric matrices that are not orthogonally diagonalizable.
+[True]
+[EXP] (7.1) See Theorem 2. Symmetric matrices are orthogonally diagonalizable, but nonsymmetric matrices exist that are not.
+[END]
+[TFQ] If $B = P D P^T$, where $P^T = P^{-1}$ and $D$ is a diagonal matrix, then $B$ is a symmetric matrix.
+[True]
+[EXP] (7.1) $B^T = (P D P^T)^T = P D P^T = B$, so $B$ is symmetric.
+[END]
+[TFQ] An orthogonal matrix is orthogonally diagonalizable.
+[False]
+[EXP] (7.1) Not all orthogonal matrices are symmetric; only symmetric matrices are guaranteed to be orthogonally diagonalizable. See Example 2.
+[END]
+[TFQ] The dimension of an eigenspace of a symmetric matrix is sometimes less than the multiplicity of the corresponding eigenvalue.
+[True]
+[EXP] (7.1) See Theorem 3(b). The geometric multiplicity can be less than the algebraic multiplicity in certain cases.
+[END]()
+-------------------------------------------
+[T] 7.2 - Quadratic Forms
+-------------------------------------------
+[TFQ] The matrix of a quadratic form is a symmetric matrix.
+[True]
+[EXP] (7.2) See the definition before Example 1. Quadratic forms are represented by symmetric matrices, even though a nonsymmetric matrix could be used to compute the same values.
+[END]
+[TFQ] A quadratic form has no cross-product terms if and only if the matrix of the quadratic form is a diagonal matrix.
+[True]
+[EXP] (7.2) See the paragraph following Example 3. Cross-product terms correspond to off-diagonal entries; diagonal matrices produce no cross terms.
+[END]
+[TFQ] The principal axes of a quadratic form $x^T A x$ are eigenvectors of $A$.
+[True]
+[EXP] (7.2) See the Diagonalization Theorem in Section 5.3. The columns of $P$ in Theorem 4, which diagonalizes $A$, are eigenvectors and give the principal axes.
+[END]
+[TFQ] A positive definite quadratic form $Q$ satisfies $Q(x) > 0$ for all $x$ in $\mathbb{R}^n$.
+[False]
+[EXP] (7.2) $Q(0) = 0$, so the inequality is not strictly positive for all $x$. Positive definite requires $Q(x) > 0$ for all $x \neq 0$.
+[END]
+[TFQ] If the eigenvalues of a symmetric matrix $A$ are all positive, then the quadratic form $x^T A x$ is positive definite.
+[True]
+[EXP] (7.2) See Theorem 5(a). Positive eigenvalues guarantee $x^T A x > 0$ for all $x \neq 0$.
+[END]
+[TFQ] A Cholesky factorization of a symmetric matrix $A$ has the form $A = R^T R$, for an upper triangular matrix $R$ with positive diagonal entries.
+[True]
+[EXP] (7.2) See the Numerical Note after Example 6. This is the standard form of the Cholesky factorization for symmetric positive definite matrices.
+[END]
+[TFQ] The expression $\|x\|^2$ is not a quadratic form.
+[True]
+[EXP] (7.2) See the paragraph before Example 1. $\|x\|^2 = x^T x$ is technically a quadratic form, but some authors distinguish it from forms involving a general symmetric matrix $A$.
+[END]
+[TFQ] If $A$ is symmetric and $P$ is an orthogonal matrix, then the change of variable $x = P y$ transforms $x^T A x$ into a quadratic form with no cross-product term.
+[False]
+[EXP] (7.2) The matrix $P$ must diagonalize $A$ (i.e., $P^T A P$ must be diagonal) to eliminate cross-product terms. Not every orthogonal $P$ suffices.
+[END]
+[TFQ] If $A$ is a $2 \times 2$ symmetric matrix, then the set of $x$ such that $x^T A x = c$ (for a constant $c$) corresponds to either a circle, an ellipse, or a hyperbola.
+[False]
+[EXP] (7.2) Degenerate cases also exist: a single point, two intersecting lines, or no points at all. See “A Geometric View of Principal Axes.”
+[END]
+[TFQ] An indefinite quadratic form is neither positive semidefinite nor negative semidefinite.
+[False]
+[EXP] (7.2) See the definition before Theorem 5. Indefinite forms have both positive and negative values, but the statement is misleading regarding semidefiniteness.
+[END]
+[TFQ] If $A$ is symmetric and the quadratic form $x^T A x$ has only negative values for $x \neq 0$, then the eigenvalues of $A$ are all negative.
+[True]
+[EXP] (7.2) See Theorem 5(b). If $x^T A x$ is negative definite, the eigenvalues must all be negative.
+[END]

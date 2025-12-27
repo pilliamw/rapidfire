@@ -1,0 +1,114 @@
+[PRESET] Chapter 5 - Eigenvalues and Eigenvectors
+-------------------------------------------
+[T] 5.1 - Eigenvectors and Eigenvalues
+-------------------------------------------
+[TFQ] If $Ax = \lambda x$ for some vector $x$, then $\lambda$ is an eigenvalue of $A$.
+[False]
+[EXP] (5.1) The equation $Ax = \lambda x$ must have a nontrivial solution ($x \neq 0$) for $\lambda$ to be an eigenvalue.
+[END]
+[TFQ] A matrix $A$ is not invertible if and only if $0$ is an eigenvalue of $A$.
+[True]
+[EXP] (5.1) See the paragraph after Example 5. A non-invertible matrix has determinant zero, which implies $0$ is an eigenvalue.
+[END]
+[TFQ] A number $c$ is an eigenvalue of $A$ if and only if the equation $(A - cI)x = 0$ has a nontrivial solution.
+[True]
+[EXP] (5.1) See the discussion of equation (3). Nontrivial solutions correspond exactly to eigenvectors of $A$ with eigenvalue $c$.
+[END]
+[TFQ] Finding an eigenvector of $A$ may be difficult, but checking whether a given vector is in fact an eigenvector is easy.
+[True]
+[EXP] (5.1) See Example 2 and the paragraph preceding it. Given $x$ and $\lambda$, one can verify $Ax = \lambda x$ directly; also see the Numerical Note.
+[END]
+[TFQ] To find the eigenvalues of $A$, reduce $A$ to echelon form.
+[False]
+[EXP] (5.1) See the warning after Example 3. Eigenvalues are found from the characteristic equation $\det(A - \lambda I) = 0$, not by row reduction.
+[END]
+[TFQ] If $Ax = \lambda x$ for some scalar $\lambda$, then $x$ is an eigenvector of $A$.
+[False]
+[EXP] (5.1) The vector $x$ must be nonzero to qualify as an eigenvector.
+[END]
+[TFQ] If $v_{1}$ and $v_{2}$ are linearly independent eigenvectors, then they correspond to distinct eigenvalues.
+[False]
+[EXP] (5.1) Counterexample: A two-dimensional eigenspace can contain linearly independent eigenvectors corresponding to the same eigenvalue. See Example 4.
+[END]
+[TFQ] A steady-state vector for a stochastic matrix is actually an eigenvector.
+[True]
+[EXP] (5.1) See the paragraph after Example 1. A steady-state vector satisfies $Av = v$, making it an eigenvector with eigenvalue 1.
+[END]
+[TFQ] The eigenvalues of a matrix are on its main diagonal.
+[False]
+[EXP] (5.1) Only true for triangular matrices (Theorem 1). See Examples 3 and 4 for counterexamples.
+[END]
+[TFQ] An eigenspace of $A$ is a null space of a certain matrix.
+[True]
+[EXP] (5.1) See the paragraph following Example 3. The eigenspace corresponding to eigenvalue $\lambda$ is the null space of $(A - \lambda I)$.
+[END]
+-------------------------------------------
+[T] 5.2 - The Characteristic Equation
+-------------------------------------------
+[TFQ] The determinant of $A$ is the product of the diagonal entries in $A$.
+[False]
+[EXP] (5.2) See Example 1. This is only true for triangular matrices, not in general.
+[END]
+[TFQ] An elementary row operation on $A$ does not change the determinant.
+[False]
+[EXP] (5.2) See Theorem 3. Some row operations (e.g., row swaps or scaling) change the determinant.
+[END]
+[TFQ] $(\det A)(\det B) = \det(AB)$.
+[True]
+[EXP] (5.2) See Theorem 3. The determinant of a product equals the product of the determinants.
+[END]
+[TFQ] If $\lambda + 5$ is a factor of the characteristic polynomial of $A$, then $5$ is an eigenvalue of $A$.
+[False]
+[EXP] (5.2) See the solution of Example 4. The correct eigenvalue is $\lambda = -5$, not $5$.
+[END]
+[TFQ] If $A$ is $3 \times 3$, with columns $a_{1}, a_{2}, a_{3}$, then $\det A$ equals the volume of the parallelepiped determined by $a_{1}, a_{2}, a_{3}$.
+[False]
+[EXP] (5.2) See the paragraph before Theorem 3. The volume equals $|\det A|$, not $\det A$ itself.
+[END]
+[TFQ] $\det A^{T} = (\det A)^{-1}$.
+[False]
+[EXP] (5.2) See Theorem 3. Actually, $\det A^{T} = \det A$.
+[END]
+[TFQ] The multiplicity of a root $r$ of the characteristic equation of $A$ is called the algebraic multiplicity of $r$ as an eigenvalue of $A$.
+[True]
+[EXP] (5.2) See the paragraph before Example 4. The algebraic multiplicity counts the number of times $r$ appears as a root.
+[END]
+[TFQ] A row replacement operation on $A$ does not change the eigenvalues.
+[False]
+[EXP] (5.2) See the warning after Theorem 4. Row replacement can change the eigenvalues of $A$.
+[END]
+-------------------------------------------
+[T] 5.3 - Diagonalization
+-------------------------------------------
+[TFQ] $A$ is diagonalizable if $A = PDP^{-1}$ for some matrix $D$ and some invertible matrix $P$.
+[False]
+[EXP] (5.3) The symbol $D$ does not automatically denote a diagonal matrix; $D$ must explicitly be diagonal for $A$ to be diagonalizable.
+[END]
+[TFQ] If $\mathbb{R}^{n}$ has a basis of eigenvectors of $A$, then $A$ is diagonalizable.
+[True]
+[EXP] (5.3) See the remark after the statement of the Diagonalization Theorem. A matrix is diagonalizable if it has a full basis of eigenvectors.
+[END]
+[TFQ] $A$ is diagonalizable if and only if $A$ has $n$ eigenvalues, counting multiplicities.
+[False]
+[EXP] (5.3) Counterexample: The $3 \times 3$ matrix in Example 4 has three eigenvalues counting multiplicities but is not diagonalizable.
+[END]
+[TFQ] If $A$ is diagonalizable, then $A$ is invertible.
+[False]
+[EXP] (5.3) Invertibility depends on $0$ not being an eigenvalue. A diagonalizable matrix may or may not have $0$ as an eigenvalue (see Examples 3 and 5).
+[END]
+[TFQ] $A$ is diagonalizable if $A$ has $n$ eigenvectors.
+[False]
+[EXP] (5.3) The $n$ eigenvectors must be linearly independent to form a basis. See the Diagonalization Theorem.
+[END]
+[TFQ] If $A$ is diagonalizable, then $A$ has $n$ distinct eigenvalues.
+[False]
+[EXP] (5.3) Counterexample: The matrix in Example 3 is diagonalizable but has only 2 distinct eigenvalues. The statement is the converse of Theorem 6.
+[END]
+[TFQ] If $AP = PD$, with $D$ diagonal, then the nonzero columns of $P$ must be eigenvectors of $A$.
+[True]
+[EXP] (5.3) This follows from $AP = PD$ and formulas (1) and (2) in the proof of the Diagonalization Theorem.
+[END]
+[TFQ] If $A$ is invertible, then $A$ is diagonalizable.
+[False]
+[EXP] (5.3) See Example 4. Invertibility does not guarantee diagonalizability; a matrix can be invertible without having enough eigenvectors to diagonalize.
+[END]

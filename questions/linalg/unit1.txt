@@ -1,0 +1,337 @@
+[PRESET] Chapter 1 - Linear Equations in Linear Algebra
+-------------------------------------------
+[T] 1.1 - Systems of Equations
+-------------------------------------------
+[TFQ] Every elementary row operation is reversible.
+[True]
+[EXP] (1.1) See the remarks following the box titled Elementary Row Operations.
+[END]
+[TFQ] A $5 \times 6$ matrix has six rows.
+[False]
+[EXP] (1.1) A $5 \times 6$ matrix has five rows.
+[END]
+[TFQ] The solution set of a linear system involving variables $x_{1} , \ldots, x_{n}$ is a list of numbers $( s_{1} , \ldots, s_{n} )$ that makes each cquation in the system a true statement when the values $s_{1} , \ldots, s_{n}$ are substituted for $x_{1} , \ldots, x_{n}$ , respectively.
+[EXP] (1.1) The description given applied to a single solution. The solution set consists of all possible solutions. Only in special cases does the solution set consist of exactly one solution. Mark a statement True only if the statement is always true.
+[False]
+[END]
+[TFQ] Two fundamental questions about a linear system involve existence and uniqueness.
+[EXP] (1.1) See the box before Example 2.
+[True]
+[END]
+[TFQ] Elementary row operations on an augmented matrix never change the solution set of the associated linear system.
+[EXP] (1.1) See the box preceding the subsection titled Existence and Uniqueness Questions.
+[True]
+[END]
+[TFQ] Two matrices are row equivalent if they have the same number of rows.
+[EXP] (1.1) The definition of row equivalent requires that there exist a sequence of row operations that transforms one matrix into the other.
+[False]
+[END]
+[TFQ] An inconsistent system has more than one solution.
+[EXP] (1.1) By definition, an inconsistent system has no solution.
+[False]
+[END]
+[TFQ] Two linear systems are equivalent if they have the same solution set.
+[EXP] (1.1) This definition of equivalent systems is in the second paragraph after equation (2).
+[True]
+[END]
+-------------------------------------------
+[T] 1.2 - Row Reduction & Echelon Forms
+-------------------------------------------
+[TFQ] In some cases, a matrix may be row reduced to more than one matrix in reduced echelon form, using different sequences of row operations.
+[False]
+[EXP] (1.2) See Theorem 1.
+[END]
+[TFQ] The row reduction algorithm applies only to augmented matrices for a linear system.
+[False]
+[EXP] (1.2) See the second paragraph of the section.
+[END]
+[TFQ] A basic variable in a linear system is a variable that corresponds to a pivot column in the coefficient matrix.
+[True]
+[EXP] (1.2) Basic variables are defined after equation (4).
+[END]
+[TFQ] Finding a parametric description of the solution set of a linear system is the same as solving the system.
+[True]
+[EXP] (1.2) This statement is at the beginning of Parametric Descriptions of Solution Sets.
+[END]
+[TFQ] If one row in an echelon form of an augmented matrix is $\left[,0\ 0\ 0\ 5\ 0,\right]$, then the associated linear system is inconsistent.
+[False]
+[EXP] (1.2) The row shown corresponds to the equation $5x_{4} = 0$, which does not by itself lead to a contradiction. So the system might be consistent or it might be inconsistent.
+[END]
+[TFQ] The echelon form of a matrix is unique.
+[False]
+[EXP] (1.2) See the statement preceding Theorem 1. Only the reduced echelon form is unique.
+[END]
+[TFQ] The pivot positions in a matrix depend on whether row interchanges are used in the row reduction process.
+[False]
+[EXP] (1.2) See the beginning of the subsection Pivot Positions. The pivot positions in a matrix are determined completely by the positions of the leading entries in the nonzero rows of any echelon form obtained from the matrix.
+[END]
+[TFQ] Reducing a matrix to echelon form is called the forward phase of the row reduction process.
+[True]
+[EXP] (1.2) See the paragraph after Example 3.
+[END]
+[TFQ] Whenever a system has free variables, the solution set contains many solutions.
+[False]
+[EXP] (1.2) The existence of at least one solution is not related to the presence or absence of free variables. If the system is inconsistent, the solution set is empty. See the solution of Practice Problem 2.
+[END]
+[TFQ] A general solution of a system is an explicit description of all solutions of the system.
+[True]
+[EXP] (1.2) See the paragraph just before Example 4.
+[END]
+-------------------------------------------
+[T] 1.3 - Vector Equations
+-------------------------------------------
+[TFQ] Another notation for the vector $\begin{bmatrix} 4 \\ 3 \end{bmatrix}$ is $\begin{bmatrix} 4 & 3 \end{bmatrix}$.
+[False]
+[EXP] (1.3) The alternative notation for a column vector is $(4, 3)$, using parentheses and commas, not a row matrix.
+[END]
+[TFQ] The points in the plane corresponding to $\begin{bmatrix} 2 \\ 5 \end{bmatrix}$ and $\begin{bmatrix} 5 \\ 2 \end{bmatrix}$ lie on a line through the origin.
+[False]
+[EXP] (1.3) If $\begin{bmatrix} 5 \\ 2 \end{bmatrix}$ lay on the line through $\begin{bmatrix} 2 \\ 5 \end{bmatrix}$ and the origin, it would have to be a scalar multiple of $\begin{bmatrix} 2 \\ 5 \end{bmatrix}$, which it is not.
+[END]
+[TFQ] An example of a linear combination of vectors $v_{1}$ and $v_{2}$ is the vector $\tfrac{1}{2} v_{1}$.
+[True]
+[EXP] (1.3) A linear combination of $v_{1}$ and $v_{2}$ has the form $c_{1} v_{1} + c_{2} v_{2}$, and this includes cases where one coefficient is zero, such as $\tfrac{1}{2} v_{1}$.
+[END]
+[TFQ] The solution set of the linear system whose augmented matrix is $\begin{bmatrix} a_{1} & a_{2} & a_{3} & b \end{bmatrix}$ is the same as the solution set of the equation $x_{1} a_{1} + x_{2} a_{2} + x_{3} a_{3} = b$.
+[True]
+[EXP] (1.3) The matrix equation $A x = b$ with $A = \begin{bmatrix} a_{1} & a_{2} & a_{3} \end{bmatrix}$ is equivalent to the vector equation $x_{1} a_{1} + x_{2} a_{2} + x_{3} a_{3} = b$.
+[END]
+[TFQ] The set $\operatorname{Span}\{u, v\}$ is always visualized as a plane through the origin.
+[False]
+[EXP] (1.3) Although $\operatorname{Span}\{u, v\}$ is often a plane, it is a line when $v$ is a scalar multiple of $u$, and it is $\{0\}$ when $u$ is the zero vector.
+[END]
+[TFQ] Any list of five real numbers is a vector in $\mathbb{R}^{5}$.
+[True]
+[EXP] (1.3) By definition, $\mathbb{R}^{5}$ consists of all ordered lists of five real numbers.
+[END]
+[TFQ] The vector $u$ results when the vector $u - v$ is added to the vector $v$.
+[True]
+[EXP] (1.3) Vector addition gives $(u - v) + v = u$, which can be visualized using the parallelogram law.
+[END]
+[TFQ] The scalars $c_{1}, \ldots, c_{p}$ in a linear combination $c_{1} v_{1} + \cdots + c_{p} v_{p}$ cannot all be zero.
+[False]
+[EXP] (1.3) A linear combination allows all coefficients to be zero, in which case the result is the zero vector.
+[END]
+[TFQ] When $u$ and $v$ are nonzero vectors, $\operatorname{Span}\{u, v\}$ contains the line through $u$ and the origin.
+[True]
+[EXP] (1.3) Since $u \in \operatorname{Span}\{u, v\}$, all scalar multiples of $u$ are also included, forming the line through $u$ and the origin.
+[END]
+[TFQ] Asking whether the linear system corresponding to the augmented matrix $\begin{bmatrix} a_{1} & a_{2} & a_{3} & b \end{bmatrix}$ has a solution amounts to asking whether $b \in \operatorname{Span}\{a_{1}, a_{2}, a_{3}\}$.
+[True]
+[EXP] (1.3) The equation $x_{1} a_{1} + x_{2} a_{2} + x_{3} a_{3} = b$ has a solution if and only if $b$ is a linear combination of the columns $a_{1}, a_{2}, a_{3}$.
+[END]
+-------------------------------------------
+[T] 1.4 - The Matrix Equation Ax = b
+-------------------------------------------
+[TFQ] The equation $A x = b$ is referred to as a vector equation.
+[False]
+[EXP] (1.4) The text refers to $A x = b$ as a matrix equation; see the paragraph following equation (3).
+[END]
+[TFQ] A vector $b$ is a linear combination of the columns of a matrix $A$ if and only if the equation $A x = b$ has at least one solution.
+[True]
+[EXP] (1.4) This equivalence is stated in the box before Example 3.
+[END]
+[TFQ] The equation $A x = b$ is consistent if the augmented matrix $\begin{bmatrix} A & b \end{bmatrix}$ has a pivot position in every row.
+[False]
+[EXP] (1.4) See the warning following Theorem 4; having a pivot in every row of $\begin{bmatrix} A & b \end{bmatrix}$ is not the correct consistency criterion.
+[END]
+[TFQ] The first entry in the product $A x$ is a sum of products.
+[True]
+[EXP] (1.4) As shown in Example 4, each entry of $A x$ is formed by taking a row of $A$ and computing a sum of products with the entries of $x$.
+[END]
+[TFQ] If the columns of an $m \times n$ matrix $A$ span $\mathbb{R}^{m}$, then the equation $A x = b$ is consistent for each $b \in \mathbb{R}^{m}$.
+[True]
+[EXP] (1.4) This follows from Theorem 4, parts (a) and (c): spanning $\mathbb{R}^{m}$ guarantees a solution for every $b \in \mathbb{R}^{m}$.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix and if the equation $A x = b$ is inconsistent for some $b \in \mathbb{R}^{m}$, then $A$ cannot have a pivot position in every row.
+[True]
+[EXP] (1.4) By Theorem 4, statement (a) is false if and only if statement (d) is false, implying that inconsistency for some $b$ prevents pivots in every row.
+[END]
+[TFQ] Every matrix equation $A x = b$ corresponds to a vector equation with the same solution set.
+[True]
+[EXP] (1.4) This is stated in Theorem 3 and also follows directly from the definition $A x = x_{1} a_{1} + \cdots + x_{n} a_{n}$, where $a_{1}, \ldots, a_{n}$ are the columns of $A$.
+[END]
+[TFQ] Any linear combination of vectors can always be written in the form $A x$ for a suitable matrix $A$ and vector $x$.
+[True]
+[EXP] (1.4) As illustrated in Example 2, placing the vectors as columns of $A$ and the coefficients into $x$ yields the given linear combination as $A x$.
+[END]
+[TFQ] The solution set of a linear system whose augmented matrix is $\begin{bmatrix} a_{1} & a_{2} & a_{3} & b \end{bmatrix}$ is the same as the solution set of $A x = b$, if $A = \begin{bmatrix} a_{1} & a_{2} & a_{3} \end{bmatrix}$.
+[True]
+[EXP] (1.4) This follows directly from Theorem 3, which states that the matrix equation and corresponding vector equation have the same solution set.
+[END]
+[TFQ] If the equation $A x = b$ is inconsistent, then $b$ is not in the set spanned by the columns of $A$.
+[True]
+[EXP] (1.4) As noted in the box before Example 2, $b$ being outside $\operatorname{Span}\{a_{1}, \ldots, a_{n}\}$ is equivalent to $b$ not being a linear combination of the columns of $A$.
+[END]
+[TFQ] If the augmented matrix $\begin{bmatrix} A & b \end{bmatrix}$ has a pivot position in every row, then the equation $A x = b$ is inconsistent.
+[False]
+[EXP] (1.4) See the warning following Theorem 4; a pivot in every row of $\begin{bmatrix} A & b \end{bmatrix}$ actually guarantees consistency, not inconsistency.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix whose columns do not span $\mathbb{R}^{m}$, then the equation $A x = b$ is inconsistent for some $b \in \mathbb{R}^{m}$.
+[True]
+[EXP] (1.4) By Theorem 4, statement (c) is false if and only if statement (a) is also false, implying the existence of some $b \in \mathbb{R}^{m}$ for which $A x = b$ has no solution.
+[END]
+-------------------------------------------
+[T] 1.5 - Solution Sets of Linear Systems
+-------------------------------------------
+[TFQ] A homogeneous equation is always consistent.
+[True]
+[EXP] (1.5) A homogeneous linear system has the form $A x = 0$ and always has the trivial solution $x = 0$; see the first paragraph of the subsection titled Homogeneous Linear Systems.
+[END]
+[TFQ] The equation $A x = 0$ gives an explicit description of its solution set.
+[False]
+[EXP] (1.5) The equation $A x = 0$ provides an implicit description of the solution set; an explicit description requires a parametric vector form, as explained in the subsection Parametric Vector Form.
+[END]
+[TFQ] The homogeneous equation $A x = 0$ has the trivial solution if and only if the equation has at least one free variable.
+[False]
+[EXP] (1.5) The equation $A x = 0$ always has the trivial solution $x = 0$, regardless of whether free variables are present; see the box before Example 1.
+[END]
+[TFQ] The equation $x = p + t v$ describes a line through $v$ parallel to $p$.
+[False]
+[EXP] (1.5) The equation $x = p + t v$ describes a line through $p$ parallel to $v$; see the paragraph preceding Fig. 5.
+[END]
+[TFQ] The solution set of $A x = b$ is the set of all vectors of the form $w = p + v_{h}$, where $v_{h}$ is any solution of the equation $A x = 0$.
+[False]
+[EXP] (1.5) The solution set of $A x = b$ has this form only when the system is consistent, meaning there exists a vector $p$ such that $A p = b$; see Theorem 6.
+[END]
+[TFQ] If $x$ is a nontrivial solution of $A x = 0$, then every entry in $x$ is nonzero.
+[False]
+[EXP] (1.5) A nontrivial solution of $A x = 0$ is any nonzero vector $x$ satisfying the equation, and it may contain zero entries; see the sentence before Example 2.
+[END]
+[TFQ] The equation $x = x_{2} u + x_{3} v$, with $x_{2}$ and $x_{3}$ free (and neither $u$ nor $v$ a multiple of the other), describes a plane through the origin.
+[True]
+[EXP] (1.5) As shown in Example 2, when $u$ and $v$ are linearly independent, all linear combinations $x_{2} u + x_{3} v$ form a plane through the origin.
+[END]
+[TFQ] The equation $A x = b$ is homogeneous if the zero vector is a solution.
+[True]
+[EXP] (1.5) If $0$ is a solution, then $A0 = b$, which implies $b = 0$, so the system is homogeneous.
+[END]
+[TFQ] The effect of adding $p$ to a vector is to move the vector in a direction parallel to $p$.
+[True]
+[EXP] (1.5) Vector addition corresponds to translation, so adding $p$ shifts a vector in a direction parallel to $p$; see the paragraph following Example 3.
+[END]
+[TFQ] The solution set of $A x = b$ is obtained by translating the solution set of $A x = 0$.
+[False]
+[EXP] (1.5) This statement holds only when $A x = b$ is consistent; Theorem 6 applies only to systems with nonempty solution sets.
+[END]
+-------------------------------------------
+[T] 1.7 - Linear Independence
+-------------------------------------------
+[TFQ] The columns of a matrix $A$ are linearly independent if the equation $A x = 0$ has the trivial solution.
+[False]
+[EXP] (1.7) A homogeneous system $A x = 0$ always has the trivial solution $x = 0$, regardless of whether the columns of $A$ are linearly independent; see the box before Example 2.
+[END]
+[TFQ] If $S$ is a linearly dependent set, then each vector is a linear combination of the other vectors in $S$.
+[False]
+[EXP] (1.7) Linear dependence guarantees that at least one vector in $S$ is a linear combination of the others, not necessarily every vector; see the warning after Theorem 7.
+[END]
+[TFQ] The columns of any $4 \times 5$ matrix are linearly dependent.
+[True]
+[EXP] (1.7) A $4 \times 5$ matrix has five vectors in $\mathbb{R}^{4}$, and any set of more than four vectors in $\mathbb{R}^{4}$ must be linearly dependent; see Fig. 3 after Theorem 8.
+[END]
+[TFQ] If $x$ and $y$ are linearly independent, and if $\{x, y, z\}$ is linearly dependent, then $z \in \operatorname{Span}\{x, y\}$.
+[True]
+[EXP] (1.7) Since $\{x, y, z\}$ is linearly dependent but $\{x, y\}$ is independent, $z$ must be expressible as a linear combination of $x$ and $y$; see the remark following Example 4.
+[END]
+[TFQ] Two vectors are linearly dependent if and only if they lie on a line through the origin.
+[True]
+[EXP] (1.7) Two vectors are linearly dependent exactly when one is a scalar multiple of the other, which means both lie on the same line through the origin; see Fig. 1.
+[END]
+[TFQ] If a set contains fewer vectors than there are entries in the vectors, then the set is linearly independent.
+[False]
+[EXP] (1.7) A set may still be linearly dependent even if it has fewer vectors than the dimension, as shown by explicit counterexamples; see the warning after Theorem 8.
+[END]
+[TFQ] If $x$ and $y$ are linearly independent, and if $z \in \operatorname{Span}\{x, y\}$, then $\{x, y, z\}$ is linearly dependent.
+[True]
+[EXP] (1.7) Since $z$ is a linear combination of $x$ and $y$, adding it to $\{x, y\}$ creates a linear dependence; see the remark following Example 4.
+[END]
+[TFQ] If a set in $\mathbb{R}^{n}$ is linearly dependent, then the set contains more vectors than there are entries in each vector.
+[False]
+[EXP] (1.7) A set can be linearly dependent even when it contains fewer than $n$ vectors; see Example 3(a).
+[END]
+-------------------------------------------
+[T] 1.8 - Introduction to Linear Transformations
+-------------------------------------------
+[TFQ] A linear transformation is a special type of function.
+[True]
+[EXP] (1.8) Functions from $\mathbb{R}^{n}$ to $\mathbb{R}^{m}$ are defined before Fig. 2, and a linear transformation is defined as a function satisfying specific linearity properties.
+[END]
+[TFQ] If $A$ is a $3 \times 5$ matrix and $T$ is a transformation defined by $T(x) = A x$, then the domain of $T$ is $\mathbb{R}^{3}$.
+[False]
+[EXP] (1.8) Since $A$ has five columns, the vector $x$ must lie in $\mathbb{R}^{5}$; see the paragraph before Example 1.
+[END]
+[TFQ] If $A$ is an $m \times n$ matrix, then the range of the transformation $x \mapsto A x$ is $\mathbb{R}^{m}$.
+[False]
+[EXP] (1.8) The range of $x \mapsto A x$ is the set of all linear combinations of the columns of $A$, which may be a proper subset of $\mathbb{R}^{m}$; see the paragraph before Example 1.
+[END]
+[TFQ] Every linear transformation is a matrix transformation.
+[False]
+[EXP] (1.8) Not every linear transformation can be represented by matrix multiplication unless a basis has been specified; see the paragraph after the definition of a linear transformation.
+[END]
+[TFQ] A transformation $T$ is linear if and only if $T(c_{1} v_{1} + c_{2} v_{2}) = c_{1} T(v_{1}) + c_{2} T(v_{2})$ for all $v_{1}, v_{2}$ in the domain of $T$ and all scalars $c_{1}, c_{2}$.
+[True]
+[EXP] (1.8) This property combines preservation of vector addition and scalar multiplication and is stated in the paragraph following the box containing equation (4).
+[END]
+[TFQ] Every matrix transformation is a linear transformation.
+[True]
+[EXP] (1.8) The paragraph following the definition of a linear transformation shows that any transformation of the form $x \mapsto A x$ satisfies the linearity properties.
+[END]
+[TFQ] The codomain of the transformation $x \mapsto A x$ is the set of all linear combinations of the columns of $A$.
+[False]
+[EXP] (1.8) If $A$ is an $m \times n$ matrix, the codomain of $x \mapsto A x$ is $\mathbb{R}^{m}$, while the set of linear combinations of the columns of $A$ is the range; see the paragraph before Example 1.
+[END]
+[TFQ] If $T : \mathbb{R}^{n} \to \mathbb{R}^{m}$ is a linear transformation and if $c \in \mathbb{R}^{m}$, then a uniqueness question is “Is $c$ in the range of $T$?”
+[False]
+[EXP] (1.8) Asking whether $c$ is in the range of $T$ is an existence question, not a uniqueness question; see the remark about Example 1(d) following its solution.
+[END]
+[TFQ] A linear transformation preserves the operations of vector addition and scalar multiplication.
+[True]
+[EXP] (1.8) Preservation of addition and scalar multiplication is exactly what defines linearity; see the discussion following the definition of a linear transformation.
+[END]
+[TFQ] The superposition principle is a physical description of a linear transformation.
+[True]
+[EXP] (1.8) The paragraph following equation (5) explains how the superposition principle models the behavior of linear transformations in physical systems.
+[END]
+-------------------------------------------
+[T] 1.9 - The Matrix of a Linear Transformation
+-------------------------------------------
+[TFQ] A linear transformation $T : \mathbb{R}^{n} \to \mathbb{R}^{m}$ is completely determined by its effect on the columns of the $n \times n$ identity matrix.
+[True]
+[EXP] (1.9) Theorem 10 states that a linear transformation is determined by its action on the standard basis vectors, which are precisely the columns of the identity matrix.
+[END]
+[TFQ] If $T : \mathbb{R}^{2} \to \mathbb{R}^{2}$ rotates vectors about the origin through an angle $\theta$, then $T$ is a linear transformation.
+[True]
+[EXP] (1.9) As shown in Example 3, rotations about the origin preserve vector addition and scalar multiplication, so they are linear transformations.
+[END]
+[TFQ] When two linear transformations are performed one after another, the combined effect may not always be a linear transformation.
+[False]
+[EXP] (1.9) The composition of two linear transformations is always linear; see the paragraph before Table 1.
+[END]
+[TFQ] A mapping $T : \mathbb{R}^{n} \to \mathbb{R}^{m}$ is onto $\mathbb{R}^{m}$ if every vector $x$ in $\mathbb{R}^{n}$ maps onto some vector in $\mathbb{R}^{m}$.
+[False]
+[EXP] (1.9) By definition, $T$ is onto if every vector in $\mathbb{R}^{m}$ is the image of at least one vector in $\mathbb{R}^{n}$; see the definition of onto.
+[END]
+[TFQ] If $A$ is a $3 \times 2$ matrix, then the transformation $x \mapsto A x$ cannot be one-to-one.
+[False]
+[EXP] (1.9) As shown in Example 5, a $3 \times 2$ matrix can define a one-to-one transformation if its columns are linearly independent.
+[END]
+[TFQ] Not every linear transformation from $\mathbb{R}^{n}$ to $\mathbb{R}^{m}$ is a matrix transformation.
+[False]
+[EXP] (1.9) The paragraph preceding Example 2 explains that every linear transformation from $\mathbb{R}^{n}$ to $\mathbb{R}^{m}$ is a matrix transformation.
+[END]
+[TFQ] The columns of the standard matrix for a linear transformation from $\mathbb{R}^{n}$ to $\mathbb{R}^{m}$ are the images of the columns of the $n \times n$ identity matrix.
+[True]
+[EXP] (1.9) By Theorem 10, the standard matrix has columns $T(e_{1}), \ldots, T(e_{n})$, where $e_{1}, \ldots, e_{n}$ are the columns of the identity matrix.
+[END]
+[TFQ] The standard matrix of a linear transformation from $\mathbb{R}^{2}$ to $\mathbb{R}^{2}$ that reflects points through the horizontal axis, the vertical axis, or the origin has the form $\begin{bmatrix} a & 0 \\ 0 & d \end{bmatrix}$, where $a$ and $d$ are $\pm 1$.
+[True]
+[EXP] (1.9) Table 1 lists these reflection transformations and shows that each has a diagonal matrix with diagonal entries equal to $\pm 1$.
+[END]
+[TFQ] A mapping $T : \mathbb{R}^{n} \to \mathbb{R}^{m}$ is one-to-one if each vector in $\mathbb{R}^{n}$ maps onto a unique vector in $\mathbb{R}^{m}$.
+[False]
+[EXP] (1.9) Every function maps each input to exactly one output; one-to-one instead means distinct inputs map to distinct outputs; see the definition of one-to-one.
+[END]
+[TFQ] If $A$ is a $3 \times 2$ matrix, then the transformation $x \mapsto A x$ cannot map $\mathbb{R}^{2}$ onto $\mathbb{R}^{3}$.
+[True]
+[EXP] (1.9) As shown in the solution of Example 5, the range of a $3 \times 2$ matrix transformation is at most two-dimensional, so it cannot equal $\mathbb{R}^{3}$.
+[END]

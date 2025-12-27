@@ -1,0 +1,235 @@
+[PRESET] Chapter 2 - Matrix Algebra
+-------------------------------------------
+[T] 2.1 - Matrix Operations
+-------------------------------------------
+[TFQ] If $A$ and $B$ are $2 \times 2$ with columns $a_1, a_2$ and $b_1, b_2$, respectively, then $AB = \begin{bmatrix}a_1b_1 & a_2b_2\end{bmatrix}$.
+[False]
+[EXP] (2.1) See the definition of matrix multiplication. Columns of $AB$ are not formed by multiplying corresponding columns elementwise.
+[END]
+[TFQ] Each column of $AB$ is a linear combination of the columns of $B$ using weights from the corresponding column of $A$.
+[False]
+[EXP] (2.1) The roles of $A$ and $B$ are reversed; each column of $AB$ is a linear combination of the columns of $A$ using entries from the corresponding column of $B$ (see box after Example 3).
+[END]
+[TFQ] $AB + AC = A(B + C)$.
+[True]
+[EXP] (2.1) See Theorem 2(b), read right to left: distributivity of matrix multiplication over addition.
+[END]
+[TFQ] $A^T + B^T = (A + B)^T$.
+[True]
+[EXP] (2.1) See Theorem 3(b), read right to left: the transpose of a sum equals the sum of transposes.
+[END]
+[TFQ] The transpose of a product of matrices equals the product of their transposes in the same order.
+[False]
+[EXP] (2.1) The correct statement is $(AB)^T = B^T A^T$, i.e., in reverse order (see box after Theorem 3).
+[END]
+[TFQ] If $A$ and $B$ are $3 \times 3$ and $B = \begin{bmatrix}b_1 & b_2 & b_3\end{bmatrix}$, then $AB = \begin{bmatrix}Ab_1 + Ab_2 + Ab_3\end{bmatrix}$.
+[False]
+[EXP] (2.1) $AB$ is $3 \times 3$; the formula with plus signs implies $3 \times 1$, which is incorrect. Columns of $AB$ are $Ab_1, Ab_2, Ab_3$.
+[END]
+[TFQ] The second row of $AB$ is the second row of $A$ multiplied on the right by $B$.
+[True]
+[EXP] (2.1) See the box after Example 6: each row of $AB$ is a linear combination of the rows of $B$ using the entries of the corresponding row of $A$.
+[END]
+[TFQ] $(AB)C = A(CB)$.
+[False]
+[EXP] (2.1) Matrix multiplication is not generally commutative; the left-to-right order of $B$ and $C$ cannot be changed.
+[END]
+[TFQ] $(AB)^T = A^T B^T$.
+[False]
+[EXP] (2.1) See Theorem 3(d): $(AB)^T = B^T A^T$, not $A^T B^T$.
+[END]
+[TFQ] The transpose of a sum of matrices equals the sum of their transposes.
+[True]
+[EXP] (2.1) Follows from Theorem 3(b): $(A + B)^T = A^T + B^T$.
+[END]
+-------------------------------------------
+[T] 2.2 - The Inverse of a Matrix
+-------------------------------------------
+[TFQ] In order for a matrix $B$ to be the inverse of $A$, both equations $AB = I$ and $BA = I$ must be true.
+[True]
+[EXP] (2.2) By definition, $B$ is the inverse of $A$ if $AB = BA = I_n$.
+[END]
+[TFQ] If $A$ and $B$ are $n \times n$ and invertible, then $A^{-1}B^{-1}$ is the inverse of $AB$.
+[False]
+[EXP] (2.2) See Theorem 6(b): the inverse of a product is $(AB)^{-1} = B^{-1}A^{-1}$, i.e., the order is reversed.
+[END]
+[TFQ] If $A = \begin{bmatrix}a & b \\ c & d\end{bmatrix}$ and $ad - bc \neq 0$, then $A$ is invertible.
+[False]
+[EXP] (2.2) Counterexample: $A = \begin{bmatrix}1 & 1 \\ 0 & 0\end{bmatrix}$ has $ad - bc = 1\cdot0 - 1\cdot0 = 0$, not invertible, showing that $ad-bc \neq 0$ is necessary but must be correctly applied.
+[END]
+[TFQ] If $A$ is an invertible $n \times n$ matrix, then the equation $Ax=b$ is consistent for each $b \in \mathbb{R}^n$.
+[True]
+[EXP] (2.2) By Theorem 5: invertibility ensures $Ax=b$ has a unique solution for each $b$.
+[END]
+[TFQ] Each elementary matrix is invertible.
+[True]
+[EXP] (2.2) By definition and Section 2.2 box before Example 6, elementary matrices correspond to reversible row operations.
+[END]
+[TFQ] A product of invertible $n \times n$ matrices is invertible, and the inverse of the product is the product of their inverses in the same order.
+[False]
+[EXP] (2.2) The inverse of a product reverses the order: $(AB)^{-1} = B^{-1}A^{-1}$ (Theorem 6(b)).
+[END]
+[TFQ] If $A$ is invertible, then the inverse of $A^{-1}$ is $A$ itself.
+[True]
+[EXP] (2.2) By Theorem 6(a), $(A^{-1})^{-1} = A$.
+[END]
+[TFQ] If $A = \begin{bmatrix}a & b \\ c & d\end{bmatrix}$ and $ad = bc$, then $A$ is not invertible.
+[True]
+[EXP] (2.2) By Theorem 4, $A$ is invertible iff $ad-bc \neq 0$; here $ad-bc = 0$, so $A$ is not invertible.
+[END]
+[TFQ] If $A$ can be row reduced to the identity matrix, then $A$ must be invertible.
+[True]
+[EXP] (2.2) By Theorem 7, row reduction to $I_n$ confirms invertibility.
+[END]
+[TFQ] If $A$ is invertible, then elementary row operations that reduce $A$ to the identity $I_n$ also reduce $A^{-1}$ to $I_n$.
+[False]
+[EXP] (2.2) The last part of Theorem 7 is misstated; the operations that reduce $A$ to $I_n$ construct $A^{-1}$ rather than reduce it to $I_n$.
+[END]
+-------------------------------------------
+[T] 2.3 - Characterizations of Invertible Matrices
+-------------------------------------------
+[TFQ] If the equation $Ax=0$ has only the trivial solution, then $A$ is row equivalent to the $n \times n$ identity matrix.
+[True]
+[EXP] (2.3) By the Invertible Matrix Theorem (IMT), statement (d) implies statement (b), confirming that $A$ is row equivalent to $I_n$.
+[END]
+[TFQ] If the columns of $A$ span $\mathbb{R}^n$, then the columns are linearly independent.
+[True]
+[EXP] (2.3) By the IMT, statement (h) implies statement (e); spanning $\mathbb{R}^n$ guarantees linear independence.
+[END]
+[TFQ] If $A$ is an $n \times n$ matrix, then the equation $Ax=b$ has at least one solution for each $b \in \mathbb{R}^n$.
+[False]
+[EXP] (2.3) Statement (g) of the IMT holds only for invertible matrices. Non-invertible matrices may not have a solution for all $b$.
+[END]
+[TFQ] If the equation $Ax=0$ has a nontrivial solution, then $A$ has fewer than $n$ pivot positions.
+[True]
+[EXP] (2.3) By the IMT, a nontrivial solution for $Ax=0$ makes statement (d) false, implying fewer than $n$ pivot positions.
+[END]
+[TFQ] If $A^T$ is not invertible, then $A$ is not invertible.
+[True]
+[EXP] (2.3) By the IMT, non-invertibility of $A^T$ (statement l) implies $A$ is also non-invertible (statement a).
+[END]
+[TFQ] If there is an $n \times n$ matrix $D$ such that $AD = I$, then there is also an $n \times n$ matrix $C$ such that $CA = I$.
+[True]
+[EXP] (2.3) By the IMT, statement (k) implies statement (j); a right inverse ensures a left inverse exists.
+[END]
+[TFQ] If the columns of $A$ are linearly independent, then the columns of $A$ span $\mathbb{R}^n$.
+[True]
+[EXP] (2.3) By the IMT, statement (e) implies statement (h); linear independence of $n$ columns ensures they span $\mathbb{R}^n$.
+[END]
+[TFQ] If the equation $Ax=b$ has at least one solution for each $b \in \mathbb{R}^n$, then the solution is unique for each $b$.
+[True]
+[EXP] (2.3) By the IMT, the solution is unique for all $b$ once $A$ is invertible (see remark after the IMT proof).
+[END]
+[TFQ] If the linear transformation $x \mapsto Ax$ maps $\mathbb{R}^n$ into $\mathbb{R}^n$, then $A$ has $n$ pivot positions.
+[False]
+[EXP] (2.3) Mapping into $\mathbb{R}^n$ does not guarantee $n$ pivot positions; the IMT statement (i) refers to mapping **onto** $\mathbb{R}^n$.
+[END]
+[TFQ] If there is a $b \in \mathbb{R}^n$ such that the equation $Ax=b$ is inconsistent, then the transformation $x \mapsto Ax$ is not one-to-one.
+[True]
+[EXP] (2.3) By the IMT, inconsistency of $Ax=b$ (statement g false) implies statement (f) is false; hence the transformation is not one-to-one.
+[END]
+-------------------------------------------
+[T] 2.4 - Partitioned Matrices
+-------------------------------------------
+[TFQ] If $A = \begin{bmatrix}A_1 & A_2\end{bmatrix}$ and $B = \begin{bmatrix}B_1 & B_2\end{bmatrix}$, with $A_1$ and $A_2$ the same sizes as $B_1$ and $B_2$, respectively, then $A + B = \begin{bmatrix}A_1 + B_1 & A_2 + B_2\end{bmatrix}$.
+[True]
+[EXP] (2.4) See the subsection "Addition and Scalar Multiplication": block addition is performed entrywise.
+[END]
+[TFQ] If $A = \begin{bmatrix}A_{11} & A_{12} \\ A_{21} & A_{22}\end{bmatrix}$ and $B = \begin{bmatrix}B_1 \\ B_2\end{bmatrix}$, then the partitions of $A$ and $B$ are conformable for block multiplication.
+[False]
+[EXP] (2.4) See the paragraph before Example 3: the block sizes must align for multiplication, which is not guaranteed here.
+[END]
+[TFQ] The definition of the matrix–vector product $Ax$ is a special case of block multiplication.
+[True]
+[EXP] (2.4) See the paragraph before Example 4: a vector can be treated as a single-column block, making $Ax$ a block multiplication.
+[END]
+[TFQ] If $A_1, A_2, B_1, B_2$ are $n \times n$ matrices, $A = \begin{bmatrix}A_1 \\ A_2\end{bmatrix}$, and $B = \begin{bmatrix}B_1 & B_2\end{bmatrix}$, then the product $BA$ is defined, but $AB$ is not.
+[False]
+[EXP] (2.4) See the paragraph before Example 3: $BA$ is defined because the inner dimensions match ($2n \times n$ times $n \times 2n$), but $AB$ is also not defined due to incompatible block dimensions.
+[END]
+-------------------------------------------
+[T] 2.8 - Subspaces of R
+-------------------------------------------
+[TFQ] A subspace of $\mathbb{R}^n$ is any set $H$ such that (i) the zero vector is in $H$, (ii) $u, v$, and $u+v$ are in $H$, and (iii) $c$ is a scalar and $cu$ is in $H$.
+[False]
+[EXP] (2.8) See the definition at the beginning of the section. The critical phrases “for each” are missing; closure under addition and scalar multiplication must hold **for all** vectors and scalars in the set.
+[END]
+[TFQ] If $v_1, \ldots, v_p$ are in $\mathbb{R}^n$, then $\text{Span}\{v_1, \ldots, v_p\}$ is the same as the column space of the matrix $[v_1 \cdots v_p]$.
+[True]
+[EXP] (2.8) See the paragraph before Example 4: the span of the vectors is exactly the set of all linear combinations, which is the column space of the matrix formed by these vectors.
+[END]
+[TFQ] The set of all solutions of a system of $m$ homogeneous equations in $n$ unknowns is a subspace of $\mathbb{R}^m$.
+[False]
+[EXP] (2.8) See Theorem 12: the null space (solutions of $Ax=0$) is a subspace of $\mathbb{R}^n$, not $\mathbb{R}^m$.
+[END]
+[TFQ] The columns of an invertible $n \times n$ matrix form a basis for $\mathbb{R}^n$.
+[True]
+[EXP] (2.8) See Example 5: invertibility ensures the columns are linearly independent and span $\mathbb{R}^n$, forming a basis.
+[END]
+[TFQ] Row operations do not affect linear dependence relations among the columns of a matrix.
+[True]
+[EXP] (2.8) See the first part of the solution of Example 8: linear dependence among columns is preserved under row operations.
+[END]
+[TFQ] A subset $H$ of $\mathbb{R}^n$ is a subspace if the zero vector is in $H$.
+[False]
+[EXP] (2.8) See the definition at the beginning of the section: inclusion of the zero vector is necessary but not sufficient; closure under addition and scalar multiplication must also hold.
+[END]
+[TFQ] Given vectors $v_1, \ldots, v_p$ in $\mathbb{R}^n$, the set of all linear combinations of these vectors is a subspace of $\mathbb{R}^n$.
+[True]
+[EXP] (2.8) See Example 3: any linear combination of vectors in $\mathbb{R}^n$ satisfies closure under addition and scalar multiplication.
+[END]
+[TFQ] The null space of an $m \times n$ matrix is a subspace of $\mathbb{R}^n$.
+[True]
+[EXP] (2.8) See Theorem 12: the null space consists of all $x \in \mathbb{R}^n$ satisfying $Ax=0$, which forms a subspace.
+[END]
+[TFQ] The column space of a matrix $A$ is the set of solutions of $Ax=b$.
+[False]
+[EXP] (2.8) See the paragraph after Example 4: the column space is the set of all vectors $b$ for which $Ax=b$ is consistent, not the set of solutions $x$.
+[END]
+[TFQ] If $B$ is an echelon form of a matrix $A$, then the pivot columns of $B$ form a basis for $\text{Col } A$.
+[False]
+[EXP] (2.8) See the warning following Theorem 13: the pivot columns of $B$ themselves are **not** a basis for $\text{Col } A$; the corresponding columns of $A$ must be used.
+[END]
+-------------------------------------------
+[T] 2.9 - Dimension and Rank
+-------------------------------------------
+[TFQ] If $B = \{v_1, \ldots, v_p\}$ is a basis for a subspace $H$ and if $x = c_1v_1 + \cdots + c_pv_p$, then $c_1, \ldots, c_p$ are the coordinates of $x$ relative to the basis $B$.
+[True]
+[EXP] (2.9) This is the definition of a $B$-coordinate vector.
+[END]
+[TFQ] Each line in $\mathbb{R}^n$ is a one-dimensional subspace of $\mathbb{R}^n$.
+[False]
+[EXP] (2.9) Dimension is defined only for a subspace. A line must pass through the origin to be a subspace of $\mathbb{R}^n$.
+[END]
+[TFQ] The dimension of $\text{Col } A$ is the number of pivot columns of $A$.
+[True]
+[EXP] (2.9) See the sentence before Example 1: the rank of $A$ equals the number of pivot columns, which defines $\dim(\text{Col } A)$.
+[END]
+[TFQ] The dimensions of $\text{Col } A$ and $\text{Nul } A$ add up to the number of columns of $A$.
+[True]
+[EXP] (2.9) This is equivalent to the Rank Theorem: $\text{rank } A + \text{nullity } A = n$, the number of columns.
+[END]
+[TFQ] If a set of $p$ vectors spans a $p$-dimensional subspace $H$ of $\mathbb{R}^n$, then these vectors form a basis for $H$.
+[True]
+[EXP] (2.9) By the Basis Theorem, a spanning set of $p$ vectors in a $p$-dimensional space is automatically linearly independent, forming a basis.
+[END]
+[TFQ] If $B$ is a basis for a subspace $H$, then each vector in $H$ can be written in only one way as a linear combination of the vectors in $B$.
+[True]
+[EXP] (2.9) See the second paragraph of the section: uniqueness of representation is guaranteed for a basis.
+[END]
+[TFQ] If $B = \{v_1, \ldots, v_p\}$ is a basis for a subspace $H$ of $\mathbb{R}^n$, then the correspondence $x \mapsto [x]_B$ makes $H$ look and act the same as $\mathbb{R}^p$.
+[True]
+[EXP] (2.9) See the second paragraph after Fig. 1: coordinate mapping establishes an isomorphism between $H$ and $\mathbb{R}^p$.
+[END]
+[TFQ] The dimension of $\text{Nul } A$ is the number of variables in the equation $Ax=0$.
+[False]
+[EXP] (2.9) See Example 2: the dimension of $\text{Nul } A$ equals the number of free variables, not the total number of variables.
+[END]
+[TFQ] The dimension of the column space of $A$ is $\text{rank } A$.
+[True]
+[EXP] (2.9) By definition, the rank of $A$ equals the dimension of its column space.
+[END]
+[TFQ] If $H$ is a $p$-dimensional subspace of $\mathbb{R}^n$, then a linearly independent set of $p$ vectors in $H$ is a basis for $H$.
+[True]
+[EXP] (2.9) By the Basis Theorem, a linearly independent set with cardinality equal to the dimension of the space automatically spans the space, forming a basis.
+[END]

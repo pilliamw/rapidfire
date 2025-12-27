@@ -35,6 +35,7 @@ function reset_saq_div() {
     });
 
     SAQ_FEEDBACK_DIV.style.display = "none";
+    SCQ_EXP_BOX.style.display = "none";
 }
 
 function hide_saq_div() { SAQ_DIV.style.display = "none"; }
@@ -53,6 +54,7 @@ function reset_mcq_div() {
     MCQ_OPTIONS_DIV.innerText = "";
     MCQ_OPTIONS_DIV.style.display = "block";
     MCQ_FEEDBACK_DIV.style.display = "none";
+    SCQ_EXP_BOX.style.display = "none";
 
     MCQ_INPUT_BTN.setAttribute("disabled", "");
     MCQ_INPUT_BTN.className = "scq_submit_btn";
@@ -68,6 +70,8 @@ const SCQ_QNUM = document.getElementById("scq_qnum");
 const SCQ_QTYPE = document.getElementById("scq_qtype");
 const SCQ_QDESC = document.getElementById("scq_qdesc");
 const SCQ_SKIP_BTN = document.getElementById("scq_skip_btn");
+const SCQ_EXP_BOX = document.getElementById("scq_exp_box");
+const SCQ_EXP_TEXT = document.getElementById("scq_exp_box_text");
 const SCQ_DIV = document.getElementById("session_content_question_div");
 
 function reset_scq_div() {
@@ -195,6 +199,9 @@ class SAQQuestion {
         this.topic = topic;
         this.correctAnswers = correctAnswers;
 
+        this.hasExplanation = false;
+        this.explanation = "";
+
         this.processingSubmit = false;
 
         this.status = QUESTION_STATUS.UNSOLVED;
@@ -258,6 +265,19 @@ class SAQQuestion {
             SAQ_FEEDBACK_TEXT.innerText = `Skipped! Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")}`;
             SAQ_FEEDBACK_DIV.style.display = "flex";
 
+            if (this.hasExplanation) {
+                SCQ_EXP_TEXT.innerText = this.explanation;
+                if (settings.renderlatex) {
+                    renderMathInElement(SCQ_EXP_TEXT, {
+                        delimiters: [
+                            {left: '$', right: '$', display: false},
+                        ],
+                        throwOnError: false
+                    });
+                }
+                SCQ_EXP_BOX.style.display = "inline-block";
+            }
+
             this.status = QUESTION_STATUS.SKIPPED;
         } if (event[0] == "SUBMIT") {
             let ans = trim_lower(event[1]);
@@ -288,6 +308,19 @@ class SAQQuestion {
                     SAQ_FEEDBACK_DIV.className = "scq_feedback correct";
                     SAQ_FEEDBACK_TEXT.innerText = `Correct! (Accepted Answers: ${this.correctAnswers.map(x => x[1]).join(", ")})`;
                     SAQ_FEEDBACK_DIV.style.display = "flex";
+
+                    if (this.hasExplanation) {
+                        SCQ_EXP_TEXT.innerText = this.explanation;
+                        if (settings.renderlatex) {
+                            renderMathInElement(SCQ_EXP_TEXT, {
+                                delimiters: [
+                                    {left: '$', right: '$', display: false},
+                                ],
+                                throwOnError: false
+                            });
+                        }
+                        SCQ_EXP_BOX.style.display = "inline-block";
+                    }
 
                     if (this.status != QUESTION_STATUS.INCORRECT) {
                         this.status = QUESTION_STATUS.CORRECT;
@@ -380,6 +413,9 @@ class MCQQuestion {
         this.answers = [];
         this.optionOrder = [];
         this.shuffle = true;
+        
+        this.hasExplanation = false;
+        this.explanation = "";
 
         this.selected = undefined;
         this.buttons = [];
@@ -464,6 +500,19 @@ class MCQQuestion {
             MCQ_FEEDBACK_TEXT.innerText = `Skipped! Correct Answer: ${correctLetter}`;
             MCQ_FEEDBACK_DIV.style.display = "flex";
 
+            if (this.hasExplanation) {
+                SCQ_EXP_TEXT.innerText = this.explanation;
+                if (settings.renderlatex) {
+                    renderMathInElement(SCQ_EXP_TEXT, {
+                        delimiters: [
+                            {left: '$', right: '$', display: false},
+                        ],
+                        throwOnError: false
+                    });
+                }
+                SCQ_EXP_BOX.style.display = "inline-block";
+            }
+
             this.status = QUESTION_STATUS.SKIPPED;
         } else if (event[0] == "SUBMIT") {
             if (this.selected != undefined) {
@@ -490,6 +539,19 @@ class MCQQuestion {
                     MCQ_FEEDBACK_TEXT.innerText = `Correct!`;
                     MCQ_FEEDBACK_DIV.style.display = "flex";
                     
+                    if (this.hasExplanation) {
+                        SCQ_EXP_TEXT.innerText = this.explanation;
+                        if (settings.renderlatex) {
+                            renderMathInElement(SCQ_EXP_TEXT, {
+                                delimiters: [
+                                    {left: '$', right: '$', display: false},
+                                ],
+                                throwOnError: false
+                            });
+                        }
+                        SCQ_EXP_BOX.style.display = "inline-block";
+                    }
+
                     if (this.status != QUESTION_STATUS.INCORRECT) {
                         this.status = QUESTION_STATUS.CORRECT;
                         if (settings.confetti) toss_confetti_at_element(MCQ_INPUT_BTN);

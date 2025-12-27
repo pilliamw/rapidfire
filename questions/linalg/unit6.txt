@@ -1,0 +1,204 @@
+[PRESET] Chapter 6 - Orthogonality and Least Squares
+-------------------------------------------
+[T] 6.1 - Inner Product, Length, and Orthogonality
+-------------------------------------------
+[TFQ] $v \cdot v = \|v\|^2$.
+[True]
+[EXP] (6.1) By definition of the norm, $\|v\|^2 = v \cdot v$.
+[END]
+[TFQ] For any scalar $c$, $u \cdot (cv) = c (u \cdot v)$.
+[True]
+[EXP] (6.1) See Theorem 1(c). The dot product is linear in each component.
+[END]
+[TFQ] If the distance from $u$ to $v$ equals the distance from $u$ to $-v$, then $u$ and $v$ are orthogonal.
+[True]
+[EXP] (6.1) See the discussion of Figure 5. Equal distances to $v$ and $-v$ imply $u \cdot v = 0$.
+[END]
+[TFQ] For a square matrix $A$, vectors in $\operatorname{Col} A$ are orthogonal to vectors in $\operatorname{Nul} A$.
+[False]
+[EXP] (6.1) Counterexample: $A = \begin{bmatrix}1 & 1 \\ 0 & 0\end{bmatrix}$. Column space vectors are not all orthogonal to null space vectors.
+[END]
+[TFQ] If vectors $v_1, \dots, v_p$ span a subspace $W$ and $x$ is orthogonal to each $v_j$ for $j = 1, \dots, p$, then $x \in W^\perp$.
+[True]
+[EXP] (6.1) See the box following Example 6. Orthogonality to a spanning set implies membership in the orthogonal complement.
+[END]
+[TFQ] $u \cdot v - v \cdot u = 0$.
+[True]
+[EXP] (6.1) See Example 1 and Theorem 1(a). The dot product is commutative: $u \cdot v = v \cdot u$.
+[END]
+[TFQ] For any scalar $c$, $\|c v\| = c \|v\|$.
+[False]
+[EXP] (6.1) The absolute value is missing; correct formula: $\|c v\| = |c| \, \|v\|$. See the box before Example 2.
+[END]
+[TFQ] If $x$ is orthogonal to every vector in a subspace $W$, then $x \in W^\perp$.
+[True]
+[EXP] (6.1) By definition of the orthogonal complement $W^\perp$.
+[END]
+[TFQ] If $\|u\|^2 + \|v\|^2 = \|u + v\|^2$, then $u$ and $v$ are orthogonal.
+[True]
+[EXP] (6.1) See the Pythagorean Theorem. Equality holds if and only if $u \cdot v = 0$.
+[END]
+[TFQ] For an $m \times n$ matrix $A$, vectors in the null space of $A$ are orthogonal to vectors in the row space of $A$.
+[True]
+[EXP] (6.1) See Theorem 3. Null space vectors are orthogonal to all linear combinations of the rows.
+[END]
+-------------------------------------------
+[T] 6.2 - Orthogonal Sets
+-------------------------------------------
+[TFQ] Not every linearly independent set in $\mathbb{R}^n$ is an orthogonal set.
+[True]
+[EXP] (6.2) For example, the vectors $u$ and $y$ in Example 3 are linearly independent but not orthogonal.
+[END]
+[TFQ] If $y$ is a linear combination of nonzero vectors from an orthogonal set, then the weights in the linear combination can be computed without row operations on a matrix.
+[True]
+[EXP] (6.2) See Theorem 5. The weights are computed using simple dot products: $c_j = \frac{y \cdot u_j}{u_j \cdot u_j}$.
+[END]
+[TFQ] If the vectors in an orthogonal set of nonzero vectors are normalized, then some of the new vectors may not be orthogonal.
+[False]
+[EXP] (6.2) See the paragraph following Example 5. Normalizing nonzero orthogonal vectors preserves orthogonality.
+[END]
+[TFQ] A matrix with orthonormal columns is an orthogonal matrix.
+[False]
+[EXP] (6.2) The matrix must also be square to be orthogonal. See the paragraph before Example 7.
+[END]
+[TFQ] If $L$ is a line through $0$ and $\hat{y}$ is the orthogonal projection of $y$ onto $L$, then $\|\hat{y}\|$ gives the distance from $y$ to $L$.
+[False]
+[EXP] (6.2) See Example 4. The distance from $y$ to $L$ is $\|y - \hat{y}\|$, not $\|\hat{y}\|$.
+[END]
+[TFQ] Not every orthogonal set in $\mathbb{R}^n$ is linearly independent.
+[True]
+[EXP] (6.2) Every orthogonal set of nonzero vectors is linearly independent. See Theorem 4.
+[END]
+[TFQ] If a set $S = \{u_1, \dots, u_p\}$ has the property that $u_i \cdot u_j = 0$ whenever $i \neq j$, then $S$ is an orthonormal set.
+[False]
+[EXP] (6.2) To be orthonormal, each vector must also have norm 1. Orthogonality alone is not sufficient.
+[END]
+[TFQ] If the columns of an $m \times n$ matrix $A$ are orthonormal, then the linear mapping $x \mapsto Ax$ preserves lengths.
+[True]
+[EXP] (6.2) See Theorem 7(a). Orthonormal columns ensure $\|Ax\| = \|x\|$ for all $x$.
+[END]
+[TFQ] The orthogonal projection of $y$ onto $v$ is the same as the orthogonal projection of $y$ onto $cv$ whenever $c \neq 0$.
+[True]
+[EXP] (6.2) See the paragraph before Example 3. Scaling the vector by a nonzero constant does not change the projection direction.
+[END]
+[TFQ] An orthogonal matrix is invertible.
+[True]
+[EXP] (6.2) See the paragraph before Example 7. The inverse of an orthogonal matrix is its transpose.
+[END]
+-------------------------------------------
+[T] 6.3 - Orthogonal Projections
+-------------------------------------------
+[TFQ] If $z$ is orthogonal to $u_1$ and to $u_2$ and if $W = \operatorname{Span}\{u_1, u_2\}$, then $z$ must be in $W^\perp$.
+[True]
+[EXP] (6.3) See the calculations for $2z$ in Example 1 or the box after Example 6 in Section 6.1. A vector orthogonal to all vectors in $W$ lies in $W^\perp$.
+[END]
+[TFQ] For each $y$ and each subspace $W$, the vector $y - \operatorname{proj}_W y$ is orthogonal to $W$.
+[True]
+[EXP] (6.3) This follows directly from the Orthogonal Decomposition Theorem.
+[END]
+[TFQ] The orthogonal projection $\hat{y}$ of $y$ onto a subspace $W$ can sometimes depend on the orthogonal basis for $W$ used to compute $\hat{y}$.
+[False]
+[EXP] (6.3) See the last paragraph in the proof of Theorem 8. The orthogonal projection onto $W$ is unique and independent of the choice of orthogonal basis.
+[END]
+[TFQ] If $y$ is in a subspace $W$, then the orthogonal projection of $y$ onto $W$ is $y$ itself.
+[True]
+[EXP] (6.3) See the box before the Best Approximation Theorem. Projection of a vector in the subspace returns the vector itself.
+[END]
+[TFQ] If the columns of an $n \times p$ matrix $U$ are orthonormal, then $UU^T y$ is the orthogonal projection of $y$ onto the column space of $U$.
+[True]
+[EXP] (6.3) Theorem 10 applies to the column space $W$ of $U$ because its columns form a basis. Then $UU^T y = \operatorname{proj}_W y$.
+[END]
+[TFQ] If $W$ is a subspace of $\mathbb{R}^n$ and if $v$ is in both $W$ and $W^\perp$, then $v$ must be the zero vector.
+[True]
+[EXP] (6.3) See the proof of the Orthogonal Decomposition Theorem. Intersection of a subspace and its orthogonal complement contains only the zero vector.
+[END]
+[TFQ] In the Orthogonal Decomposition Theorem, each term in formula (2) for $\hat{y}$ is itself an orthogonal projection of $y$ onto a subspace of $W$.
+[True]
+[EXP] (6.3) See the subsection “A Geometric Interpretation of the Orthogonal Projection.” Each term corresponds to projection onto a one-dimensional subspace spanned by an orthogonal basis vector.
+[END]
+[TFQ] If $y = z_1 + z_2$, where $z_1$ is in a subspace $W$ and $z_2$ is in $W^\perp$, then $z_1$ must be the orthogonal projection of $y$ onto $W$.
+[True]
+[EXP] (6.3) The orthogonal decomposition in Theorem 8 is unique. Hence $z_1 = \operatorname{proj}_W y$.
+[END]
+[TFQ] The best approximation to $y$ by elements of a subspace $W$ is given by the vector $y - \operatorname{proj}_W y$.
+[False]
+[EXP] (6.3) The Best Approximation Theorem states that the best approximation is $\operatorname{proj}_W y$, not $y - \operatorname{proj}_W y$.
+[END]
+[TFQ] If an $n \times p$ matrix $U$ has orthonormal columns, then $UU^T x = x$ for all $x \in \mathbb{R}^n$.
+[False]
+[EXP] (6.3) This is only true if $x$ is in the column space of $U$. If $n > p$, the column space of $U$ is a proper subspace of $\mathbb{R}^n$, so the equality fails for vectors outside it.
+[END]
+-------------------------------------------
+[T] 6.4 - The Gram-Schmidt Process
+-------------------------------------------
+[TFQ] If $\{v_1, v_2, v_3\}$ is an orthogonal basis for $W$, then multiplying $v_3$ by a scalar $c$ gives a new orthogonal basis $\{v_1, v_2, cv_3\}$.
+[False]
+[EXP] (6.4) Scaling a vector may produce the zero vector if $c = 0$, which cannot be part of a basis. See Example 2, where scaling requires a nonzero factor.
+[END]
+[TFQ] The Gram–Schmidt process produces from a linearly independent set $\{x_1, \dots, x_p\}$ an orthogonal set $\{v_1, \dots, v_p\}$ with the property that for each $k$, the vectors $v_1, \dots, v_k$ span the same subspace as that spanned by $x_1, \dots, x_k$.
+[True]
+[EXP] (6.4) See Theorem 11, statement (1). Gram–Schmidt preserves the span of initial segments of the set.
+[END]
+[TFQ] If $A = QR$, where $Q$ has orthonormal columns, then $R = Q^T A$.
+[True]
+[EXP] (6.4) See the solution of Example 4. Multiplying both sides of $A = QR$ by $Q^T$ gives $Q^T A = Q^T Q R = R$.
+[END]
+[TFQ] If $W = \operatorname{Span}\{x_1, x_2, x_3\}$ with $\{x_1, x_2, x_3\}$ linearly independent, and if $\{v_1, v_2, v_3\}$ is an orthogonal set in $W$, then $\{v_1, v_2, v_3\}$ is a basis for $W$.
+[False]
+[EXP] (6.4) The three orthogonal vectors must all be nonzero to form a basis. See Step 3 in the solution of Example 2.
+[END]
+[TFQ] If $x$ is not in a subspace $W$, then $x - \operatorname{proj}_W x$ is not zero.
+[True]
+[EXP] (6.4) If $x \notin W$, then $x \neq \operatorname{proj}_W x$. Hence $x - \operatorname{proj}_W x \neq 0$, as used in the proof of Theorem 11.
+[END]
+[TFQ] In a QR factorization, say $A = QR$ (when $A$ has linearly independent columns), the columns of $Q$ form an orthonormal basis for the column space of $A$.
+[True]
+[EXP] (6.4) See Theorem 12. By construction, $Q$ has orthonormal columns spanning $\operatorname{Col} A$.
+[END]
+-------------------------------------------
+[T] 6.5 - Least-Squares Problems
+-------------------------------------------
+[TFQ] The general least-squares problem is to find an $x$ that makes $Ax$ as close as possible to $b$.
+[True]
+[EXP] (6.5) See the beginning of the section. The goal is to minimize the distance $\|Ax - b\|$.
+[END]
+[TFQ] A least-squares solution of $Ax = b$ is a vector $\hat{x}$ that satisfies $A\hat{x} = \hat{b}$, where $\hat{b}$ is the orthogonal projection of $b$ onto $\operatorname{Col} A$.
+[True]
+[EXP] (6.5) See the discussion around equation (1). The vector $\hat{x}$ produces $A\hat{x} = \operatorname{proj}_{\operatorname{Col} A} b$.
+[END]
+[TFQ] A least-squares solution of $Ax = b$ is a vector $\hat{x}$ such that $\|b - Ax\| \le \|b - \hat{x}\|$ for all $x$ in $\mathbb{R}^n$.
+[False]
+[EXP] (6.5) The inequality is reversed in the definition. The correct statement is $\|b - A\hat{x}\| \le \|b - Ax\|$ for all $x \in \mathbb{R}^n$.
+[END]
+[TFQ] Any solution of $A^T A x = A^T b$ is a least-squares solution of $Ax = b$.
+[True]
+[EXP] (6.5) See Theorem 13. Solutions to the normal equations always yield least-squares solutions.
+[END]
+[TFQ] If the columns of $A$ are linearly independent, then the equation $Ax = b$ has exactly one least-squares solution.
+[True]
+[EXP] (6.5) See Theorem 14. Linear independence ensures that $A^T A$ is invertible, giving a unique solution.
+[END]
+[TFQ] If $b$ is in the column space of $A$, then every solution of $Ax = b$ is a least-squares solution.
+[True]
+[EXP] (6.5) See the paragraph following the definition. If $b \in \operatorname{Col} A$, then $\|b - Ax\| = 0$, so any solution is automatically least-squares.
+[END]
+[TFQ] The least-squares solution of $Ax = b$ is the point in the column space of $A$ closest to $b$.
+[False]
+[EXP] (6.5) The least-squares solution $\hat{x}$ produces $A\hat{x}$, which is the closest point in $\operatorname{Col} A$ to $b$, not $\hat{x}$ itself.
+[END]
+[TFQ] A least-squares solution of $Ax = b$ is a list of weights that, when applied to the columns of $A$, produces the orthogonal projection of $b$ onto $\operatorname{Col} A$.
+[True]
+[EXP] (6.5) See the discussion following equation (1). The solution $\hat{x}$ provides coefficients such that $A\hat{x} = \operatorname{proj}_{\operatorname{Col} A} b$.
+[END]
+[TFQ] If $\hat{x}$ is a least-squares solution of $Ax = b$, then $\hat{x} = (A^T A)^{-1} A^T b$.
+[False]
+[EXP] (6.5) This formula is valid only when the columns of $A$ are linearly independent. See Theorem 14.
+[END]
+[TFQ] The normal equations always provide a reliable method for computing least-squares solutions.
+[False]
+[EXP] (6.5) See the comments after Example 4. Numerical issues such as ill-conditioning can make solving $A^T A x = A^T b$ unreliable.
+[END]
+[TFQ] If $A$ has a QR factorization, say $A = QR$, then the best way to find the least-squares solution of $Ax = b$ is to compute $\hat{x} = R^{-1} Q^T b$.
+[False]
+[EXP] (6.5) See the Numerical Note. While this formula works in theory, other methods may be numerically more stable.
+[END]

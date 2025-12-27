@@ -14,13 +14,13 @@ const DIRECTORY = {
             "u3ch9", "u3ch10", "u3ch11", "u4ch12", "u4ch13", "u4ch14"
         ]
     },
-    "APWH": {
+    /*"APWH": {
         "plaintext": "AP World History",
         "path": "./questions/apwh/",
         "files": [
             "unit1"
         ]
-    },
+    },*/
     "ESS": {
         "plaintext": "Adv. Earth & Space Systems",
         "path": "./questions/ess/",
@@ -40,6 +40,13 @@ const DIRECTORY = {
         "path": "./questions/calc/",
         "files": [
             "flashcards"
+        ]
+    },
+    "LinAlg": {
+        "plaintext": "Linear Algebra",
+        "path": "./questions/linalg/",
+        "files": [
+            "unit1", "unit2", "unit3", "unit4", "unit5", "unit6", "unit7", "supplementary"
         ]
     },
     "DEBUG": {
@@ -134,7 +141,8 @@ function parse_qset_lines(lines) {
                     if (line[0] == "A" || line[0] == "EXA") {
                         currentQObj.correctAnswers.push([line[0] == "EXA", line[1]]);
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -146,7 +154,8 @@ function parse_qset_lines(lines) {
                     } else if (line[0] == "NS") {
                         currentQObj.shuffle = false;
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
@@ -156,7 +165,8 @@ function parse_qset_lines(lines) {
                     } else if (line[0].toUpperCase() == "FALSE") {
                         currentQObj.answer = false;
                     } else if (line[0] == "EXP") {
-                        // TODO: Explanations
+                        currentQObj.hasExplanation = true;
+                        currentQObj.explanation = line[1];
                     } else {
                         throw new Error(`[PARSE] Line ${lineNum}: Unrecognized identifier "${line[0]}" (with arg "${line[1]}")`);
                     }
