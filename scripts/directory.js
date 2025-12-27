@@ -14,13 +14,13 @@ const DIRECTORY = {
             "u3ch9", "u3ch10", "u3ch11", "u4ch12", "u4ch13", "u4ch14"
         ]
     },
-    "APWH": {
+    /*"APWH": {
         "plaintext": "AP World History",
         "path": "./questions/apwh/",
         "files": [
             "unit1"
         ]
-    },
+    },*/
     "ESS": {
         "plaintext": "Adv. Earth & Space Systems",
         "path": "./questions/ess/",
